@@ -1,0 +1,5 @@
+density: 5.120849609375%
+Input data starting address (512b): 0 (0x0)
+Input data end address (512b): 4 (0x4)
+SFC weights start addr (512b): 1024 (0x400)
+SFC weights end addr (512b): 1522 (0x5F2)

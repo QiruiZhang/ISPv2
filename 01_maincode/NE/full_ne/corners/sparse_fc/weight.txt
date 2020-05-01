@@ -1,0 +1,1678 @@
+w channel: [19, 0]
+   8	
+w channel: [0, 1]
+   9	
+w channel: [11, 1]
+ -15	
+w channel: [14, 1]
+  10	
+w channel: [35, 1]
+  10	
+w channel: [48, 2]
+ -25	
+w channel: [55, 2]
+  14	
+w channel: [13, 3]
+  11	
+w channel: [51, 3]
+  24	
+w channel: [20, 4]
+  -4	
+w channel: [42, 4]
+  10	
+w channel: [14, 5]
+ -21	
+w channel: [38, 5]
+  -7	
+w channel: [41, 5]
+ -25	
+w channel: [44, 5]
+  14	
+w channel: [2, 6]
+  26	
+w channel: [53, 6]
+  20	
+w channel: [54, 6]
+ -28	
+w channel: [61, 6]
+ -20	
+w channel: [0, 7]
+  25	
+w channel: [10, 7]
+   8	
+w channel: [15, 7]
+   4	
+w channel: [48, 7]
+  -5	
+w channel: [58, 7]
+  -4	
+w channel: [63, 7]
+   1	
+w channel: [12, 9]
+ -30	
+w channel: [14, 9]
+  23	
+w channel: [22, 9]
+  19	
+w channel: [49, 9]
+  14	
+w channel: [20, 10]
+   1	
+w channel: [24, 10]
+  -8	
+w channel: [25, 10]
+ -25	
+w channel: [45, 10]
+   8	
+w channel: [15, 11]
+  30	
+w channel: [28, 11]
+   6	
+w channel: [50, 11]
+ -15	
+w channel: [4, 12]
+  10	
+w channel: [18, 12]
+  28	
+w channel: [33, 12]
+  29	
+w channel: [53, 12]
+   6	
+w channel: [2, 13]
+ -17	
+w channel: [4, 13]
+ -12	
+w channel: [17, 13]
+   6	
+w channel: [31, 13]
+  21	
+w channel: [58, 13]
+  -6	
+w channel: [7, 14]
+   8	
+w channel: [9, 14]
+   1	
+w channel: [18, 14]
+  20	
+w channel: [41, 14]
+   9	
+w channel: [49, 14]
+  -1	
+w channel: [4, 15]
+ -27	
+w channel: [47, 15]
+ -32	
+w channel: [1, 16]
+  17	
+w channel: [7, 16]
+   4	
+w channel: [10, 16]
+  30	
+w channel: [17, 16]
+  10	
+w channel: [0, 17]
+  26	
+w channel: [25, 17]
+ -18	
+w channel: [38, 17]
+  30	
+w channel: [48, 17]
+ -22	
+w channel: [1, 18]
+   5	
+w channel: [9, 18]
+  20	
+w channel: [27, 18]
+  14	
+w channel: [43, 18]
+  19	
+w channel: [54, 18]
+ -28	
+w channel: [19, 19]
+   5	
+w channel: [8, 20]
+ -24	
+w channel: [15, 20]
+  19	
+w channel: [33, 20]
+ -22	
+w channel: [40, 20]
+  29	
+w channel: [48, 20]
+ -11	
+w channel: [4, 21]
+   2	
+w channel: [26, 21]
+   1	
+w channel: [53, 21]
+  31	
+w channel: [61, 22]
+   2	
+w channel: [10, 23]
+  22	
+w channel: [43, 23]
+ -15	
+w channel: [28, 24]
+ -30	
+w channel: [12, 25]
+  17	
+w channel: [31, 25]
+   6	
+w channel: [53, 25]
+  26	
+w channel: [56, 25]
+   4	
+w channel: [38, 26]
+ -32	
+w channel: [40, 26]
+ -11	
+w channel: [27, 27]
+  -1	
+w channel: [41, 27]
+   2	
+w channel: [54, 27]
+  28	
+w channel: [63, 27]
+ -11	
+w channel: [0, 28]
+ -23	
+w channel: [17, 28]
+ -30	
+w channel: [36, 28]
+  23	
+w channel: [38, 28]
+  12	
+w channel: [62, 28]
+  19	
+w channel: [52, 29]
+ -17	
+w channel: [54, 29]
+  -8	
+w channel: [8, 30]
+ -21	
+w channel: [4, 31]
+   2	
+w channel: [10, 31]
+ -28	
+w channel: [3, 32]
+ -30	
+w channel: [6, 32]
+  -9	
+w channel: [9, 32]
+  17	
+w channel: [7, 33]
+ -10	
+w channel: [53, 33]
+ -27	
+w channel: [15, 34]
+ -30	
+w channel: [35, 34]
+ -11	
+w channel: [28, 35]
+  -8	
+w channel: [39, 35]
+  18	
+w channel: [6, 36]
+  29	
+w channel: [14, 36]
+   1	
+w channel: [34, 36]
+  -7	
+w channel: [47, 36]
+  26	
+w channel: [12, 37]
+  -6	
+w channel: [14, 37]
+  17	
+w channel: [4, 38]
+  14	
+w channel: [7, 38]
+ -23	
+w channel: [16, 38]
+  -4	
+w channel: [29, 38]
+  -7	
+w channel: [44, 38]
+  17	
+w channel: [48, 38]
+  29	
+w channel: [61, 38]
+   1	
+w channel: [3, 39]
+  28	
+w channel: [15, 39]
+  -2	
+w channel: [18, 39]
+  -8	
+w channel: [32, 39]
+ -12	
+w channel: [34, 39]
+   8	
+w channel: [45, 39]
+  12	
+w channel: [59, 39]
+  18	
+w channel: [37, 40]
+   4	
+w channel: [54, 40]
+ -14	
+w channel: [55, 40]
+   7	
+w channel: [2, 42]
+ -32	
+w channel: [21, 42]
+ -11	
+w channel: [22, 42]
+ -32	
+w channel: [45, 42]
+  23	
+w channel: [53, 42]
+ -15	
+w channel: [57, 42]
+ -11	
+w channel: [1, 43]
+  30	
+w channel: [14, 43]
+ -19	
+w channel: [16, 43]
+ -30	
+w channel: [61, 44]
+  -5	
+w channel: [5, 46]
+  24	
+w channel: [7, 46]
+  -7	
+w channel: [25, 46]
+  -8	
+w channel: [42, 46]
+   9	
+w channel: [47, 46]
+  24	
+w channel: [1, 47]
+  29	
+w channel: [16, 47]
+  31	
+w channel: [26, 47]
+ -19	
+w channel: [5, 48]
+   8	
+w channel: [6, 48]
+ -13	
+w channel: [9, 48]
+  18	
+w channel: [17, 48]
+ -19	
+w channel: [8, 49]
+  -9	
+w channel: [16, 49]
+   5	
+w channel: [33, 49]
+  20	
+w channel: [58, 49]
+ -31	
+w channel: [61, 49]
+ -27	
+w channel: [8, 50]
+  -4	
+w channel: [23, 50]
+  19	
+w channel: [37, 50]
+  10	
+w channel: [49, 51]
+  -6	
+w channel: [57, 51]
+ -28	
+w channel: [58, 51]
+ -13	
+w channel: [24, 52]
+ -14	
+w channel: [11, 53]
+  16	
+w channel: [21, 53]
+  19	
+w channel: [43, 53]
+  -5	
+w channel: [62, 54]
+  23	
+w channel: [28, 55]
+  24	
+w channel: [35, 55]
+  -1	
+w channel: [59, 55]
+  -6	
+w channel: [61, 55]
+ -21	
+w channel: [6, 56]
+ -26	
+w channel: [22, 56]
+  23	
+w channel: [40, 56]
+  20	
+w channel: [58, 56]
+  29	
+w channel: [6, 57]
+ -18	
+w channel: [23, 57]
+ -24	
+w channel: [24, 57]
+ -20	
+w channel: [31, 57]
+  -2	
+w channel: [46, 57]
+ -18	
+w channel: [49, 57]
+  13	
+w channel: [18, 58]
+   1	
+w channel: [20, 58]
+  18	
+w channel: [21, 58]
+  12	
+w channel: [29, 58]
+  21	
+w channel: [31, 58]
+   5	
+w channel: [33, 58]
+ -13	
+w channel: [35, 58]
+ -19	
+w channel: [39, 58]
+ -18	
+w channel: [62, 58]
+ -21	
+w channel: [18, 59]
+ -17	
+w channel: [14, 60]
+ -17	
+w channel: [27, 60]
+  27	
+w channel: [42, 60]
+ -21	
+w channel: [43, 60]
+ -13	
+w channel: [46, 60]
+ -17	
+w channel: [0, 62]
+  31	
+w channel: [7, 62]
+  27	
+w channel: [29, 62]
+   3	
+w channel: [35, 62]
+  28	
+w channel: [20, 63]
+  13	
+w channel: [25, 63]
+ -22	
+w channel: [30, 63]
+  21	
+w channel: [16, 64]
+  21	
+w channel: [30, 64]
+ -21	
+w channel: [53, 64]
+  24	
+w channel: [14, 65]
+ -22	
+w channel: [19, 65]
+  31	
+w channel: [19, 66]
+  28	
+w channel: [24, 66]
+  -3	
+w channel: [58, 66]
+ -23	
+w channel: [2, 67]
+  19	
+w channel: [19, 67]
+  -6	
+w channel: [24, 67]
+  -5	
+w channel: [57, 67]
+ -24	
+w channel: [60, 68]
+  -3	
+w channel: [10, 69]
+ -14	
+w channel: [16, 69]
+  28	
+w channel: [39, 69]
+   7	
+w channel: [0, 70]
+ -25	
+w channel: [40, 70]
+  28	
+w channel: [58, 70]
+   5	
+w channel: [62, 70]
+  25	
+w channel: [28, 71]
+ -23	
+w channel: [45, 71]
+  22	
+w channel: [40, 72]
+   7	
+w channel: [42, 72]
+ -22	
+w channel: [54, 72]
+ -25	
+w channel: [56, 72]
+ -18	
+w channel: [59, 72]
+  31	
+w channel: [60, 72]
+ -24	
+w channel: [62, 72]
+  21	
+w channel: [19, 73]
+ -11	
+w channel: [34, 73]
+  19	
+w channel: [52, 73]
+  28	
+w channel: [0, 74]
+ -19	
+w channel: [36, 74]
+  -8	
+w channel: [35, 75]
+ -24	
+w channel: [55, 75]
+   3	
+w channel: [5, 76]
+ -22	
+w channel: [13, 76]
+  31	
+w channel: [15, 76]
+  16	
+w channel: [23, 76]
+  18	
+w channel: [46, 76]
+  22	
+w channel: [17, 77]
+  -3	
+w channel: [31, 77]
+  -8	
+w channel: [7, 78]
+   7	
+w channel: [62, 78]
+  28	
+w channel: [63, 78]
+ -10	
+w channel: [11, 79]
+  -2	
+w channel: [31, 79]
+ -29	
+w channel: [51, 79]
+  -6	
+w channel: [2, 80]
+ -28	
+w channel: [45, 80]
+  -1	
+w channel: [49, 80]
+  10	
+w channel: [8, 81]
+  25	
+w channel: [11, 81]
+  -1	
+w channel: [19, 81]
+ -28	
+w channel: [31, 81]
+  -7	
+w channel: [46, 81]
+  24	
+w channel: [0, 82]
+  -7	
+w channel: [14, 83]
+   6	
+w channel: [23, 83]
+ -12	
+w channel: [23, 84]
+  -5	
+w channel: [29, 84]
+  13	
+w channel: [33, 84]
+  10	
+w channel: [56, 84]
+  20	
+w channel: [13, 85]
+  24	
+w channel: [14, 85]
+   5	
+w channel: [38, 85]
+  10	
+w channel: [0, 86]
+  15	
+w channel: [14, 86]
+ -21	
+w channel: [16, 86]
+  16	
+w channel: [21, 86]
+ -13	
+w channel: [39, 86]
+   5	
+w channel: [32, 87]
+  -2	
+w channel: [34, 87]
+ -30	
+w channel: [2, 88]
+ -11	
+w channel: [19, 88]
+ -29	
+w channel: [15, 89]
+  21	
+w channel: [27, 89]
+ -21	
+w channel: [30, 89]
+ -28	
+w channel: [37, 90]
+ -27	
+w channel: [32, 91]
+  10	
+w channel: [55, 91]
+  20	
+w channel: [19, 92]
+  20	
+w channel: [63, 92]
+ -21	
+w channel: [34, 93]
+   3	
+w channel: [41, 93]
+ -10	
+w channel: [47, 93]
+  27	
+w channel: [38, 94]
+  22	
+w channel: [4, 95]
+  -3	
+w channel: [32, 95]
+  -6	
+w channel: [33, 95]
+  11	
+w channel: [55, 95]
+  26	
+w channel: [56, 95]
+  -2	
+w channel: [63, 95]
+ -20	
+w channel: [14, 96]
+ -13	
+w channel: [17, 96]
+  -4	
+w channel: [26, 96]
+  25	
+w channel: [28, 96]
+  -1	
+w channel: [5, 97]
+  -3	
+w channel: [41, 97]
+  29	
+w channel: [53, 97]
+ -27	
+w channel: [61, 97]
+  21	
+w channel: [7, 98]
+  27	
+w channel: [26, 98]
+  -6	
+w channel: [10, 99]
+  21	
+w channel: [25, 99]
+ -23	
+w channel: [42, 99]
+  30	
+w channel: [57, 99]
+  15	
+w channel: [18, 100]
+   4	
+w channel: [19, 100]
+ -29	
+w channel: [15, 101]
+   9	
+w channel: [16, 101]
+ -10	
+w channel: [28, 101]
+   8	
+w channel: [31, 101]
+ -23	
+w channel: [23, 102]
+   2	
+w channel: [31, 102]
+  17	
+w channel: [32, 102]
+ -26	
+w channel: [43, 102]
+ -11	
+w channel: [52, 102]
+  -1	
+w channel: [1, 103]
+  24	
+w channel: [26, 103]
+ -20	
+w channel: [31, 103]
+ -26	
+w channel: [42, 103]
+   8	
+w channel: [56, 103]
+ -12	
+w channel: [8, 104]
+  25	
+w channel: [41, 104]
+   8	
+w channel: [50, 104]
+  29	
+w channel: [21, 105]
+  30	
+w channel: [43, 105]
+  -2	
+w channel: [47, 106]
+ -28	
+w channel: [10, 107]
+  30	
+w channel: [44, 107]
+  22	
+w channel: [25, 108]
+ -21	
+w channel: [34, 108]
+ -23	
+w channel: [37, 108]
+   7	
+w channel: [54, 108]
+ -16	
+w channel: [4, 109]
+ -31	
+w channel: [25, 109]
+ -12	
+w channel: [48, 109]
+  25	
+w channel: [55, 109]
+  16	
+w channel: [0, 110]
+  24	
+w channel: [38, 110]
+  14	
+w channel: [55, 110]
+  21	
+w channel: [1, 111]
+  21	
+w channel: [45, 111]
+  13	
+w channel: [46, 111]
+   7	
+w channel: [49, 111]
+ -23	
+w channel: [63, 112]
+   3	
+w channel: [3, 113]
+ -22	
+w channel: [8, 113]
+ -32	
+w channel: [45, 113]
+  17	
+w channel: [57, 113]
+  -1	
+w channel: [62, 113]
+  13	
+w channel: [24, 114]
+ -21	
+w channel: [25, 114]
+  -9	
+w channel: [35, 114]
+  30	
+w channel: [37, 114]
+  -5	
+w channel: [47, 115]
+   5	
+w channel: [17, 116]
+  19	
+w channel: [22, 116]
+ -30	
+w channel: [33, 116]
+ -24	
+w channel: [49, 116]
+  29	
+w channel: [2, 117]
+  23	
+w channel: [4, 117]
+ -13	
+w channel: [29, 117]
+ -27	
+w channel: [41, 117]
+ -21	
+w channel: [55, 117]
+  16	
+w channel: [37, 118]
+  17	
+w channel: [40, 118]
+  17	
+w channel: [36, 119]
+ -14	
+w channel: [39, 119]
+ -27	
+w channel: [50, 119]
+   1	
+w channel: [8, 120]
+  10	
+w channel: [41, 120]
+  10	
+w channel: [18, 121]
+  -2	
+w channel: [22, 121]
+ -26	
+w channel: [18, 122]
+  19	
+w channel: [28, 122]
+  23	
+w channel: [52, 122]
+  -6	
+w channel: [59, 122]
+ -20	
+w channel: [2, 123]
+  27	
+w channel: [7, 123]
+  18	
+w channel: [12, 123]
+  15	
+w channel: [33, 123]
+  -8	
+w channel: [46, 123]
+ -17	
+w channel: [55, 123]
+ -10	
+w channel: [30, 124]
+  -9	
+w channel: [38, 124]
+ -27	
+w channel: [49, 124]
+  18	
+w channel: [51, 124]
+   2	
+w channel: [59, 124]
+  31	
+w channel: [61, 124]
+  23	
+w channel: [3, 125]
+  -5	
+w channel: [16, 125]
+ -29	
+w channel: [31, 125]
+  23	
+w channel: [43, 125]
+  31	
+w channel: [48, 125]
+  -4	
+w channel: [60, 125]
+ -25	
+w channel: [7, 126]
+  21	
+w channel: [31, 126]
+  28	
+w channel: [45, 126]
+ -14	
+w channel: [61, 126]
+  18	
+w channel: [1, 127]
+  -1	
+w channel: [3, 127]
+ -19	
+w channel: [5, 127]
+ -16	
+w channel: [44, 127]
+  25	
+w channel: [6, 128]
+  10	
+w channel: [11, 128]
+ -25	
+w channel: [39, 128]
+ -26	
+w channel: [20, 129]
+ -24	
+w channel: [24, 129]
+  21	
+w channel: [45, 129]
+ -13	
+w channel: [61, 129]
+ -14	
+w channel: [17, 131]
+ -19	
+w channel: [19, 131]
+  24	
+w channel: [24, 131]
+   6	
+w channel: [29, 131]
+  -1	
+w channel: [45, 131]
+ -25	
+w channel: [32, 132]
+  -5	
+w channel: [58, 132]
+  22	
+w channel: [60, 132]
+ -16	
+w channel: [1, 133]
+ -21	
+w channel: [12, 133]
+  18	
+w channel: [29, 133]
+ -25	
+w channel: [9, 134]
+  14	
+w channel: [6, 135]
+  -5	
+w channel: [10, 135]
+  -8	
+w channel: [37, 135]
+  13	
+w channel: [44, 135]
+   5	
+w channel: [6, 136]
+  30	
+w channel: [27, 136]
+ -32	
+w channel: [55, 136]
+ -17	
+w channel: [5, 137]
+ -13	
+w channel: [10, 137]
+ -24	
+w channel: [37, 137]
+ -23	
+w channel: [52, 137]
+  -2	
+w channel: [7, 138]
+ -32	
+w channel: [58, 138]
+  -1	
+w channel: [12, 139]
+ -26	
+w channel: [23, 139]
+  14	
+w channel: [24, 139]
+  30	
+w channel: [26, 139]
+ -30	
+w channel: [0, 140]
+ -25	
+w channel: [18, 140]
+ -12	
+w channel: [39, 140]
+  -9	
+w channel: [48, 140]
+ -15	
+w channel: [60, 140]
+ -12	
+w channel: [29, 141]
+  31	
+w channel: [40, 141]
+   5	
+w channel: [43, 141]
+ -11	
+w channel: [52, 141]
+ -18	
+w channel: [58, 141]
+  -9	
+w channel: [52, 142]
+  10	
+w channel: [62, 142]
+  -8	
+w channel: [10, 143]
+ -21	
+w channel: [14, 143]
+ -27	
+w channel: [53, 143]
+ -23	
+w channel: [58, 143]
+ -10	
+w channel: [44, 145]
+ -25	
+w channel: [10, 146]
+ -16	
+w channel: [22, 146]
+ -13	
+w channel: [41, 146]
+  16	
+w channel: [52, 146]
+  -2	
+w channel: [18, 147]
+  24	
+w channel: [34, 147]
+  20	
+w channel: [41, 147]
+  -2	
+w channel: [23, 148]
+ -20	
+w channel: [28, 148]
+ -19	
+w channel: [34, 148]
+  -7	
+w channel: [49, 148]
+   8	
+w channel: [61, 148]
+ -25	
+w channel: [1, 149]
+ -25	
+w channel: [31, 149]
+ -30	
+w channel: [32, 149]
+  19	
+w channel: [36, 149]
+  -3	
+w channel: [49, 149]
+ -23	
+w channel: [58, 149]
+ -14	
+w channel: [59, 149]
+  19	
+w channel: [9, 150]
+ -32	
+w channel: [11, 150]
+  12	
+w channel: [54, 150]
+  29	
+w channel: [57, 151]
+   7	
+w channel: [14, 152]
+ -27	
+w channel: [33, 152]
+  11	
+w channel: [41, 152]
+ -23	
+w channel: [53, 152]
+  22	
+w channel: [37, 153]
+ -15	
+w channel: [42, 153]
+   6	
+w channel: [53, 153]
+  -7	
+w channel: [12, 154]
+ -10	
+w channel: [39, 154]
+ -18	
+w channel: [47, 154]
+  28	
+w channel: [18, 155]
+ -10	
+w channel: [21, 155]
+   8	
+w channel: [27, 155]
+  28	
+w channel: [41, 155]
+  20	
+w channel: [49, 155]
+ -23	
+w channel: [1, 156]
+  17	
+w channel: [12, 156]
+  10	
+w channel: [26, 156]
+  22	
+w channel: [34, 156]
+  27	
+w channel: [4, 157]
+  -4	
+w channel: [26, 157]
+ -29	
+w channel: [27, 157]
+   6	
+w channel: [45, 158]
+  22	
+w channel: [51, 158]
+ -24	
+w channel: [30, 159]
+  -7	
+w channel: [44, 159]
+  23	
+w channel: [60, 159]
+   4	
+w channel: [5, 160]
+ -17	
+w channel: [30, 160]
+  -1	
+w channel: [34, 160]
+ -23	
+w channel: [60, 160]
+  30	
+w channel: [3, 161]
+ -26	
+w channel: [37, 161]
+  -5	
+w channel: [52, 161]
+  23	
+w channel: [56, 161]
+ -32	
+w channel: [60, 161]
+ -11	
+w channel: [62, 161]
+ -12	
+w channel: [22, 162]
+ -32	
+w channel: [23, 162]
+ -10	
+w channel: [25, 162]
+   7	
+w channel: [3, 163]
+  -5	
+w channel: [15, 163]
+  -5	
+w channel: [34, 163]
+  31	
+w channel: [45, 163]
+   7	
+w channel: [13, 164]
+  31	
+w channel: [18, 164]
+ -28	
+w channel: [46, 164]
+ -18	
+w channel: [0, 165]
+   9	
+w channel: [1, 165]
+  22	
+w channel: [8, 165]
+  -2	
+w channel: [25, 165]
+  -2	
+w channel: [31, 165]
+  17	
+w channel: [34, 165]
+ -10	
+w channel: [40, 165]
+  18	
+w channel: [41, 165]
+  -5	
+w channel: [27, 166]
+ -29	
+w channel: [62, 166]
+ -10	
+w channel: [9, 167]
+  17	
+w channel: [53, 167]
+  27	
+w channel: [56, 167]
+   8	
+w channel: [60, 167]
+   3	
+w channel: [23, 168]
+  28	
+w channel: [33, 168]
+ -10	
+w channel: [5, 169]
+  19	
+w channel: [7, 169]
+ -22	
+w channel: [10, 169]
+ -22	
+w channel: [13, 169]
+ -31	
+w channel: [27, 169]
+   2	
+w channel: [35, 169]
+ -30	
+w channel: [51, 169]
+ -32	
+w channel: [57, 169]
+ -30	
+w channel: [61, 169]
+  25	
+w channel: [0, 170]
+  13	
+w channel: [9, 170]
+   9	
+w channel: [42, 170]
+  28	
+w channel: [58, 170]
+  11	
+w channel: [14, 171]
+   2	
+w channel: [23, 171]
+  17	
+w channel: [35, 171]
+ -30	
+w channel: [43, 171]
+   6	
+w channel: [2, 172]
+  18	
+w channel: [6, 172]
+  18	
+w channel: [11, 172]
+ -20	
+w channel: [39, 172]
+  -1	
+w channel: [51, 172]
+ -14	
+w channel: [7, 173]
+  29	
+w channel: [12, 173]
+  10	
+w channel: [32, 173]
+  -3	
+w channel: [44, 173]
+  -4	
+w channel: [63, 173]
+ -16	
+w channel: [12, 174]
+ -28	
+w channel: [26, 174]
+ -23	
+w channel: [52, 174]
+ -26	
+w channel: [10, 175]
+ -26	
+w channel: [18, 175]
+  -6	
+w channel: [35, 175]
+ -11	
+w channel: [53, 175]
+ -16	
+w channel: [62, 175]
+ -19	
+w channel: [26, 176]
+  31	
+w channel: [45, 176]
+  11	
+w channel: [57, 176]
+   2	
+w channel: [59, 176]
+ -14	
+w channel: [26, 177]
+  27	
+w channel: [23, 178]
+  26	
+w channel: [29, 178]
+  25	
+w channel: [40, 178]
+   4	
+w channel: [61, 178]
+ -12	
+w channel: [8, 179]
+ -23	
+w channel: [33, 179]
+   3	
+w channel: [9, 180]
+   4	
+w channel: [25, 180]
+  -9	
+w channel: [13, 181]
+ -22	
+w channel: [37, 181]
+  13	
+w channel: [57, 181]
+ -32	
+w channel: [60, 181]
+  -3	
+w channel: [61, 181]
+ -18	
+w channel: [5, 182]
+   6	
+w channel: [9, 182]
+  -4	
+w channel: [32, 182]
+  31	
+w channel: [36, 182]
+ -14	
+w channel: [51, 182]
+  -2	
+w channel: [52, 182]
+  12	
+w channel: [53, 182]
+  -8	
+w channel: [60, 182]
+   7	
+w channel: [21, 183]
+  -2	
+w channel: [38, 183]
+ -10	
+w channel: [46, 183]
+  -6	
+w channel: [54, 183]
+  -7	
+w channel: [61, 183]
+ -17	
+w channel: [61, 184]
+  26	
+w channel: [19, 185]
+  21	
+w channel: [55, 185]
+  -3	
+w channel: [2, 186]
+  13	
+w channel: [45, 186]
+  29	
+w channel: [47, 186]
+  20	
+w channel: [52, 186]
+  14	
+w channel: [54, 186]
+ -29	
+w channel: [9, 187]
+  24	
+w channel: [31, 187]
+  -9	
+w channel: [32, 187]
+  25	
+w channel: [26, 188]
+  11	
+w channel: [51, 188]
+ -29	
+w channel: [1, 189]
+ -10	
+w channel: [4, 189]
+ -15	
+w channel: [33, 189]
+  26	
+w channel: [38, 189]
+  26	
+w channel: [43, 189]
+ -16	
+w channel: [7, 190]
+  -1	
+w channel: [16, 190]
+  15	
+w channel: [44, 190]
+ -14	
+w channel: [2, 191]
+  28	
+w channel: [7, 191]
+  18	
+w channel: [21, 191]
+  -6	
+w channel: [33, 191]
+  21	
+w channel: [48, 191]
+ -19	
+w channel: [19, 192]
+  -7	
+w channel: [25, 192]
+  -3	
+w channel: [33, 192]
+  19	
+w channel: [13, 193]
+  23	
+w channel: [53, 193]
+  31	
+w channel: [14, 194]
+ -15	
+w channel: [34, 194]
+  18	
+w channel: [57, 194]
+  -2	
+w channel: [19, 195]
+  11	
+w channel: [46, 195]
+ -22	
+w channel: [59, 195]
+  -7	
+w channel: [31, 196]
+  30	
+w channel: [8, 197]
+ -20	
+w channel: [27, 199]
+  30	
+w channel: [50, 199]
+ -27	
+w channel: [55, 199]
+  13	
+w channel: [23, 200]
+ -15	
+w channel: [56, 200]
+ -28	
+w channel: [12, 201]
+  -7	
+w channel: [14, 201]
+  25	
+w channel: [31, 201]
+ -24	
+w channel: [34, 201]
+  18	
+w channel: [39, 201]
+  16	
+w channel: [1, 202]
+  30	
+w channel: [14, 202]
+ -19	
+w channel: [3, 203]
+  11	
+w channel: [25, 203]
+   6	
+w channel: [52, 203]
+   3	
+w channel: [28, 204]
+ -20	
+w channel: [40, 204]
+   5	
+w channel: [45, 204]
+ -20	
+w channel: [14, 205]
+ -26	
+w channel: [44, 205]
+   9	
+w channel: [13, 206]
+ -18	
+w channel: [31, 206]
+  -7	
+w channel: [1, 207]
+ -19	
+w channel: [7, 207]
+   3	
+w channel: [31, 207]
+  22	
+w channel: [53, 207]
+  11	
+w channel: [63, 207]
+   3	
+w channel: [24, 208]
+ -15	
+w channel: [32, 208]
+   3	
+w channel: [9, 209]
+  -9	
+w channel: [58, 209]
+  26	
+w channel: [19, 210]
+ -19	
+w channel: [25, 210]
+ -11	
+w channel: [57, 210]
+  -1	
+w channel: [9, 211]
+   4	
+w channel: [13, 211]
+  19	
+w channel: [27, 211]
+   3	
+w channel: [34, 211]
+  25	
+w channel: [46, 211]
+   4	
+w channel: [62, 211]
+  -1	
+w channel: [9, 212]
+  -6	
+w channel: [10, 212]
+  22	
+w channel: [11, 212]
+  29	
+w channel: [16, 212]
+  13	
+w channel: [17, 212]
+ -11	
+w channel: [2, 213]
+  29	
+w channel: [31, 213]
+ -18	
+w channel: [46, 213]
+ -26	
+w channel: [63, 213]
+ -19	
+w channel: [26, 214]
+ -11	
+w channel: [43, 214]
+ -15	
+w channel: [48, 214]
+ -25	
+w channel: [38, 215]
+  15	
+w channel: [44, 215]
+  23	
+w channel: [49, 215]
+ -15	
+w channel: [11, 216]
+  11	
+w channel: [16, 216]
+ -28	
+w channel: [43, 216]
+ -17	
+w channel: [11, 217]
+ -21	
+w channel: [13, 217]
+ -16	
+w channel: [15, 217]
+  11	
+w channel: [17, 217]
+ -29	
+w channel: [29, 217]
+  24	
+w channel: [30, 217]
+  27	
+w channel: [35, 217]
+ -20	
+w channel: [47, 217]
+  14	
+w channel: [30, 218]
+ -26	
+w channel: [46, 218]
+  11	
+w channel: [2, 219]
+   5	
+w channel: [16, 219]
+  24	
+w channel: [38, 219]
+ -21	
+w channel: [51, 219]
+ -28	
+w channel: [59, 219]
+   1	
+w channel: [4, 220]
+ -13	
+w channel: [22, 220]
+  -3	
+w channel: [23, 220]
+ -18	
+w channel: [29, 220]
+   1	
+w channel: [31, 220]
+ -11	
+w channel: [10, 221]
+ -11	
+w channel: [18, 221]
+ -25	
+w channel: [49, 221]
+  22	
+w channel: [0, 222]
+  12	
+w channel: [56, 222]
+  -9	
+w channel: [59, 222]
+ -23	
+w channel: [60, 222]
+ -25	
+w channel: [8, 223]
+  16	
+w channel: [47, 223]
+  30	
+w channel: [54, 223]
+  -3	
+w channel: [63, 223]
+ -17	
+w channel: [15, 224]
+ -27	
+w channel: [18, 224]
+   2	
+w channel: [31, 224]
+ -20	
+w channel: [46, 224]
+ -30	
+w channel: [53, 224]
+  -3	
+w channel: [10, 226]
+ -18	
+w channel: [24, 226]
+  -7	
+w channel: [29, 226]
+ -23	
+w channel: [41, 226]
+  29	
+w channel: [62, 226]
+ -12	
+w channel: [0, 227]
+ -12	
+w channel: [2, 227]
+  29	
+w channel: [32, 227]
+  15	
+w channel: [40, 227]
+  25	
+w channel: [46, 227]
+  12	
+w channel: [12, 228]
+  26	
+w channel: [34, 228]
+ -28	
+w channel: [50, 228]
+  25	
+w channel: [21, 229]
+ -12	
+w channel: [26, 229]
+   5	
+w channel: [7, 230]
+   6	
+w channel: [32, 230]
+ -12	
+w channel: [45, 230]
+   3	
+w channel: [3, 231]
+ -23	
+w channel: [56, 231]
+  11	
+w channel: [61, 231]
+ -32	
+w channel: [53, 232]
+  31	
+w channel: [4, 233]
+   1	
+w channel: [28, 233]
+  14	
+w channel: [63, 233]
+   7	
+w channel: [8, 234]
+ -25	
+w channel: [43, 234]
+ -16	
+w channel: [46, 234]
+  22	
+w channel: [12, 235]
+  14	
+w channel: [37, 235]
+  26	
+w channel: [43, 235]
+ -15	
+w channel: [47, 235]
+ -16	
+w channel: [56, 235]
+  -3	
+w channel: [0, 236]
+   3	
+w channel: [20, 236]
+ -13	
+w channel: [1, 237]
+ -26	
+w channel: [13, 238]
+  -6	
+w channel: [38, 238]
+  29	
+w channel: [15, 239]
+  18	
+w channel: [7, 240]
+ -25	
+w channel: [24, 240]
+   3	
+w channel: [26, 240]
+ -20	
+w channel: [31, 240]
+   7	
+w channel: [16, 241]
+ -25	
+w channel: [39, 241]
+ -32	
+w channel: [57, 241]
+ -30	
+w channel: [59, 241]
+ -27	
+w channel: [7, 242]
+ -22	
+w channel: [43, 242]
+ -13	
+w channel: [53, 242]
+   7	
+w channel: [51, 243]
+ -26	
+w channel: [36, 244]
+ -29	
+w channel: [45, 244]
+   1	
+w channel: [2, 245]
+  31	
+w channel: [16, 245]
+  -3	
+w channel: [21, 245]
+ -23	
+w channel: [51, 245]
+  -3	
+w channel: [0, 246]
+ -18	
+w channel: [7, 246]
+  -8	
+w channel: [49, 246]
+  28	
+w channel: [54, 246]
+  -2	
+w channel: [60, 246]
+ -12	
+w channel: [8, 247]
+   5	
+w channel: [13, 247]
+  -8	
+w channel: [39, 247]
+ -32	
+w channel: [34, 248]
+ -20	
+w channel: [42, 248]
+  25	
+w channel: [46, 248]
+ -27	
+w channel: [48, 248]
+ -28	
+w channel: [49, 248]
+ -14	
+w channel: [15, 249]
+  15	
+w channel: [36, 249]
+   5	
+w channel: [42, 249]
+ -23	
+w channel: [17, 250]
+  -8	
+w channel: [23, 250]
+ -28	
+w channel: [34, 250]
+  23	
+w channel: [27, 251]
+ -28	
+w channel: [35, 251]
+ -16	
+w channel: [41, 251]
+  -2	
+w channel: [11, 252]
+  16	
+w channel: [27, 252]
+   8	
+w channel: [42, 252]
+  25	
+w channel: [48, 252]
+  25	
+w channel: [9, 253]
+  22	
+w channel: [33, 253]
+ -13	
+w channel: [56, 253]
+   3	
+w channel: [33, 254]
+  12	
+w channel: [41, 254]
+ -32	
+w channel: [50, 254]
+ -16	
+w channel: [45, 255]
+  11	
+w channel: [58, 255]
+  -3	

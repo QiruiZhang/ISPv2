@@ -1,0 +1,128 @@
+oa channel: [0]
+3276	
+oa channel: [1]
+ 244	
+oa channel: [2]
+-1301	
+oa channel: [3]
+ 283	
+oa channel: [4]
+ 890	
+oa channel: [5]
+-859	
+oa channel: [6]
+-744	
+oa channel: [7]
+ 259	
+oa channel: [8]
+ 375	
+oa channel: [9]
+-197	
+oa channel: [10]
+-1159	
+oa channel: [11]
+ 733	
+oa channel: [12]
+ -63	
+oa channel: [13]
+ 523	
+oa channel: [14]
+1262	
+oa channel: [15]
+ 388	
+oa channel: [16]
+1974	
+oa channel: [17]
+1103	
+oa channel: [18]
+1376	
+oa channel: [19]
+-4090	
+oa channel: [20]
+-240	
+oa channel: [21]
+ 958	
+oa channel: [22]
+ 314	
+oa channel: [23]
+2223	
+oa channel: [24]
+ 549	
+oa channel: [25]
+-890	
+oa channel: [26]
+-832	
+oa channel: [27]
+-1296	
+oa channel: [28]
+ 322	
+oa channel: [29]
+-965	
+oa channel: [30]
+-206	
+oa channel: [31]
+-2082	
+oa channel: [32]
+-450	
+oa channel: [33]
+1359	
+oa channel: [34]
+-308	
+oa channel: [35]
+ 532	
+oa channel: [36]
+-1321	
+oa channel: [37]
+ -89	
+oa channel: [38]
+ 929	
+oa channel: [39]
+-1729	
+oa channel: [40]
+-147	
+oa channel: [41]
+1142	
+oa channel: [42]
+ 441	
+oa channel: [43]
+ 105	
+oa channel: [44]
+ 474	
+oa channel: [45]
+ 463	
+oa channel: [46]
+1760	
+oa channel: [47]
+-456	
+oa channel: [48]
+1505	
+oa channel: [49]
+-1351	
+oa channel: [50]
+-1106	
+oa channel: [51]
+-177	
+oa channel: [52]
+ 918	
+oa channel: [53]
+3175	
+oa channel: [54]
+-432	
+oa channel: [55]
+1087	
+oa channel: [56]
+  45	
+oa channel: [57]
+-2382	
+oa channel: [58]
+2019	
+oa channel: [59]
+-794	
+oa channel: [60]
+ 836	
+oa channel: [61]
+-1778	
+oa channel: [62]
+-1815	
+oa channel: [63]
+ 279	

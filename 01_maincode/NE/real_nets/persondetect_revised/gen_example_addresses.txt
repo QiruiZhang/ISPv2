@@ -1,0 +1,21 @@
+conv1 w start: 1000
+conv1 w end:   1010
+conv1 l start: 1010
+conv1 l end:   1014
+conv1 b start: 1400
+conv1 b end:   1401
+conv1 weights: 1800
+
+conv2 w start: 2000
+conv2 w end:   2012
+conv2 l start: 2012
+conv2 l end:   2018
+conv2 b start: 2400
+conv2 b end:   2402
+conv2 weights: 2800
+
+
+fc1 weights:    0E00  
+fc1 bias start: 5800
+fc1 bias end:   5805
+fc2 weights:    1800

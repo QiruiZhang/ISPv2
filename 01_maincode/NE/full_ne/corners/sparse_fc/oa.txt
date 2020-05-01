@@ -1,0 +1,128 @@
+oa channel: [0]
+ 102	
+oa channel: [1]
+   7	
+oa channel: [2]
+ -41	
+oa channel: [3]
+   8	
+oa channel: [4]
+  27	
+oa channel: [5]
+ -27	
+oa channel: [6]
+ -24	
+oa channel: [7]
+   8	
+oa channel: [8]
+  11	
+oa channel: [9]
+  -7	
+oa channel: [10]
+ -37	
+oa channel: [11]
+  22	
+oa channel: [12]
+  -2	
+oa channel: [13]
+  16	
+oa channel: [14]
+  39	
+oa channel: [15]
+  12	
+oa channel: [16]
+  61	
+oa channel: [17]
+  34	
+oa channel: [18]
+  43	
+oa channel: [19]
+-128	
+oa channel: [20]
+  -8	
+oa channel: [21]
+  29	
+oa channel: [22]
+   9	
+oa channel: [23]
+  69	
+oa channel: [24]
+  17	
+oa channel: [25]
+ -28	
+oa channel: [26]
+ -26	
+oa channel: [27]
+ -41	
+oa channel: [28]
+  10	
+oa channel: [29]
+ -31	
+oa channel: [30]
+  -7	
+oa channel: [31]
+ -66	
+oa channel: [32]
+ -15	
+oa channel: [33]
+  42	
+oa channel: [34]
+ -10	
+oa channel: [35]
+  16	
+oa channel: [36]
+ -42	
+oa channel: [37]
+  -3	
+oa channel: [38]
+  29	
+oa channel: [39]
+ -55	
+oa channel: [40]
+  -5	
+oa channel: [41]
+  35	
+oa channel: [42]
+  13	
+oa channel: [43]
+   3	
+oa channel: [44]
+  14	
+oa channel: [45]
+  14	
+oa channel: [46]
+  55	
+oa channel: [47]
+ -15	
+oa channel: [48]
+  47	
+oa channel: [49]
+ -43	
+oa channel: [50]
+ -35	
+oa channel: [51]
+  -6	
+oa channel: [52]
+  28	
+oa channel: [53]
+  99	
+oa channel: [54]
+ -14	
+oa channel: [55]
+  33	
+oa channel: [56]
+   1	
+oa channel: [57]
+ -75	
+oa channel: [58]
+  63	
+oa channel: [59]
+ -25	
+oa channel: [60]
+  26	
+oa channel: [61]
+ -56	
+oa channel: [62]
+ -57	
+oa channel: [63]
+   8	

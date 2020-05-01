@@ -1,0 +1,24 @@
+r[ 0] = xxxx
+r[ 1] = input image data address (128b world)
+r[ 2] = 1st location for intermediate data (512b) Needs at least 256 contiguous 512-bit words
+r[ 3] = xxxx
+r[ 4] = 2nd location for intermediate data (512b) Needs at least 256 contiguous 512-bit words
+r[ 5] = conv1 bias start (128b)
+r[ 6] = conv1 bias end (128b)
+r[ 7] = PersonDetect: xxxx   FaceDetect: 0002 [always set to =0002]
+r[ 8] = xxxx
+r[ 9] = xxxx
+r[10] = PersonDetect: xxxx   FaceDetect: macroblock index of the window's top-left McB
+r[11] = xxxx
+r[12] = conv1 weights (128b)
+r[13] = conv1 huffman w table start (128b)
+r[14] = conv1 huffman w table end AND conv1 huffman loc table start (128b)
+r[15] = conv1 huffman loc table end (128b)
+r[16] = conv2 weights (128b)
+r[17] = conv2 huffman w table start (128b)
+r[18] = conv2 huffman w table end AND conv2 huffman loc table start (128b)
+r[19] = conv2 bias start (128b) [end is automatically set to =start+2]
+r[20] = dfc1 weights (512b)
+r[21] = dfc2 weights (512b)
+r[22] = dfc1 bias start (128b) [end is automatically set to =start+5]
+r[23] = conv2 huffman loc table end (128b)

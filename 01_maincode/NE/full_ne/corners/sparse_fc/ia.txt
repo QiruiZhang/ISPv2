@@ -1,0 +1,512 @@
+ia channel: [0]
+   9	
+ia channel: [1]
+   5	
+ia channel: [2]
+ -17	
+ia channel: [3]
+ -25	
+ia channel: [4]
+   0	
+ia channel: [5]
+  -1	
+ia channel: [6]
+   0	
+ia channel: [7]
+   0	
+ia channel: [8]
+  25	
+ia channel: [9]
+  -4	
+ia channel: [10]
+  -2	
+ia channel: [11]
+  11	
+ia channel: [12]
+  16	
+ia channel: [13]
+  -6	
+ia channel: [14]
+  18	
+ia channel: [15]
+ -20	
+ia channel: [16]
+ -26	
+ia channel: [17]
+  14	
+ia channel: [18]
+  16	
+ia channel: [19]
+   0	
+ia channel: [20]
+ -18	
+ia channel: [21]
+  19	
+ia channel: [22]
+ -14	
+ia channel: [23]
+   1	
+ia channel: [24]
+  -1	
+ia channel: [25]
+  -2	
+ia channel: [26]
+   8	
+ia channel: [27]
+  22	
+ia channel: [28]
+ -17	
+ia channel: [29]
+  10	
+ia channel: [30]
+  12	
+ia channel: [31]
+  25	
+ia channel: [32]
+   5	
+ia channel: [33]
+ -31	
+ia channel: [34]
+  16	
+ia channel: [35]
+ -14	
+ia channel: [36]
+   0	
+ia channel: [37]
+   4	
+ia channel: [38]
+  12	
+ia channel: [39]
+   1	
+ia channel: [40]
+  22	
+ia channel: [41]
+   7	
+ia channel: [42]
+  12	
+ia channel: [43]
+ -29	
+ia channel: [44]
+  -5	
+ia channel: [45]
+  -8	
+ia channel: [46]
+  13	
+ia channel: [47]
+  13	
+ia channel: [48]
+ -24	
+ia channel: [49]
+  20	
+ia channel: [50]
+  11	
+ia channel: [51]
+  31	
+ia channel: [52]
+ -26	
+ia channel: [53]
+  -1	
+ia channel: [54]
+  28	
+ia channel: [55]
+   9	
+ia channel: [56]
+  29	
+ia channel: [57]
+ -25	
+ia channel: [58]
+  24	
+ia channel: [59]
+  14	
+ia channel: [60]
+ -29	
+ia channel: [61]
+  13	
+ia channel: [62]
+  12	
+ia channel: [63]
+  -2	
+ia channel: [64]
+   5	
+ia channel: [65]
+ -29	
+ia channel: [66]
+ -27	
+ia channel: [67]
+ -18	
+ia channel: [68]
+ -27	
+ia channel: [69]
+  20	
+ia channel: [70]
+ -25	
+ia channel: [71]
+  22	
+ia channel: [72]
+ -21	
+ia channel: [73]
+   7	
+ia channel: [74]
+  -4	
+ia channel: [75]
+   4	
+ia channel: [76]
+  22	
+ia channel: [77]
+   9	
+ia channel: [78]
+ -16	
+ia channel: [79]
+  29	
+ia channel: [80]
+  -2	
+ia channel: [81]
+  18	
+ia channel: [82]
+  24	
+ia channel: [83]
+ -30	
+ia channel: [84]
+ -22	
+ia channel: [85]
+  10	
+ia channel: [86]
+  17	
+ia channel: [87]
+   6	
+ia channel: [88]
+ -25	
+ia channel: [89]
+  17	
+ia channel: [90]
+  25	
+ia channel: [91]
+ -19	
+ia channel: [92]
+ -24	
+ia channel: [93]
+ -31	
+ia channel: [94]
+  -7	
+ia channel: [95]
+  10	
+ia channel: [96]
+  21	
+ia channel: [97]
+  -3	
+ia channel: [98]
+   1	
+ia channel: [99]
+ -13	
+ia channel: [100]
+  30	
+ia channel: [101]
+  -2	
+ia channel: [102]
+  31	
+ia channel: [103]
+  25	
+ia channel: [104]
+  -6	
+ia channel: [105]
+  13	
+ia channel: [106]
+  30	
+ia channel: [107]
+   6	
+ia channel: [108]
+  12	
+ia channel: [109]
+  25	
+ia channel: [110]
+  31	
+ia channel: [111]
+  29	
+ia channel: [112]
+ -29	
+ia channel: [113]
+ -27	
+ia channel: [114]
+   1	
+ia channel: [115]
+  31	
+ia channel: [116]
+ -14	
+ia channel: [117]
+ -28	
+ia channel: [118]
+  22	
+ia channel: [119]
+  12	
+ia channel: [120]
+ -30	
+ia channel: [121]
+ -25	
+ia channel: [122]
+  10	
+ia channel: [123]
+ -13	
+ia channel: [124]
+  17	
+ia channel: [125]
+ -14	
+ia channel: [126]
+ -21	
+ia channel: [127]
+  15	
+ia channel: [128]
+ -13	
+ia channel: [129]
+  29	
+ia channel: [130]
+  -5	
+ia channel: [131]
+ -22	
+ia channel: [132]
+  29	
+ia channel: [133]
+ -10	
+ia channel: [134]
+ -17	
+ia channel: [135]
+ -19	
+ia channel: [136]
+ -17	
+ia channel: [137]
+  20	
+ia channel: [138]
+  -5	
+ia channel: [139]
+ -20	
+ia channel: [140]
+ -17	
+ia channel: [141]
+ -29	
+ia channel: [142]
+ -30	
+ia channel: [143]
+ -16	
+ia channel: [144]
+   4	
+ia channel: [145]
+  18	
+ia channel: [146]
+   9	
+ia channel: [147]
+ -11	
+ia channel: [148]
+  -3	
+ia channel: [149]
+  -9	
+ia channel: [150]
+  -8	
+ia channel: [151]
+ -20	
+ia channel: [152]
+  19	
+ia channel: [153]
+ -12	
+ia channel: [154]
+  11	
+ia channel: [155]
+ -24	
+ia channel: [156]
+  20	
+ia channel: [157]
+  19	
+ia channel: [158]
+ -13	
+ia channel: [159]
+  -7	
+ia channel: [160]
+  14	
+ia channel: [161]
+   9	
+ia channel: [162]
+  27	
+ia channel: [163]
+  -6	
+ia channel: [164]
+  25	
+ia channel: [165]
+   9	
+ia channel: [166]
+  16	
+ia channel: [167]
+   9	
+ia channel: [168]
+  12	
+ia channel: [169]
+   6	
+ia channel: [170]
+  12	
+ia channel: [171]
+ -20	
+ia channel: [172]
+  -9	
+ia channel: [173]
+ -20	
+ia channel: [174]
+ -10	
+ia channel: [175]
+ -31	
+ia channel: [176]
+ -28	
+ia channel: [177]
+ -23	
+ia channel: [178]
+ -14	
+ia channel: [179]
+  31	
+ia channel: [180]
+  18	
+ia channel: [181]
+  29	
+ia channel: [182]
+  20	
+ia channel: [183]
+  13	
+ia channel: [184]
+ -22	
+ia channel: [185]
+ -25	
+ia channel: [186]
+   8	
+ia channel: [187]
+   5	
+ia channel: [188]
+  -3	
+ia channel: [189]
+ -18	
+ia channel: [190]
+  -8	
+ia channel: [191]
+   2	
+ia channel: [192]
+  15	
+ia channel: [193]
+  11	
+ia channel: [194]
+  21	
+ia channel: [195]
+  29	
+ia channel: [196]
+ -20	
+ia channel: [197]
+ -30	
+ia channel: [198]
+  20	
+ia channel: [199]
+  14	
+ia channel: [200]
+ -32	
+ia channel: [201]
+ -20	
+ia channel: [202]
+ -25	
+ia channel: [203]
+   0	
+ia channel: [204]
+  14	
+ia channel: [205]
+ -29	
+ia channel: [206]
+   2	
+ia channel: [207]
+  -8	
+ia channel: [208]
+   6	
+ia channel: [209]
+  13	
+ia channel: [210]
+  30	
+ia channel: [211]
+  -8	
+ia channel: [212]
+  13	
+ia channel: [213]
+  23	
+ia channel: [214]
+  20	
+ia channel: [215]
+  24	
+ia channel: [216]
+   1	
+ia channel: [217]
+ -11	
+ia channel: [218]
+ -32	
+ia channel: [219]
+ -25	
+ia channel: [220]
+  -6	
+ia channel: [221]
+ -32	
+ia channel: [222]
+   8	
+ia channel: [223]
+  -4	
+ia channel: [224]
+ -18	
+ia channel: [225]
+  -6	
+ia channel: [226]
+  28	
+ia channel: [227]
+  13	
+ia channel: [228]
+ -25	
+ia channel: [229]
+ -16	
+ia channel: [230]
+   6	
+ia channel: [231]
+ -10	
+ia channel: [232]
+   4	
+ia channel: [233]
+  31	
+ia channel: [234]
+  14	
+ia channel: [235]
+   5	
+ia channel: [236]
+  -4	
+ia channel: [237]
+  25	
+ia channel: [238]
+  26	
+ia channel: [239]
+ -13	
+ia channel: [240]
+ -24	
+ia channel: [241]
+   9	
+ia channel: [242]
+ -28	
+ia channel: [243]
+  20	
+ia channel: [244]
+  19	
+ia channel: [245]
+ -30	
+ia channel: [246]
+   1	
+ia channel: [247]
+  20	
+ia channel: [248]
+ -23	
+ia channel: [249]
+   2	
+ia channel: [250]
+ -27	
+ia channel: [251]
+   8	
+ia channel: [252]
+  -8	
+ia channel: [253]
+ -16	
+ia channel: [254]
+ -14	
+ia channel: [255]
+  -3	
