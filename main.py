@@ -84,9 +84,10 @@ else :
 			\nPROGRAM24:4x4MCBREFFRAMEBAYERDBG    \
 			\nPROGRAM25:4x4MCBREFFRAMEYFLSOUT     \
                        ')
-		test_num = raw_input("\n\tWhich program?:    ")
-		sel      = raw_input("\n\tSelection(yuv/h264/cdmap/full/ne/bayer)?:    ")
-		filename = r'./01_maincodes/'+'/software/design_tb_%s_%s'+'/design_tb_%s_%s.hex'%(test_num,sel,test_num,sel)
+		test_num = input("\n\tWhich program?:    ")
+		#sel      = input("\n\tSelection(yuv/h264/cdmap/full/ne/bayer)?:    ")
+		#filename = r'./01_maincodes/'+'/software/design_tb_{}_{}'+'/design_tb_{}_{}.hex',test_num,sel,test_num,sel)
+		filename = r'./01_maincodes/'+'/software/design_tb_{}'.format(test_num)+'/design_tb_{}.hex'.format(test_num)
 		if   str(test_num) == "help":
 			pass
 		else:

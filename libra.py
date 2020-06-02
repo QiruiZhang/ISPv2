@@ -25,7 +25,7 @@ class libra():
     ##### initiate class API #################################################
     def _load_sigmap(self,filename=r".\02_registermap\registermap.ereg.txt"):
         # {{{
-        print("- libra2 : loading sigmap for ereg from %s",filename)
+        print("- libra2 : loading sigmap for ereg from {}",filename)
         ifile = open(filename,'r')
         #ex {'signame' : [registernum, startbit, length]}
         for line in ifile:
@@ -44,7 +44,7 @@ class libra():
 
     def _load_orgdict(self,filename=r".\02_registermap\registermap.dictionary.txt"):
                 #{{{
-        print("- libra2 : loading orgdict from %s",filename)
+        print("- libra2 : loading orgdict from {}",filename)
         ifile = open(filename,'r')
         #ex groupname : signame0,signame1,signame2
         for line in ifile:
@@ -63,7 +63,7 @@ class libra():
         print("\nsignal map : [regnum, startbit, length]")
         print("\t")
         for key,item in self.sigmap.iteritems():
-            print("%28s"%key,"%15s",str(item))
+            print("{:28}".format(key),"{:15}".format(str(item)))
             if ((i+1)%5==0 and i != len(self.sigmap.keys())-1):
                 print("")
                 print("\t")
@@ -78,27 +78,27 @@ class libra():
         print("\n")
         for key in keys:
             item = self.orgdict[key]
-            print("%18s||\t"%key)
+            print("{:18}||\t".format(key))
             for j in range(0, len(item)):
-                print("%-25s\t"%item[j])
+                print("{:>25}\t".format(item[j]))
                 if ((j+1)%5==0 and j != len(item)-1):
                     print("")
-                    print("%20s\t"%(''))
+                    print("{:20}\t".format(''))
                 elif (j == len(item)-1):
-                    print("\n%20s"%(''),'-'*(125+8*4),'\n')
+                    print("\n{:20}".format(''),'-'*(125+8*4),'\n')
         return# }}}
 
     ##### register read/write API ############################################
     def read(self,keyword,memberid=2,verbose=0,vv=0):
         # datalist = (...,[regaddr(int), data(str)], ...){{{
         if keyword in self.orgdict.keys(): #block read
-            print('\t- libra2 : reading register block %s',keyword)
+            print('\t- libra2 : reading register block {}'.format(keyword))
             def _read_reg_iter(keyword,verbose,vv):
                 blocknames = self.orgdict[keyword]
                 signames = []
                 regnums = []
                 datalist = {}
-                print('\t- libra2 : printing register block %s',keyword)
+                print('\t- libra2 : printing register block {}'.format(keyword))
                 for item in blocknames: 
                     if item in self.orgdict.keys(): #another block
                         (temp_signames,temp_datalist) = _read_reg_iter(item,verbose=verbose,vv=vv)
@@ -111,7 +111,7 @@ class libra():
                     if type(signame) == type([]): pass
                     else :
                         (regnum,startbit,length) = self.sigmap[signame]
-                        print('\t\tlibra2 : reading %s from reg=%d, startbit=%d, length=%d',(signame,regnum,startbit,length))
+                        print('\t\tlibra2 : reading {} from reg={}, startbit={}, length={}'.format(signame,regnum,startbit,length))
                         if regnum not in regnums: regnums.append(regnum)
                 for item in regnums:
                     (addrstr,temp_datalist) = self.mbus.send_register_read(memberid,item,1,1,0,verbose=verbose,vv=vv) #single length read of 32b
@@ -119,8 +119,8 @@ class libra():
                 return signames,datalist
             def _print_reg_iter(signames,datalist,blockname,tab):   
                 outputdata = []
-                print ('\t'*tab)+'\t'+'='*100
-                print ('\t'*tab)+'\tlibra2 : register block ** %s ** output'%(blockname)
+                print(('\t'*tab)+'\t'+'='*100)
+                print(('\t'*tab)+'\tlibra2 : register block ** {} ** output'.format(blockname))
                 #print signals
                 for signame in signames:
                     if type(signame) == type([]):
@@ -136,14 +136,14 @@ class libra():
                 output_dataline = ''
                 outputdatalen = len(outputdata)
                 for i in range(0, 0 if outputdatalen==0 else len(outputdata[0])):
-                    output_nameline = output_nameline + "\t\t%24s"%(outputdata[0][i])
-                    output_dataline = output_dataline + "\t\t%24s"%(outputdata[1][i])
+                    output_nameline = output_nameline + "\t\t{:24}".format(outputdata[0][i])
+                    output_dataline = output_dataline + "\t\t{:24}".format(outputdata[1][i])
                     if (i%printperline == printperline-1) or i == len(outputdata[0])-1: 
-                        print ('\t'*tab)+"%4d"%(i/printperline*printperline),output_nameline
-                        print ('\t'*tab)+"%4s"%(''),output_dataline
+                        print (('\t'*tab)+"{:4}".format(i/printperline*printperline),output_nameline)
+                        print (('\t'*tab)+"{:4}".format(''),output_dataline)
                         output_nameline = ''
                         output_dataline = ''
-                print ('\t'*tab)+'\t'+'='*100
+                print (('\t'*tab)+'\t'+'='*100)
                 return
             (top_signames,top_datalist) = _read_reg_iter(keyword,verbose=verbose,vv=vv)
             print('')
@@ -153,26 +153,25 @@ class libra():
         elif keyword in self.sigmap.keys() : #individual read
             #{'signame' : [registernum, startbit, length]}
             (regnum,startbit,length) = self.sigmap[keyword]
-            print('\t- libra2 : reading signal %s @reg=%d,bit=%d,length=%d',(keyword,regnum,startbit,length))
+            print('\t- libra2 : reading signal {} @reg={},bit={},length={}'.format(keyword,regnum,startbit,length))
             (addrstr,datalist) = self.mbus.send_register_read(memberid,regnum,1,1,0,verbose=verbose,vv=vv)
             #datalist = [...,[regaddr(int),datastr],...]
             datastr = list(datalist[0][1])[::-1] #24b length
             return_data = int(''.join(datastr[startbit:startbit+length][::-1]),2)
             print('\t'+'='*100)
-            print('\t%24s = %d/%d (%s)',(keyword,return_data,pow(2,length)-1,bin(return_data)[2:].zfill(length)))
+            print('\t{:24} = {}/{} ({})'.format(keyword,return_data,pow(2,length)-1,bin(return_data)[2:].zfill(length)))
             print('\t'+'='*100)
             return keyword,return_data
         else:
-            raise LibraError("\t\tlibra2 : LibraError : cannot find %s from namespace\n\n"%(keyword))
+            raise LibraError("\t\tlibra2 : LibraError : cannot find {} from namespace\n\n".format(keyword))
         return # }}}
     
     def write(self,keyword,valuelist,memberid=2,verbose=0,vv=0):
         if keyword in self.orgdict.keys() : #block write# {{{
-            print('\t- libra2 : writing register block %s',(keyword))
-            #print'\t- libra2 : writing register block %s'%(keyword), valuelist
+            print('\t- libra2 : writing register block {}'.format(keyword),valuelist)
             (signames,datalist) = self.read(keyword,verbose=verbose,vv=vv)
             if len(signames) != len(valuelist): 
-                raise LibraError("\t\tlibra2 : LibraError : length mismatch, #ofSignals=%d & #ofValues=%d\n\n"%(len(signames),len(valuelist)))
+                raise LibraError("\t\tlibra2 : LibraError : length mismatch, #ofSignals={} & #ofValues={}\n\n".format(len(signames),len(valuelist)))
             def _write_reg_iter(valuelist,signames,datalist,verbose,vv):
                 #get signal values
                 for i in range(0, len(signames)):
@@ -188,15 +187,17 @@ class libra():
                 return
             def _send_reg_iter(datalist,verbose,vv):
                 #write regs
-                for regnum,data in datalist.iteritems():
+                for regnum,data in datalist.items():
                     self.mbus.send_register_write(memberid,[[regnum,data[1]]],verbose=verbose,vv=vv)
                 return
             _write_reg_iter(valuelist,signames,datalist,verbose=verbose,vv=vv)
+            print('\t- DBG')
+            print(datalist)
             _send_reg_iter(datalist,verbose=verbose,vv=vv)
         elif keyword in self.sigmap.keys() : #individual write
             #{'signame' : [registernum, startbit, length]}
             (regnum,startbit,length) = self.sigmap[keyword]
-            print('\t- libra2 : writing signal %s @reg=%d,bit=%d,length=%d',(keyword,regnum,startbit,length), valuelist)
+            print('\t- libra2 : writing signals {} @reg={},bit={},length={}'.format(keyword,regnum,startbit,length), valuelist)
             (addrstr,datalist) = self.mbus.send_register_read(memberid,regnum,1,1,0,verbose=verbose,vv=vv)
             #datalist = [...,[regaddr(int),datastr],...]
             datastr = list(datalist[0][1])[::-1] #24b length
@@ -209,7 +210,7 @@ class libra():
             outputdatastr = ''.join(datastr[::-1])
             self.mbus.send_register_write(memberid,[[regnum,outputdatastr]],verbose=verbose,vv=vv)
         else:
-            raise LibraError("\t\tlibra2 : LibraError : cannot find %s from namespace\n\n"%(keyword))
+            raise LibraError("\t\tlibra2 : LibraError : cannot find {} from namespace\n\n".format(keyword))
         print("\t- libra2 : executing call-back")
         self.read(keyword,verbose=verbose,vv=vv)
         print("\t- libra2 : DONE writing registers")
@@ -307,140 +308,22 @@ class libra():
         print(Style.RESET_ALL)
         if tune == 1:
             print('- libra2 : tune SRAM banks')
-            #self.write('sram_instr_tuning',[31,63,31,2],verbose=verbose,vv=vv) slow SRAM
-            self.write('sram_instr_tuning',       [31,63,10,2],verbose=verbose,vv=vv) #isp37 demo
-            self.write('sram64x512_imgif_tuning', [31,63,10,2],verbose=verbose,vv=vv) #isp37 demo
-            self.write('sram128x512_imgif_tuning',[31,63,10,2],verbose=verbose,vv=vv) #isp37 demo
-            self.write('sram128x512_ne_tuning',   [31,63,10,2],verbose=verbose,vv=vv) #isp37 demo
-            self.write('sram32x32_ne_tuning',     [31,63,10,2],verbose=verbose,vv=vv) #isp37 demo
-            self.write('sram_h264_tuning',        [31,63,10,2],verbose=verbose,vv=vv) #isp37 demo
-            #self.write('sram_instr_tuning',       [31,47,10,2],verbose=verbose,vv=vv) #isp37 max
-            #self.write('sram64x512_imgif_tuning', [31,47,10,2],verbose=verbose,vv=vv) #isp37 max
-            #self.write('sram128x512_imgif_tuning',[31,47,10,2],verbose=verbose,vv=vv) #isp37 max
-            #self.write('sram128x512_ne_tuning',   [31,47,10,2],verbose=verbose,vv=vv) #isp37 max
-            #self.write('sram32x32_ne_tuning',     [31,47,10,2],verbose=verbose,vv=vv) #isp37 max
-            #self.write('sram_h264_tuning',        [31,47,10,2],verbose=verbose,vv=vv) #isp37 max
-            #self.write('sram_instr_tuning',       [31,40,10,2],verbose=verbose,vv=vv) #isp35 max
-            #self.write('sram64x512_imgif_tuning', [31,40,10,2],verbose=verbose,vv=vv) #isp35 max
-            #self.write('sram128x512_imgif_tuning',[31,40,10,2],verbose=verbose,vv=vv) #isp35 max
-            #self.write('sram128x512_ne_tuning',   [31,40,10,2],verbose=verbose,vv=vv) #isp35 max
-            #self.write('sram32x32_ne_tuning',     [31,40,10,2],verbose=verbose,vv=vv) #isp35 max
-            #self.write('sram_h264_tuning',        [31,40,10,2],verbose=verbose,vv=vv) #isp35 max
+            self.write('instr_h264_sram_tuning1',[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('instr_h264_sram_tuning2',[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('imgif_128_sram_tuning1' ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('imgif_128_sram_tuning2' ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('imgif_64_sram_tuning1'  ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('imgif_64_sram_tuning2'  ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('ne_128_sram_tuning1'    ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('ne_128_sram_tuning2'    ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('ne_256_sram_tuning1'    ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('ne_256_sram_tuning2'    ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('ne_32_sram_tuning1'     ,[31,63,10,2],verbose=verbose,vv=vv)
+            self.write('ne_32_sram_tuning2'     ,[31,63,10,2],verbose=verbose,vv=vv)
         print('- libra2 : SRAM reset release')
-        self.write('sram_resetn',[1,1,1,1],verbose=verbose,vv=vv)
+        self.write('sram_powergating_enable',[0,0,0,0,0,0],verbose=verbose,vv=vv)
         print('- libra2 : SRAM isolate release')
-        self.write('sram_isolate',[0,0,0,0],verbose=verbose,vv=vv)
-
-        #Main mem sw configuration
-        print('- libra2 : MAIN SRAM SW value setting')
-        addr_list = []
-        for i in range(16):
-            addr_list.append((0+i*1024*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(1024*4)/4,1,1,0,verbose=verbose,vv=vv) # this should not be the first address you access
-
-        print('- libra2 : IMGIF SRAM setting')
-        self.img_if_reset_enable_on()
-        self.img_if_direct_mem_access_on()
-        print('\t- libra2 : MINMAX mem 64x512(1)')
-        self.mbus.send_memory_bulkwrite(memberid,(0xA0410290/4),[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA0410290+10*4)/4,1,1,0,verbose=verbose,vv=vv) # this should not be the first address you access
-        print('\t- libra2 : CD mem 64x512(4) 128x512(4)')
-        addr_list = []
-        for i in range(4):
-            addr_list.append((0xA0400000 + 0xF0 + i*4*8*512)/4)
-            addr_list.append((0xA0400000 + 0xF0 + i*4*8*512 + 2*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA0400000 + 0xF0 + 4*8*512)/4,1,1,0,verbose=verbose,vv=vv) # this should not be the first address you access
-        print('\t- libra2 : REF mem 64x512(3)')
-        addr_list = []
-        for i in range(3):
-            addr_list.append((0xA0400000 + 0x4D810 + i*2*512*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA0400000 + 0x4D810 + 2*512*4)/4,1,1,0) # this should not be the first address you access
-        print('\t- libra2 : COMP mem 64x512(55)') #55 SRAM banks
-        addr_list = []
-        for i in range(36):
-            addr_list.append((0xA0413810+i*2*512*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA0413810+2*512*4)/4,1,1,0)
-        addr_list = []
-        for i in range(36,55):
-            addr_list.append((0xA0413810+i*2*512*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA0413810+37*1024*4)/4,1,1,0)
-        self.img_if_reset_enable_off()
-        self.img_if_direct_mem_access_off()
-
-        #Neural engine configuration
-        print('- libra2 : NE SRAM setting')
-        self.ne_reset_enable_on()
-        self.ne_autogate_pe_disable()
-        print('\t- libra2 : NE shared mem 128x512(80)')
-        addr_list = []
-        for i in range(80):
-            addr_list.append((0xA0104100+i*2048*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA0104100+2048*4)/4,1,1,0)
-        print('\t- libra2 : NE weight mem 256x256(4)')
-        addr_list = []
-        addr_list.append((0xA01CC100+0*4)/4)
-        addr_list.append((0xA01CC100+8*4)/4)
-        addr_list.append((0xA01D0100+0*4)/4)
-        addr_list.append((0xA01D0100+8*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA01CC100+16*4)/4,1,1,0)
-        print('\t- libra2 : NE instr mem 128x256(2)')
-        addr_list = []
-        addr_list.append((0xA0100100+0*4)/4)
-        addr_list.append((0xA0100100+4*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA0100100+8*4)/4,1,1,0)
-        print('\t- libra2 : NE local mem 256x256(4)')
-        addr_list = []
-        addr_list.append((0xA01C4100+0*4)/4)
-        addr_list.append((0xA01C4100+8*4)/4)
-        addr_list.append((0xA01C8100+0*4)/4)
-        addr_list.append((0xA01C8100+8*4)/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA01C4100+12*4)/4,1,1,0)
-        #print '\t- libra2 : NE accum mem 32x32(64)'
-        #addr_list = []
-        #for i in range(64):
-        #   addr_list.append((0xA01D4100+i*32*4)/4)
-        #for addr in addr_list:
-        #   self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        print('\t- libra2 : NE bias mem 128x512(1)')
-        addr_list = []
-        addr_list.append(0xA01D6100/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA01D6100 + 8*4)/4,1,1,0)
-        self.ne_autogate_pe_enable()
-
-        #H264 configuration
-        print('- libra2 : H264 SRAM setting')
-        self.h264_reset_enable_on()
-        self.h264_direct_mem_access_on()
-        addr_list = []
-        addr_list.append(0xA0200038/4)
-        for addr in addr_list:
-            self.mbus.send_memory_bulkwrite(memberid,addr,[0x00ff00ff],verbose=verbose,vv=vv)
-        self.mbus.send_memory_read(memberid,(0xA0200038 + 8*4)/4,1,1,0)
-        self.h264_direct_mem_access_off()
-        self.h264_reset_enable_off()
-
-        print('- libra2 : SRAM SWRW release')
-        self.write('sram_swrw',[0,0,0,0],verbose=verbose,vv=vv)
+        self.write('sram_isol_1p2',[0,0,0,0,0,0],verbose=verbose,vv=vv)
         return# }}}
 
     def write_prog_mem(self,filename='./01_maincodes/design_tb_0.hex',memberid=2,compare=1,startaddr=0,verbose=1,vv=0):
@@ -596,11 +479,11 @@ class libra():
     ##### memory APIs : boot test sequences ################################
     def boot(self,filename='./01_maincodes/design_tb_0.hex',memberid=2,osc_sd=0x1C,osc_div=2,ne_use=0,ne_basepath='./01_maincodes/ne/dbgnets',compare=0,verbose=1,vv=0):
         self.set_osc(memberid=memberid,osc_sd=osc_sd,osc_div=osc_div,verbose=verbose,vv=vv)
-        self.memory_init(tune=1,memberid=memberid,verbose=verbose,vv=vv)
+        self.memory_init(tune=0,memberid=memberid,verbose=verbose,vv=vv)
         if ne_use == 1 :
             self.ne_instr_mem_write(basepath=ne_basepath,memberid=2,compare=0,verbose=1,vv=0)
             self.ne_shared_mem_write(basepath=ne_basepath,memberid=2,compare=0,verbose=verbose,vv=0)
-        time.sleep(1)
+        #time.sleep(1)
         print(Fore.YELLOW + '- libra2 : main mem write')
         print(Style.RESET_ALL)
         self.write_prog_mem(filename=filename,memberid=memberid,compare=compare,startaddr=0,verbose=verbose,vv=vv)
