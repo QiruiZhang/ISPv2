@@ -18,7 +18,7 @@ mainvol ='0P600V'
 arrvol  ='0P405V'
 
 rerun = str(raw_input("\n\tRerun?(y/n):   "))
-print "\n"
+print("\n")
 if rerun == "y":
 	chip = libra.libra(0)
 	chip.stop_cpu()

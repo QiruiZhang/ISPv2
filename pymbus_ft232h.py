@@ -10,7 +10,7 @@ command_width = 10
 
 class PYMBUS_FT232H():
 	def __init__(self, newinstance=1,nummembers=1,ftID=0,verbose=0,vv=0):
-		if verbose: print "\t\tpymbus : initializing ft232h"
+		if verbose: print("\t\tpymbus : initializing ft232h")
 		self.dev = _MBUS_FT232H_device(newinstance,ftID,verbose,vv)
 		self.comgen = _MBUS_FT232H_command_generator()
 		self.dev.flush(verbose,vv)
@@ -62,9 +62,9 @@ class PYMBUS_FT232H():
 
 	def write_message_asMaster(self,addrstr,datastr,maxtry=5,verbose=1,vv=0):
 		if vv: verbose=1
-		if vv: print "\t\t\tpymbus.write_message_asMaster : writing message to member as master"
+		if vv: print("\t\t\tpymbus.write_message_asMaster : writing message to member as master")
 		if len(addrstr) != 8:
-			print "\t\tfunction write_message_asMaster, arg 'addrstr' needs to be length of 8"
+			print("\t\tfunction write_message_asMaster, arg 'addrstr' needs to be length of 8")
 			return 0 #fail
 		addrlist = []
 		datalist = []
@@ -90,12 +90,12 @@ class PYMBUS_FT232H():
 				self.dev.flush(verbose,vv)
 				(di,do,ci,co) = self.read_didocico_single(verbose,vv)
 				timeout_count += 1
-			if vv: print "\t\t\t- master bus declared!"
+			if vv: print("\t\t\t- master bus declared!")
 			## arbitration - 3clk
 			i_doco_pairs = []
 			i_doco_pairs.extend([(0,0),(0,1),(0,0),(0,1),(0,0),(0,1)])
 			## writting MBUS address
-			if verbose: print "\t\t\t- writing message\t\t%s,\t"%(addrstr),
+			if verbose: print("\t\t\t- writing message\t\t%s,\t"%(addrstr)),
 			for i in range(0,len(addrlist)):
 				i_doco_pairs.append((addrlist[i],0))
 				i_doco_pairs.append((addrlist[i],1))
@@ -111,15 +111,15 @@ class PYMBUS_FT232H():
 				bit_count += 1
 				tempdata_str += str(datalist[i])
 				if bit_count%8 == 0:
-					if verbose: print tempdata_str,
+					if verbose: print(tempdata_str)
 					tempdata_str = ''
 				if bit_count%32 == 0:
-					if verbose: print '\n\t\t\t\t\t\t\t\t\t',
+					if verbose: print('\n\t\t\t\t\t\t\t\t\t')
 				if bit_count%packet_length == 0:
 					self.write_doco_multiple(i_doco_pairs,verbose,vv)
 					i_doco_pairs = []
 			self.write_doco_multiple(i_doco_pairs,verbose,vv)
-			if verbose: print tempdata_str,' - eom'
+			if verbose: print(tempdata_str,' - eom')
 			## interjection
 			i_doco_pairs = []
 			i_doco_pairs.append((0,1))
@@ -135,9 +135,9 @@ class PYMBUS_FT232H():
 			(di,do,ci,co) = self.read_didocico_single(verbose,vv)
 			self.write_doco_multiple([(1,1),(1,0),(1,1)],verbose,vv) #- b4 - don't care : back to default [1,1]
 			if di == 0 :
-				if verbose: print "\t\t\t- SUCCESS! message acknowledged!"
+				if verbose: print("\t\t\t- SUCCESS! message acknowledged!")
 			else:
-				if verbose: print "\t\t\t- FAILED! no acknowledgment...!"
+				if verbose: print("\t\t\t- FAILED! no acknowledgment...!")
 			self.dev.flush(verbose,vv)
 			success_flag = (di == 0)
 			if success_flag == 1 :
@@ -147,8 +147,8 @@ class PYMBUS_FT232H():
 	def read_response_asMaster(self,maxtry=5,verbose=1,vv=0):
 		masterid=1
 		if vv: verbose=1
-		if vv: print "\t\t\tpymbus.read_response_asMaster : reading response from member as master"
-		if vv: print "\t\t\t- waiting for member bus declaration "
+		if vv: print("\t\t\tpymbus.read_response_asMaster : reading response from member as master")
+		if vv: print("\t\t\t- waiting for member bus declaration ")
 		for j in range(maxtry):
 			## detect channel declaration
 			self.write_doco_single(1,1,verbose,vv)
@@ -159,7 +159,7 @@ class PYMBUS_FT232H():
 				time.sleep(0.5)
 				continue
 				#raise MbusError('\t\tMbusError : function read_response_asMaster, no bus declaration from members\n\n')
-			if vv: print "\t\t\t- member declared bus!"
+			if vv: print("\t\t\t- member declared bus!")
 			addrlist = []
 			datalist = []
 			## arbitration - 3clk
@@ -176,7 +176,7 @@ class PYMBUS_FT232H():
 			addrlist = [str(x[0]) for x in read_str_list]
 			## read data
 			count = 0
-			if verbose: print "\t\t\t- reading message\t\t%s,\t"%(''.join(addrlist)),
+			if verbose: print("\t\t\t- reading message\t\t%s,\t"%(''.join(addrlist)))
 			tempdata_str = ''
 			while (1):
 				commands = ''
@@ -198,12 +198,12 @@ class PYMBUS_FT232H():
 						datalist.append(str(di)) #di
 						tempdata_str += str(di)
 					if count%8 == 0:
-						if verbose: print tempdata_str,
+						if verbose: print(tempdata_str)
 						tempdata_str = ''
 					if count%32 == 0:
-						if verbose: print '\n\t\t\t\t\t\t\t\t\t',
+						if verbose: print('\n\t\t\t\t\t\t\t\t\t')
 				if ci == 1 or count > 1024*1024: #cout=1, so cin should be 1 if normal, but 0 when message end.
-					if verbose: print tempdata_str,' - eom'
+					if verbose: print(tempdata_str,' - eom')
 					break
 			## done sequence - 2clk
 			i_doco_pairs = [(1,0),(1,1),(1,0),(1,1)]
@@ -240,7 +240,7 @@ class PYMBUS_FT232H():
 				self.dev.flush(verbose,vv)
 				(di,do,ci,co) = self.read_didocico_single(verbose,vv)
 				self.write_doco_multiple(((di,0),(di,1),(1,1)),verbose,vv)
-			if verbose: print "\t\t\t- SUCCESS! received message"
+			if verbose: print("\t\t\t- SUCCESS! received message")
 			self.dev.flush(verbose,vv)
 			break
 		return (return_addrstr,datalist) #success
@@ -254,7 +254,7 @@ class PYMBUS_FT232H():
 
 	def broadcast_interject(self,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : interject mbus" 
+		if verbose: print("\t\tpymbus : interject mbus")
 		## interjection - N=6 
 		self.write_doco_multiple(((1,1), (0,1), (1,1), (0,1), (1,1), (0,1), (1,1), (0,1), (1,1), (0,1), (1,1), (0,1), (1,1)),verbose,vv)
 		## control bit - Switch Role, EOM=0 , ACK=0(NACK), IDLE
@@ -264,7 +264,7 @@ class PYMBUS_FT232H():
 
 	def broadcast_enumerate(self,memberid,maxtry=5,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : enumerating member with id=%d"%(memberid)
+		if verbose: print("\t\tpymbus : enumerating member with id=%d"%(memberid))
 		if memberid == 0 or memberid == 1:
 			raise MbusError("\t\tMbusError : function broadcast_enumerate, memberid %d forbidden\n\n"%(memberid))
 			return
@@ -272,52 +272,52 @@ class PYMBUS_FT232H():
 		datastr = '0010' + bin(int(memberid))[2:].zfill(4)
 		self.write_message_asMaster(addrstr,datastr,maxtry,verbose=verbose,vv=vv)
 		self.read_response_asMaster(verbose=verbose,vv=vv)
-		if verbose: print "\t\t- SUCCESS! enumeration broadcast sent/received"
+		if verbose: print("\t\t- SUCCESS! enumeration broadcast sent/received")
 		return
 
 	def broadcast_allwake(self,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : waking up all layers"
+		if verbose: print("\t\tpymbus : waking up all layers")
 		addrstr = '00000001'
 		datastr = '00010000'
 		self.write_message_asMaster(addrstr,datastr,verbose=verbose,vv=vv)
-		if verbose: print "\t\t- SUCCESS! all-wake broadcast sent"
+		if verbose: print("\t\t- SUCCESS! all-wake broadcast sent")
 		return
 
 	def broadcast_allsleep(self,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : sleeping up all layers"
+		if verbose: print("\t\tpymbus : sleeping up all layers")
 		self.broadcast_interject()
 		time.sleep(1)
 		addrstr = '00000001'
 		datastr = '00000000'
 		self.write_message_asMaster(addrstr,datastr,verbose=verbose,vv=vv)
-		if verbose: print "\t\t- SUCCESS! all-sleep broadcast sent"
+		if verbose: print("\t\t- SUCCESS! all-sleep broadcast sent")
 		return
 
 	def selective_sleep(self,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : sleeping up all layers"
+		if verbose: print("\t\tpymbus : sleeping up all layers")
 		addrstr = '00000001'
 		datastr = '00000000000000000000000000000001'+'01000000'+'00000000000000000000'+'1'
 		self.write_message_asMaster(addrstr,datastr,verbose=verbose,vv=vv)
-		if verbose: print "\t\t- SUCCESS! all-sleep broadcast sent"
+		if verbose: print("\t\t- SUCCESS! all-sleep broadcast sent")
 		return
 
 	def broadcast_querydevices(self,nummember=1,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : query devices"
+		if verbose: print("\t\tpymbus : query devices")
 		addrstr = '00000000'
 		datastr = '00000000'
 		self.write_message_asMaster(addrstr,datastr,verbose=verbose,vv=vv)
 		for i in range(0,nummember):
 			self.read_response_asMaster(verbose=verbose,vv=vv)
-		if verbose: print "\t\t- SUCCESS! querydevice broadcast sent/received"
+		if verbose: print("\t\t- SUCCESS! querydevice broadcast sent/received")
 		return
 
 	def send_register_write(self,memberid,addr_data_list,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : try reg writing to (member #%d) of"%(memberid),addr_data_list
+		if verbose: print("\t\tpymbus : try reg writing to (member #%d) of"%(memberid),addr_data_list)
 		func = '0000'
 		if type(memberid) in [type(1) ,type(long(1))]: #integer
 			addrstr = bin(memberid)[2:].zfill(4)
@@ -345,12 +345,12 @@ class PYMBUS_FT232H():
 				return
 			self.write_message_asMaster(addrstr,datastr,verbose=verbose,vv=vv)
 			datastr = ''
-		if verbose: print "\t\t- SUCCESS! register write sent"
+		if verbose: print("\t\t- SUCCESS! register write sent")
 		return
 
 	def send_register_read(self,memberid,startaddr,numread,destid,deststartaddr,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : try reg reading from (member #%d from reg addr %d, %d times) and send to (member #%d and store from reg addr %d)"%(memberid,startaddr,numread,destid,deststartaddr)
+		if verbose: print("\t\tpymbus : try reg reading from (member #%d from reg addr %d, %d times) and send to (member #%d and store from reg addr %d)"%(memberid,startaddr,numread,destid,deststartaddr))
 		func = '0001'
 		if type(memberid) in [type(1) ,type(long(1))]: #integer
 			addrstr = bin(memberid)[2:].zfill(4)
@@ -403,13 +403,13 @@ class PYMBUS_FT232H():
 					return_datalist.append([int(temp_addr,2),temp_data])
 					temp_addr = ''
 					temp_data = ''
-		if verbose: print "\t\t- SUCCESS! register read sent/received"
+		if verbose: print("\t\t- SUCCESS! register read sent/received")
 		return (received_addrstr,return_datalist)
 
 	## Memory API - asMaster
 	def send_memory_bulkwrite(self,memberid,startaddr,data_list,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : try mem bulk writing to (member #%d)"%(memberid)
+		if verbose: print("\t\tpymbus : try mem bulk writing to (member #%d)"%(memberid))
 		func = '0010'
 		if type(memberid) in [type(1) ,type(long(1))]: #integer
 			addrstr = bin(memberid)[2:].zfill(4)
@@ -436,12 +436,12 @@ class PYMBUS_FT232H():
 			raise MbusError('\t\tMbusError : function send_register_write, message %s has length %d, abort\n\n'%(datastr,len(datastr)))
 			return
 		self.write_message_asMaster(addrstr,datastr,verbose=verbose,vv=vv)
-		if verbose: print "\t\t- SUCCESS! memory bulk write sent"
+		if verbose: print("\t\t- SUCCESS! memory bulk write sent")
 		return
 
 	def send_memory_read(self,memberid,startaddr,numread,destid,deststartaddr,verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\tpymbus : try mem reading from (member #%d from mem addr %d, %d times) and send to (member #%d and store from mem addr %d)"%(memberid,startaddr,numread,destid,deststartaddr)
+		if verbose: print("\t\tpymbus : try mem reading from (member #%d from mem addr %d, %d times) and send to (member #%d and store from mem addr %d)"%(memberid,startaddr,numread,destid,deststartaddr))
 		func = '0011'
 		if type(memberid) in [type(1) ,type(long(1))]: #integer
 			addrstr = bin(memberid)[2:].zfill(4)
@@ -493,7 +493,7 @@ class PYMBUS_FT232H():
 				if i%32 == 31: #end of data
 					return_datalist.append([temp_data])
 					temp_data = ''
-		if verbose: print "\t\t- SUCCESS! memory read sent/received"
+		if verbose: print("\t\t- SUCCESS! memory read sent/received")
 		return (received_addrstr,return_datalist)
 
 	def send_memory_streamwrite(self,verbose=1,vv=0):
@@ -507,7 +507,7 @@ class _MBUS_FT232H_command_generator():
 
 	def command_write_doco_single(self,dout,cout,verbose=1,vv=0):
 		if vv: verbose=1
-		if vv: print "\t\t\t\t- command compile, write_doco", "[c1(dout),c3(cout)] = [%d,%d]"%(dout,cout)
+		if vv: print("\t\t\t\t- command compile, write_doco", "[c1(dout),c3(cout)] = [%d,%d]"%(dout,cout))
 		commands = ''
 		i_dout = int(dout)
 		i_cout = int(cout)
@@ -518,16 +518,16 @@ class _MBUS_FT232H_command_generator():
 
 	def command_read_didocico_single(self,verbose=1,vv=0):
 		if vv: verbose=1
-		if vv: print "\t\t\t\t- command compile, read_dococico"
+		if vv: print("\t\t\t\t- command compile, read_dococico")
 		commands = '\x83'
 		return commands
 
 class _MBUS_FT232H_device():
 	def __init__(self, newinstance=1,ftID=0, verbose=1,vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\t\t- ft232h : Listing connected ftd2xx device (by Serial#):", ftd2xx.listDevices(ft.OPEN_BY_SERIAL_NUMBER)
-		if verbose: print "\t\t\t- ft232h : Listing connected ftd2xx device (by description):", ftd2xx.listDevices(ft.OPEN_BY_DESCRIPTION)
-		if verbose: print "\t\t\t- ft232h : Opening device by given ftID:", ftID, "(default=0)"
+		if verbose: print("\t\t\t- ft232h : Listing connected ftd2xx device (by Serial#):", ftd2xx.listDevices(ft.OPEN_BY_SERIAL_NUMBER))
+		if verbose: print("\t\t\t- ft232h : Listing connected ftd2xx device (by description):", ftd2xx.listDevices(ft.OPEN_BY_DESCRIPTION))
+		if verbose: print("\t\t\t- ft232h : Opening device by given ftID:", ftID, "(default=0)")
 		self.dev = ftd2xx.open(ftID)
 		if newinstance:
 			self._bringup_configmode(verbose,vv)
@@ -541,16 +541,16 @@ class _MBUS_FT232H_device():
 
 	def _bringup_configmode(self, verbose=1, vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\t\t- ft232h : Bringing up FT232H configuration"
+		if verbose: print("\t\t\t- ft232h : Bringing up FT232H configuration")
 		# Reset the FT232H
-		if vv: print "\t\t\t\t- resetting FT232H"
+		if vv: print("\t\t\t\t- resetting FT232H")
 		self.dev.resetDevice()
 		# Purge USB receive buffer ... Get the number of bytes in the FT232H receive buffer and then read them
-		if vv: print "\t\t\t\t- flushing FT232H read buffer"
+		if vv: print("\t\t\t\t- flushing FT232H read buffer")
 		dwNumInputBuffer = self.dev.getQueueStatus()
 		if (dwNumInputBuffer > 0):
 			self.dev.read(dwNumInputBuffer)
-		if vv: print "\t\t\t\t- setting up USB communication / FT232H mode=MPSSE"
+		if vv: print("\t\t\t\t- setting up USB communication / FT232H mode=MPSSE")
 		self.dev.setUSBParameters(65536, 65535) # Set USB request transfer sizes
 		self.dev.setChars(False, 0, False, 0) 	# Disable event and error characters
 		self.dev.setTimeouts(5000, 5000)	# Set the read and write timeouts to 5 seconds
@@ -562,96 +562,96 @@ class _MBUS_FT232H_device():
 
 	def _bringup_syncmpsse(self, verbose=1, vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\t\t- ft232h : Synchronizing MPSSE"
+		if verbose: print("\t\t\t- ft232h : Synchronizing MPSSE")
 		commands = "\xAA"	#0xAA = bad command
 		self.send(commands,verbose,vv)
 		read_str = self.read(2,verbose,vv)
 		if read_str == "\xFA"+"\xAA" :
-			if verbose: print "\t\t\t- ft232h : (1/2) SUCCESS! synchronized MPSSE with bad command 0xAA"
+			if verbose: print("\t\t\t- ft232h : (1/2) SUCCESS! synchronized MPSSE with bad command 0xAA")
 		else:
-			if verbose: print "\t\t\t- ft232h : (1/2) failed synchronization"
+			if verbose: print("\t\t\t- ft232h : (1/2) failed synchronization")
 			raise MbusError
 		commands = "\xAB"	#0xAA = bad command
 		self.send(commands,verbose,vv) #0xAB = bad command
 		read_str = self.read(2,verbose,vv)
 		if read_str == "\xFA"+"\xAB" :
-			if verbose: print "\t\t\t- ft232h : (2/2) SUCCESS! synchronized MPSSE with bad command 0xAB"
+			if verbose: print("\t\t\t- ft232h : (2/2) SUCCESS! synchronized MPSSE with bad command 0xAB")
 		else:
-			if verbose: print "\t\t\t- ft232h : (2/2) failed synchronization"
+			if verbose: print("\t\t\t- ft232h : (2/2) failed synchronization")
 			raise MbusError
 		return
 
 	def _bringup_configmpsse(self, verbose=1, vv=0):
 		if vv: verbose=1
-		if verbose: print "\t\t\t- ft232h : Configuring MPSSE (Multi-Protocol Synchornonous Serial Engine) to MBUS"
-		if verbose: print "\t\t\t\t[MISC setting]"
+		if verbose: print("\t\t\t- ft232h : Configuring MPSSE (Multi-Protocol Synchornonous Serial Engine) to MBUS")
+		if verbose: print("\t\t\t\t[MISC setting]")
 		commands = ""
 		commands += "\x8B"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\tEnable clock divide-by-5 for 60Mhz master clock"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\tEnable clock divide-by-5 for 60Mhz master clock")
 		commands += "\x8D"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\tDisable 3 phase data clocking, that makes data hold longer so it's valid on both clock edges. for I2C"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\tDisable 3 phase data clocking, that makes data hold longer so it's valid on both clock edges. for I2C")
 		commands += "\x97"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\tDisable adaptive clocking"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\tDisable adaptive clocking")
 		commands += "\x9E"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\tDrive-zero mode on the lines used for I2C ..."
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\tDrive-zero mode on the lines used for I2C ...")
 		commands += "\x00"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\t...Disabled for lower port AD 0-7"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\t...Disabled for lower port AD 0-7")
 		commands += "\x00"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\t...Disabled for upper port AC 0-7"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\t...Disabled for upper port AC 0-7")
 		commands += "\x85"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\tInternal loopback is off"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\tInternal loopback is off")
 		self.send(commands,verbose,vv)
-		if verbose: print "\t\t\t\t[Clock setting to 1.2MHz]"
+		if verbose: print("\t\t\t\t[Clock setting to 1.2MHz]")
 		commands = ""
 		commands += "\x86"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\tSet clock divisor = ((1+256*valueH+valueL)*2)"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\tSet clock divisor = ((1+256*valueH+valueL)*2)")
 		commands += "\x02"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\t....valueL=2"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\t....valueL=2")
 		commands += "\x00"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\t....valueH=0 ... div by 10 ... 1.2MHz"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\t....valueH=0 ... div by 10 ... 1.2MHz")
 		self.send(commands,verbose,vv)
-		if verbose: print "\t\t\t\t[Pin map c0=din(i), c1=dout(O), c2=cin(i), c3=cout(O)] perspective to Master"
+		if verbose: print("\t\t\t\t[Pin map c0=din(i), c1=dout(O), c2=cin(i), c3=cout(O)] perspective to Master")
 		commands = ""
 		commands += "\xF0"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\tSet AD 0-7 values for pins that are output (not used)"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\tSet AD 0-7 values for pins that are output (not used)")
 		commands += "\x00"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\t...all as zeros (not used)"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\t...all as zeros (not used)")
 		commands += "\x00"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\t...no pins are outputs (not used)"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\t...no pins are outputs (not used)")
 		self.send(commands,verbose,vv)
 		commands = ""
 		commands += "\x82"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\tSet AC 0-7 values for pins that are output"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\tSet AC 0-7 values for pins that are output")
 		commands += "\x06"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\t...[1]=dout, [3]=cout are ones"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\t...[1]=dout, [3]=cout are ones")
 		commands += "\x06"
-		if vv: print "\t\t\t\t"+hex(ord(commands[-1]))+"\t...[1]=dout, [3]=cout are outputs"
+		if vv: print("\t\t\t\t"+hex(ord(commands[-1]))+"\t...[1]=dout, [3]=cout are outputs")
 		self.send(commands,verbose,vv)
 		return
 
 	def send(self,commands='',verbose=1,vv=0):
 		if vv: verbose=1
-		if vv: print "\t\t\t\tft232h.send : sending following command", ", length :", len(commands)
+		if vv: print("\t\t\t\tft232h.send : sending following command", ", length :", len(commands))
 		i_iter = (len(commands))/16 + int((len(commands))%16 > 0)
 		for i in range(i_iter):
 			if i == i_iter-1:
-				if vv: print "\t\t\t\t->"+' '.join([hex(ord(x))[2:].zfill(2) for x in commands[16*i:]])
+				if vv: print("\t\t\t\t->"+' '.join([hex(ord(x))[2:].zfill(2) for x in commands[16*i:]]))
 			else:
-				if vv: print "\t\t\t\t->"+' '.join([hex(ord(x))[2:].zfill(2) for x in commands[16*i:16*(i+1)]])
+				if vv: print("\t\t\t\t->"+' '.join([hex(ord(x))[2:].zfill(2) for x in commands[16*i:16*(i+1)]]))
 		write_len = self.dev.write(commands)
 		if write_len != len(commands):
-			if verbose: print "\t\t\t\t- Failed writing, timeout"
+			if verbose: print("\t\t\t\t- Failed writing, timeout")
 			raise MbusError
 		else:
-			if vv: print "\t\t\t\t- SUCCESS! writing"
+			if vv: print("\t\t\t\t- SUCCESS! writing")
 		return write_len
 
 	def read(self,length=2,verbose=1,vv=0):
 		if vv: verbose=1
-		if vv: print "\t\t\t\tft232h.read : reading device for length =", length
+		if vv: print("\t\t\t\tft232h.read : reading device for length =", length)
 		tries = 0
 		read_len = self.dev.getQueueStatus()
-		if vv: print "\t\t\t\t- data len in read buffer = %d"%(read_len)
+		if vv: print("\t\t\t\t- data len in read buffer = %d"%(read_len))
 		while (read_len < length and tries < 100):
 			read_len = self.dev.getQueueStatus()
 			tries += 1
@@ -661,23 +661,23 @@ class _MBUS_FT232H_device():
 			i_iter = (len(read_str))/16 + int((len(read_str))%16 > 0)
 			for i in range(i_iter):
 				if i == i_iter-1:
-					if vv: print "\t\t\t\t->"+' '.join([hex(ord(x))[2:].zfill(2) for x in read_str[16*i:]])
+					if vv: print("\t\t\t\t->"+' '.join([hex(ord(x))[2:].zfill(2) for x in read_str[16*i:]]))
 				else:
-					if vv: print "\t\t\t\t->"+' '.join([hex(ord(x))[2:].zfill(2) for x in read_str[16*i:16*(i+1)]])
-			if vv: print "\t\t\t\t- SUCCESS! reading"
+					if vv: print("\t\t\t\t->"+' '.join([hex(ord(x))[2:].zfill(2) for x in read_str[16*i:16*(i+1)]]))
+			if vv: print("\t\t\t\t- SUCCESS! reading")
 		else:
-			if verbose: print "\t\t\t\t- Failed reading, timeout"
+			if verbose: print("\t\t\t\t- Failed reading, timeout")
 			raise MbusError
 		return read_str
 
 	def flush(self,verbose=1,vv=0):
 		if vv: verbose=1
-		if vv: print "\t\t\t\tft232h.flush : flushing read buffer"
+		if vv: print("\t\t\t\tft232h.flush : flushing read buffer")
 		read_len = self.dev.getQueueStatus()
-		if vv: print "\t\t\t\t- read buffer has %d data... flushing"%(read_len)
+		if vv: print("\t\t\t\t- read buffer has %d data...  flushing"%(read_len))
 		if (read_len > 0):
 			self.dev.read(read_len)
-		if vv: print "\t\t\t\t- SUCCESS! flushing"
+		if vv: print("\t\t\t\t- SUCCESS! flushing")
 		return
 
 
@@ -687,19 +687,4 @@ class Error(Exception):
 
 class MbusError(Error):
 	def __init__(self,expression):
-		print expression
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		print(expression)
