@@ -17,7 +17,7 @@ chipname='isp37'
 mainvol ='0P600V'
 arrvol  ='0P405V'
 
-rerun = str(raw_input("\n\tRerun?(y/n):   "))
+rerun = input("\n\tRerun?(y/n):   ")
 print("\n")
 if rerun == "y":
 	chip = libra.libra(0)
@@ -27,9 +27,9 @@ if rerun == "y":
 else:
 	chip = libra.libra()
 
-mem_test = str(raw_input("\n\tMemory test?(y/n):   "))
+mem_test = input("\n\tMemory test?(y/n):   ")
 if mem_test == "y":
-	mem_test_sel = int(raw_input("\n\tWhat memory test? (0)Main memory (1) Imager interface (2) Neural Engine? (3) IMG IF & NE intense :"))
+	mem_test_sel = input("\n\tWhat memory test? (0)Main memory (1) Imager interface (2) Neural Engine? (3) IMG IF & NE intense :")
 	if mem_test_sel == 0 :
 		print('\n**** Main memory Test ****')
 		time.sleep(2)

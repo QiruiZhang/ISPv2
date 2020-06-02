@@ -37,20 +37,20 @@ class libraview():
 				if (numstream <= i-1 and M) or (numstream <= i and not M): break
 				elif source == 0:
 					if i < numstream and M:
-						print "\tlibraView : iter %d - capture"%(i+1)
+						print("\tlibraView : iter %d - capture"%(i+1))
 						hour = datetime.datetime.now().strftime("%H%M%S")
 						filename = r'\%s_%s_%d.bin'%(date,hour,(i+1))
 						p1 = mp.Process(target=self.capture_img,args=(basepath+filename,)) #p1 = capture from Saleae
 						p1.start()
 					elif i < numstream and not M:
-						print "\tlibraView : iter %d - capture"%(i)
+						print("\tlibraView : iter %d - capture"%(i))
 						hour = datetime.datetime.now().strftime("%H%M%S")
 						filename = r'\%s_%s_%d.bin'%(date,hour,(i))
 						self.capture_img(basepath+filename)
 						prev_date = date
 						prev_hour = hour
 					if (i >= 1 and M) or (i >= 0 and not M): 
-						print "\tlibraView : iter %d - process and show"%(i)
+						print("\tlibraView : iter %d - process and show"%(i))
 						## processing with .exe
 						filename = r'\%s_%s_%d.bin'%(prev_date,prev_hour,(i))
 						if showlast : 
@@ -58,7 +58,7 @@ class libraview():
 							(stdouttext,stderrtext)=p.communicate()
 							temp_line = stdouttext.split('\n')[-8:-2]
 							return_str = temp_line[:]
-							print '\n'.join(temp_line)
+							print('\n'.join(temp_line))
 						else : 
 							p = sp.Popen(['VIMv1_process_MD.exe',basepath+filename])
 							p.communicate()
@@ -69,7 +69,7 @@ class libraview():
 						if not noshow and not animate and not md:
 							## load and show
 							for j in range(N) if not showlast else [N-1]:
-								print "\t\tlibraView : showing %d-%d image"%(i,j+1)
+								print("\t\tlibraView : showing %d-%d image"%(i,j+1))
 								pfilename = r'\%s_%s_%d.bin_%d'%(prev_date,prev_hour,(i),j+1)
 								img_array = self.load_grayimg(basepath+pfilename,source=0)[0]
 								hfilename = r'\%s_%s_%d.bin_hist_%d'%(prev_date,prev_hour,(i),j+1)
@@ -83,7 +83,7 @@ class libraview():
 							loop_img_array = []
 							## load
 							for j in range(N):
-								print "\t\tlibraView : showing %d-%d image"%(i,j+1)
+								print("\t\tlibraView : showing %d-%d image"%(i,j+1))
 								pfilename = r'\%s_%s_%d.bin_%d'%(prev_date,prev_hour,(i),j+1)
 								img_array = self.load_grayimg(basepath+pfilename,source=0)[0]
 								loop_img_array.append(img_array[:])
@@ -113,13 +113,13 @@ class libraview():
 							self.draw_md(prev_md_data,vga_data,post_md_data,maxcode,zoom,dpi,dgain,pedestal,offset,'%s_%s_%d'%(prev_date,prev_hour,i),store,figpath+figname,color,denoise,wb,wb_gain)
 							plt.pause(0.3)
 						if noraw: 
-							if not showlast : print '\t\tremoving files :',','.join([x.split('\\')[-1] for x in listofraw])
+							if not showlast : print('\t\tremoving files :',','.join([x.split('\\')[-1] for x in listofraw]))
 							[os.remove(x) for x in listofraw]
 					if i < numstream and M:
 						p1.join()
-						print '\t\t- snooping joined'
+						print('\t\t- snooping joined')
 					elif i < numstream and not M:
-						print '\t\t- snooping joined'
+						print('\t\t- snooping joined')
 					i += 1
 				prev_date = date
 				prev_hour = hour
@@ -134,7 +134,7 @@ class libraview():
 
 	def draw_md(self,prev_md_data,vga_data,post_md_data,maxcode=2**12,zoom=1,dpi=96,dgain=1,pedestal=0,offset=0,plotname='',store=0,path='',color=0,denoise=0,wb=0,wb_gain=[1.0,1.0,1.8]):
 		t = time.time()
-		print "\t\tlibraView : drawing images of MD capture"
+		print("\t\tlibraView : drawing images of MD capture")
 		len_premd = min(len(prev_md_data),3)
 		len_postmd = min(len(post_md_data),6)
 		newdpi = dpi/zoom
@@ -182,9 +182,9 @@ class libraview():
 		img_data_slice = (np.minimum(((img_data_slice)*dgain)+pedestal,maxcode-1)*(256.0/maxcode)).astype(np.uint8)
 		if denoise: img_data_slice = cv2.fastNlMeansDenoisingColored(img_data_slice,None,3,3,3,7)
 		ax1.imshow(img_data_slice,interpolation=None)
-		print "\t\t>image drawing : time = %.1f sec"%(time.time()-t)
+		print("\t\t>image drawing : time = %.1f sec"%(time.time()-t))
 		if store:
-			print "\t\tlibraView : saving image with name %s"%(plotname)
+			print("\t\tlibraView : saving image with name %s"%(plotname))
 			self.fig1.savefig('.'.join(path.split('.')[:-1])+'_MD.png')	
 			self.fig2.savefig('.'.join(path.split('.')[:-1])+'_VGA.png')	
 		plt.show()
@@ -195,7 +195,7 @@ class libraview():
 		t = time.time()
 		y = float(len(img_data))
 		x = len(img_data[0])
-		print "\t\tlibraView : drawing image with x=%d,y=%d,maxcode=%d,zoom=%d,dpi=%d"%(x,y,maxcode,zoom,dpi)
+		print("\t\tlibraView : drawing image with x=%d,y=%d,maxcode=%d,zoom=%d,dpi=%d"%(x,y,maxcode,zoom,dpi))
 		newdpi = dpi/zoom
 		#matplotlib
 		if self.fig1 == None : self.fig1 = plt.figure()
@@ -216,16 +216,16 @@ class libraview():
 		if denoise: img_data_slice = cv2.fastNlMeansDenoisingColored(img_data_slice,None,3,3,3,7)
 		#ax1.imshow(img_data_slice,interpolation=None,norm=mpl.colors.NoNorm(vmin=0,vmax=255))
 		ax1.imshow(img_data_slice,interpolation=None)
-		print "\t\t>image drawing : time = %.1f sec"%(time.time()-t)
+		print("\t\t>image drawing : time = %.1f sec"%(time.time()-t))
 		if store:
-			print "\t\tlibraView : saving image with name %s"%(plotname)
+			print("\t\tlibraView : saving image with name %s"%(plotname))
 			self.fig1.savefig(path)	
 		if type(hist_data) == type(np.array([])) and hist_data.all() != None:
 			t = time.time()
 			self.fig2.clear()
 			ax2 = self.fig2.add_subplot(1,1,1)
 			ax2.plot(range(0,4096),hist_data)
-			print "\t\t>hist drawing : time = %.1f sec"%(time.time()-t)
+			print("\t\t>hist drawing : time = %.1f sec"%(time.time()-t))
 		plt.show()
 		plt.pause(0.05)
 		return
@@ -234,7 +234,7 @@ class libraview():
 		t = time.time()
 		y = float(len(img_data[0]))
 		x = len(img_data[0][0])
-		print "\t\tlibraView : animate image with x=%d,y=%d,maxcode=%d,zoom=%d,dpi=%d"%(x,y,maxcode,zoom,dpi)
+		print("\t\tlibraView : animate image with x=%d,y=%d,maxcode=%d,zoom=%d,dpi=%d"%(x,y,maxcode,zoom,dpi))
 		newdpi = dpi/zoom
 		#matplotlib
 		if self.fig1 == None : self.fig1 = plt.figure()
@@ -256,7 +256,7 @@ class libraview():
 			ims.append([plt.imshow(img_data_slice,interpolation=None,norm=mpl.colors.NoNorm(vmin=0,vmax=255),animated=True)])
 		ani = animation.ArtistAnimation(self.fig1, ims, interval=animate_interval, blit=True)#, repeat_delay=100)
 		if store:
-			print "\t\tlibraView : saving animation"
+			print("\t\tlibraView : saving animation")
 			ani.save(path)
 		plt.show()
 		plt.pause(0.05)
@@ -264,19 +264,19 @@ class libraview():
 
 	def load_grayhist(self,filename):
 		if os.path.exists(filename):
-			print "\t\tlibraView : reading histogram dump"
+			print("\t\tlibraView : reading histogram dump")
 			hist_data = array.array('L')
-			print '\t\t- opening file : %s'%filename
+			print('\t\t- opening file : %s'%filename)
 			hist_data.fromfile(open(filename,'rb'), os.path.getsize(filename) // hist_data.itemsize)
 			return np.fromiter(hist_data,dtype=int)
 		else: return None
 
 	def load_grayimg(self,filename,source=0,N=1):	
-		print "\t\tlibraView : reading binary dump"
+		print("\t\tlibraView : reading binary dump")
 		t = time.time()
 		# process data
 		bin_data = array.array('H')
-		print '\t\t- opening file : %s'%filename
+		print('\t\t- opening file : %s'%filename)
 		bin_data.fromfile(open(filename,'rb'), os.path.getsize(filename) // bin_data.itemsize)
 		if source == 1: #from saleae dump directly
 			return_data = self._load_grayimg_filter(bin_data,N)
@@ -284,7 +284,7 @@ class libraview():
 			numrow = bin_data[-1]
 			numcol = bin_data[-2]
 			return_data = [np.array(np.array_split(np.fromiter(bin_data[:-2],dtype=np.uint16),numrow))]
-		print "\t\t>reading : time = %.1f sec"%(time.time()-t)
+		print("\t\t>reading : time = %.1f sec"%(time.time()-t))
 		return return_data
 		
 	def _load_grayimg_filter(bin_data,N=1):
@@ -313,13 +313,13 @@ class libraview():
 		clk_index = ch_map['clk']
 		clk_thres = 2**clk_index
 		for i in range(N):
-			print '\t\t- loading %d-th/%d dataset from binary dump :'%(i+1,N),time.time() - tt
+			print('\t\t- loading %d-th/%d dataset from binary dump :'%(i+1,N),time.time() - tt)
 			tt = time.time()
 			vsync_data = dropwhile(lambda x: not x/vsync_thres%2, bin_data)
 			if N > 1: (bin_data,vsync_data) = tee(vsync_data,2)
 			vsync_data = tuple(takewhile(lambda x: x/vsync_thres%2, vsync_data))
 			if N > 1: bin_data = tuple(dropwhile(lambda x: x/vsync_thres%2, bin_data))
-			print '\t\t- data length = ',len(bin_data)
+			print('\t\t- data length = ',len(bin_data))
 			clk_data_xor = imap(lambda x,y: not x/clk_thres%2 and y/clk_thres%2,islice(vsync_data,0,None),islice(vsync_data,1,None))
 			result_data = compress(islice(vsync_data,1,None),clk_data_xor)
 			def f(x) : 
@@ -331,7 +331,7 @@ class libraview():
 				return temp_x/16*8+temp_x%8
 			img_data = imap(f,result_data)
 			img_data = tuple(img_data)
-			print '\t\t- creating img_data :',time.time() - tt
+			print('\t\t- creating img_data :',time.time() - tt)
 			## get numcol
 			tt = time.time()
 			hsync = dropwhile(lambda x : not x/hsync_thres%2, vsync_data)
@@ -341,15 +341,15 @@ class libraview():
 			numcol=sum(hsync_clk)
 			len_img = len(img_data)
 			numrow=len_img/numcol
-			print '\t\t- getting num row :',time.time() - tt
+			print('\t\t- getting num row :',time.time() - tt)
 			return_array.append(np.array(np.array_split(np.fromiter(img_data,dtype=float),numrow)))
 			#return_array.append(np.array(np.array_split(np.fromiter(img_data,dtype=np.uint32),numrow)))
-		print "\t\t>loading : time = %.1f sec"%(time.time()-t)
+		print("\t\t>loading : time = %.1f sec"%(time.time()-t))
 		return return_array
 
 	def capture_img(self,filename):	
 		t = time.time()
-		print "\t\tlibraView : snooping image with Saleae"
+		print("\t\tlibraView : snooping image with Saleae")
 		if os.path.exists(filename): os.remove(filename)
 		sal = saleae.Saleae()
 		sal.capture_start_and_wait_until_finished()
@@ -357,6 +357,6 @@ class libraview():
 		while not os.path.exists(filename) or not (os.path.getsize(filename) > 1000) or not sal.is_processing_complete(): #wait
 			time.sleep(0.5)
 		time.sleep(5)
-		print "\t\t>snooping : time = %.1f sec"%(time.time()-t)
+		print("\t\t>snooping : time = %.1f sec"%(time.time()-t))
 		time.sleep(1)
 		return
