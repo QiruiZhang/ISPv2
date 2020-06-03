@@ -87,12 +87,12 @@ else :
 		test_num = input("\n\tWhich program?:    ")
 		#sel      = input("\n\tSelection(yuv/h264/cdmap/full/ne/bayer)?:    ")
 		#filename = r'./01_maincodes/'+'/software/design_tb_{}_{}'+'/design_tb_{}_{}.hex',test_num,sel,test_num,sel)
-		filename = r'./01_maincodes/'+'/software/design_tb_{}'.format(test_num)+'/design_tb_{}.hex'.format(test_num)
+		filename = r'./01_maincode/'+'/software/design_tb_{}'.format(test_num)+'/design_tb_{}.hex'.format(test_num)
 		if   str(test_num) == "help":
 			pass
 		else:
 			ne_use = 0
-			ne_basepath='./01_maincodes/'+'NE'
+			ne_basepath='./01_maincode/'+'NE'
 			print('\n\n\t=========================================================')
 			if int(test_num) == 0 :
 				print("\t==========PROGRAM0:sfr map   integrity         =========");

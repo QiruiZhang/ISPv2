@@ -191,8 +191,6 @@ class libra():
                     self.mbus.send_register_write(memberid,[[regnum,data[1]]],verbose=verbose,vv=vv)
                 return
             _write_reg_iter(valuelist,signames,datalist,verbose=verbose,vv=vv)
-            print('\t- DBG')
-            print(datalist)
             _send_reg_iter(datalist,verbose=verbose,vv=vv)
         elif keyword in self.sigmap.keys() : #individual write
             #{'signame' : [registernum, startbit, length]}
@@ -326,10 +324,9 @@ class libra():
         self.write('sram_isol_1p2',[0,0,0,0,0,0],verbose=verbose,vv=vv)
         return# }}}
 
-    def write_prog_mem(self,filename='./01_maincodes/design_tb_0.hex',memberid=2,compare=1,startaddr=0,verbose=1,vv=0):
-        print(Fore.YELLOW + '\t- libra2 : memory write') #{{{
+    def write_prog_mem(self,filename='./01_maincode/design_tb_0.hex',memberid=2,compare=1,startaddr=0,verbose=1,vv=0):
+        print(Fore.YELLOW + '\t- libra2 : memory write')   #{{{
         print(Style.RESET_ALL)
-        #ifile = open('./01_maincodes/'+filename,'r')
         ifile = open(filename,'r')
         ofile_memwrite= open('memwrite.log','w')
         datalist = []
@@ -356,12 +353,14 @@ class libra():
                 print(Fore.RED + 'Nei :(')
                 print(Style.RESET_ALL)
                 for item in returned_datalist[1:]:
-                    print >>ofile_memread,bin(item)[2:].zfill(32)
+                    #print >>ofile_memread,bin(item)[2:].zfill(32)
+                    print(bin(item)[2:].zfill(32), end="", file=ofile_memwrite)
                 time.sleep(5)
             ofile_memread.close()
     
         for item in datalist:
-            print >>ofile_memwrite,bin(item)[2:].zfill(32)
+            #print >>ofile_memwrite,bin(item)[2:].zfill(32)
+            print(bin(item)[2:].zfill(32), end="", file=ofile_memwrite)
         ofile_memwrite.close()
         return# }}}
 
@@ -483,7 +482,6 @@ class libra():
         if ne_use == 1 :
             self.ne_instr_mem_write(basepath=ne_basepath,memberid=2,compare=0,verbose=1,vv=0)
             self.ne_shared_mem_write(basepath=ne_basepath,memberid=2,compare=0,verbose=verbose,vv=0)
-        #time.sleep(1)
         print(Fore.YELLOW + '- libra2 : main mem write')
         print(Style.RESET_ALL)
         self.write_prog_mem(filename=filename,memberid=memberid,compare=compare,startaddr=0,verbose=verbose,vv=vv)
