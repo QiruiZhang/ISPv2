@@ -1,0 +1,2 @@
+gcc -o refTest_small ./refTest_small.c -lwiringPi
+./refTest_small

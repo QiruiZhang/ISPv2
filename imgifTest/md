@@ -1,0 +1,2 @@
+gcc -o mdTest ./mdTest.c -lwiringPi
+./mdTest

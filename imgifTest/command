@@ -1,0 +1,2 @@
+gcc -o curTest_small ./curTest_small.c -lwiringPi
+./curTest_small
