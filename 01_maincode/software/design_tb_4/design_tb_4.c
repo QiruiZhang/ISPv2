@@ -321,6 +321,7 @@ int main() {
 
 
     // run Person Detect
+    delay(100);
     arb_debug_ascii(0xDA, "PD  ");
     ne_start(NE_PERSON_DETECTION_IMEM_START_ADDR);
     while(1){ delay(1); if(ne_flag){ ne_flag = 0; break; } }
@@ -328,10 +329,18 @@ int main() {
     // check result
     uint16_t result = 0;
     result = ne_get_ncx_register(5);
-    if(result != 74) arb_debug_ascii("ERR ");
+    if(result != 74){
+	    flsif_senddata(0xAAAAAAAA);
+	    while(1){  delay(1); if(flash_flag){ flash_flag = 0; break; } }
+    }
     result = ne_get_ncx_register(7);
-    if(result != 84) arb_debug_ascii("ERR ");
+    if(result != 84){
+	    flsif_senddata(0xAAAAAAAA);
+	    while(1){  delay(1); if(flash_flag){ flash_flag = 0; break; } }
+    }
 
+
+	flsif_senddata(0xAAAAAAAA);
 
 	arb_debug_reg(0xFF, 0);//END_OF_PROGRAM
 

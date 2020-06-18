@@ -176,6 +176,7 @@ int main() {
 	int i;
 	int pat_cnt;
 	int temp_reg;
+	int err_cnt = 0;
 
 	int pattern [8]; 
 	pattern[0] = 0xDEADBEEF;
@@ -187,6 +188,7 @@ int main() {
 	pattern[6] = 0xCDCDCDCD;
 	pattern[7] = 0xEFEFEFEF;
 
+	flsif_initialize(0x3, 0x3);
 	imgif_initialize();
 	//1. first write all data in all SRAM (You can use certain round-robin pattern)
 	//2. read data in all SRAM and match
@@ -209,7 +211,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<1024;i=i+1){
 		temp_reg=*(p_MINMAX_SRAM_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 
@@ -228,7 +230,7 @@ int main() {
 		if(i%8 == 6 | i%8 == 7)
 			continue;
 		temp_reg=*(p_CD_SRAM_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 
@@ -243,7 +245,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<(1024*3);i=i+1){
 		temp_reg=*(p_REF_SRAM_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 
@@ -258,7 +260,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<(1024*55);i=i+1){
 		temp_reg=*(p_COMP_SRAM_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 	
@@ -281,7 +283,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<(2048*52);i=i+1){
 		temp_reg=*(p_NE_SHARED_MEM_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		//if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 		if(pat_cnt == 6){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
@@ -296,7 +298,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<(2048*5);i=i+1){
 		temp_reg=*(p_NE_SHARED_MEM_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		//if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 		if(pat_cnt == 6){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
@@ -313,7 +315,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<(2048*4);i=i+1){
 		temp_reg=*(p_NE_PE_WEIGHTBUF_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 
@@ -329,7 +331,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<(2048*2);i=i+1){
 		temp_reg=*(p_NE_IMEM_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 	//4. local memeory
@@ -344,7 +346,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<(2048*4);i=i+1){
 		temp_reg=*(p_NE_PE_LOCALMEM_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 	//5. accum memeory
@@ -360,7 +362,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<(32*64);i=i+1){
 		temp_reg=*(p_NE_PE_ACCUMULATORS_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 	//6. Bias memeory
@@ -375,7 +377,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<2048*1;i=i+1){
 		temp_reg=*(p_NE_PE_BIAS_BUFFER_START+i);
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 	
@@ -398,7 +400,7 @@ int main() {
 	pat_cnt=0;
 	for(i=0;i<1024;i=i+1){
 		temp_reg=(p_H264_MEM_START+i) -> as_int;
-		if(temp_reg != pattern[pat_cnt]) arb_debug_ascii(0xD5, "ERR"); else arb_debug_ascii(0xD5, "SUC"); 
+		if(temp_reg != pattern[pat_cnt]) err_cnt=err_cnt+1; else arb_debug_ascii(0xD5, "SUC"); 
 		if(pat_cnt == 7){pat_cnt = 0;}else{pat_cnt = pat_cnt+1;}
 	}
 
@@ -406,6 +408,7 @@ int main() {
 	//********************************************************************
 	// FINISH             
 	//********************************************************************
+	flsif_senddata(err_cnt);
 	arb_debug_ascii(0xD3, "CYAB"); //Print 4 chars 
 	arb_debug_ascii(0xD4, "CYA "); //Print 4 chars 
 	arb_debug_ascii(0xD5, "MAGB"); //Print 4 chars 

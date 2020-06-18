@@ -1,0 +1,5468 @@
+idx before dec_golomb: 56347
+idx after dec_golomb: 56354
+mode_diff is 4
+mode is 4
+idx before dec_golomb: 56370
+idx after dec_golomb: 56375
+mode_diff is -3
+mode is 1
+idx before dec_golomb: 56389
+idx after dec_golomb: 56392
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56407
+idx after dec_golomb: 56410
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56424
+idx after dec_golomb: 56427
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56448
+idx after dec_golomb: 56451
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56465
+idx after dec_golomb: 56468
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56486
+idx after dec_golomb: 56489
+mode_diff is 1
+mode is 1
+mcb_idx=184
+i, j = 65, 385
+
+McB row is 5
+McB col is 25
+idx before dec_golomb: 56515
+idx after dec_golomb: 56516
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56517
+idx after dec_golomb: 56518
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56519
+idx after dec_golomb: 56520
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56521
+idx after dec_golomb: 56522
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56523
+idx after dec_golomb: 56526
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56527
+idx after dec_golomb: 56528
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56529
+idx after dec_golomb: 56530
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56531
+idx after dec_golomb: 56532
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56533
+idx after dec_golomb: 56536
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56550
+idx after dec_golomb: 56551
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56565
+idx after dec_golomb: 56566
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56580
+idx after dec_golomb: 56581
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56595
+idx after dec_golomb: 56596
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56610
+idx after dec_golomb: 56611
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56625
+idx after dec_golomb: 56626
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56640
+idx after dec_golomb: 56641
+mode_diff is 0
+mode is 1
+mcb_idx=185
+i, j = 65, 401
+
+McB row is 5
+McB col is 26
+idx before dec_golomb: 56667
+idx after dec_golomb: 56670
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56671
+idx after dec_golomb: 56672
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56673
+idx after dec_golomb: 56674
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56675
+idx after dec_golomb: 56676
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56677
+idx after dec_golomb: 56678
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56679
+idx after dec_golomb: 56680
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56681
+idx after dec_golomb: 56682
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56683
+idx after dec_golomb: 56684
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56685
+idx after dec_golomb: 56688
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56702
+idx after dec_golomb: 56703
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56717
+idx after dec_golomb: 56718
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56732
+idx after dec_golomb: 56733
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56747
+idx after dec_golomb: 56748
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56762
+idx after dec_golomb: 56763
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56777
+idx after dec_golomb: 56778
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56792
+idx after dec_golomb: 56793
+mode_diff is 0
+mode is 1
+mcb_idx=186
+i, j = 65, 417
+
+McB row is 5
+McB col is 27
+idx before dec_golomb: 56817
+idx after dec_golomb: 56820
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56821
+idx after dec_golomb: 56822
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56823
+idx after dec_golomb: 56826
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56827
+idx after dec_golomb: 56828
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56829
+idx after dec_golomb: 56832
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56833
+idx after dec_golomb: 56834
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56835
+idx after dec_golomb: 56836
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56837
+idx after dec_golomb: 56838
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56839
+idx after dec_golomb: 56842
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56856
+idx after dec_golomb: 56857
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56871
+idx after dec_golomb: 56874
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56875
+idx after dec_golomb: 56876
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56877
+idx after dec_golomb: 56880
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56894
+idx after dec_golomb: 56895
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56909
+idx after dec_golomb: 56912
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56913
+idx after dec_golomb: 56914
+mode_diff is 0
+mode is 0
+mcb_idx=187
+i, j = 65, 433
+
+McB row is 5
+McB col is 28
+idx before dec_golomb: 56925
+idx after dec_golomb: 56928
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56929
+idx after dec_golomb: 56930
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56931
+idx after dec_golomb: 56932
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56933
+idx after dec_golomb: 56934
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56935
+idx after dec_golomb: 56938
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56939
+idx after dec_golomb: 56940
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56941
+idx after dec_golomb: 56942
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56943
+idx after dec_golomb: 56944
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56945
+idx after dec_golomb: 56946
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56947
+idx after dec_golomb: 56948
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56949
+idx after dec_golomb: 56950
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56951
+idx after dec_golomb: 56952
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56953
+idx after dec_golomb: 56954
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56955
+idx after dec_golomb: 56956
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56957
+idx after dec_golomb: 56958
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56959
+idx after dec_golomb: 56960
+mode_diff is 0
+mode is 0
+mcb_idx=188
+i, j = 65, 449
+
+McB row is 5
+McB col is 29
+idx before dec_golomb: 56971
+idx after dec_golomb: 56974
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 56975
+idx after dec_golomb: 56976
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 56977
+idx after dec_golomb: 56980
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 56981
+idx after dec_golomb: 56982
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56983
+idx after dec_golomb: 56984
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56985
+idx after dec_golomb: 56986
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56987
+idx after dec_golomb: 56988
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56989
+idx after dec_golomb: 56990
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56991
+idx after dec_golomb: 56992
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56993
+idx after dec_golomb: 56994
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 56995
+idx after dec_golomb: 56998
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 57014
+idx after dec_golomb: 57017
+mode_diff is 1
+mode is 2
+idx before dec_golomb: 57029
+idx after dec_golomb: 57034
+mode_diff is -2
+mode is 0
+idx before dec_golomb: 57035
+idx after dec_golomb: 57036
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57037
+idx after dec_golomb: 57038
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57050
+idx after dec_golomb: 57057
+mode_diff is 5
+mode is 5
+mcb_idx=189
+i, j = 65, 465
+
+McB row is 5
+McB col is 30
+idx before dec_golomb: 57079
+idx after dec_golomb: 57086
+mode_diff is -4
+mode is 1
+idx before dec_golomb: 57087
+idx after dec_golomb: 57088
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 57089
+idx after dec_golomb: 57092
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 57093
+idx after dec_golomb: 57094
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57095
+idx after dec_golomb: 57096
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57097
+idx after dec_golomb: 57098
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57099
+idx after dec_golomb: 57100
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57101
+idx after dec_golomb: 57102
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57103
+idx after dec_golomb: 57104
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57105
+idx after dec_golomb: 57106
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57107
+idx after dec_golomb: 57108
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57109
+idx after dec_golomb: 57110
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57111
+idx after dec_golomb: 57112
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57113
+idx after dec_golomb: 57114
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57115
+idx after dec_golomb: 57116
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57117
+idx after dec_golomb: 57118
+mode_diff is 0
+mode is 0
+mcb_idx=190
+i, j = 65, 481
+
+McB row is 5
+McB col is 31
+idx before dec_golomb: 57129
+idx after dec_golomb: 57130
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57131
+idx after dec_golomb: 57132
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57133
+idx after dec_golomb: 57138
+mode_diff is 2
+mode is 2
+idx before dec_golomb: 57150
+idx after dec_golomb: 57155
+mode_diff is -2
+mode is 0
+idx before dec_golomb: 57172
+idx after dec_golomb: 57173
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57174
+idx after dec_golomb: 57175
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57176
+idx after dec_golomb: 57183
+mode_diff is 7
+mode is 7
+idx before dec_golomb: 57195
+idx after dec_golomb: 57202
+mode_diff is -7
+mode is 0
+idx before dec_golomb: 57214
+idx after dec_golomb: 57215
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57216
+idx after dec_golomb: 57217
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57218
+idx after dec_golomb: 57225
+mode_diff is 5
+mode is 5
+idx before dec_golomb: 57234
+idx after dec_golomb: 57235
+mode_diff is 0
+mode is 5
+idx before dec_golomb: 57255
+idx after dec_golomb: 57262
+mode_diff is -5
+mode is 0
+idx before dec_golomb: 57263
+idx after dec_golomb: 57264
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57265
+idx after dec_golomb: 57266
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57275
+idx after dec_golomb: 57280
+mode_diff is 2
+mode is 2
+mcb_idx=191
+i, j = 65, 497
+
+McB row is 5
+McB col is 32
+idx before dec_golomb: 57299
+idx after dec_golomb: 57304
+mode_diff is -2
+mode is 0
+idx before dec_golomb: 57305
+idx after dec_golomb: 57306
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57307
+idx after dec_golomb: 57312
+mode_diff is 3
+mode is 3
+idx before dec_golomb: 57326
+idx after dec_golomb: 57331
+mode_diff is -3
+mode is 0
+idx before dec_golomb: 57348
+idx after dec_golomb: 57349
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57350
+idx after dec_golomb: 57351
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57352
+idx after dec_golomb: 57359
+mode_diff is 7
+mode is 7
+idx before dec_golomb: 57368
+idx after dec_golomb: 57375
+mode_diff is -7
+mode is 0
+idx before dec_golomb: 57387
+idx after dec_golomb: 57394
+mode_diff is 6
+mode is 6
+idx before dec_golomb: 57413
+idx after dec_golomb: 57418
+mode_diff is 2
+mode is 8
+idx before dec_golomb: 57426
+idx after dec_golomb: 57429
+mode_diff is -1
+mode is 7
+idx before dec_golomb: 57438
+idx after dec_golomb: 57445
+mode_diff is -7
+mode is 0
+idx before dec_golomb: 57453
+idx after dec_golomb: 57458
+mode_diff is 3
+mode is 3
+idx before dec_golomb: 57462
+idx after dec_golomb: 57467
+mode_diff is -3
+mode is 0
+idx before dec_golomb: 57468
+idx after dec_golomb: 57469
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57481
+idx after dec_golomb: 57482
+mode_diff is 0
+mode is 0
+mcb_idx=192
+i, j = 65, 513
+
+McB row is 5
+McB col is 33
+idx before dec_golomb: 57504
+idx after dec_golomb: 57513
+mode_diff is 14
+mode is 14
+Error(1): mode=14, m=65, n=513
+err_flag reset!
+
+McB row is 5
+McB col is 33
+idx before dec_golomb: 57505
+idx after dec_golomb: 57512
+mode_diff is 7
+mode is 7
+idx before dec_golomb: 57535
+idx after dec_golomb: 57538
+mode_diff is -1
+mode is 6
+idx before dec_golomb: 57552
+idx after dec_golomb: 57559
+mode_diff is -6
+mode is 0
+idx before dec_golomb: 57560
+idx after dec_golomb: 57561
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57562
+idx after dec_golomb: 57563
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57576
+idx after dec_golomb: 57577
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57590
+idx after dec_golomb: 57591
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57592
+idx after dec_golomb: 57593
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57594
+idx after dec_golomb: 57595
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57607
+idx after dec_golomb: 57608
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57620
+idx after dec_golomb: 57621
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57633
+idx after dec_golomb: 57636
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 57637
+idx after dec_golomb: 57640
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 57652
+idx after dec_golomb: 57653
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57665
+idx after dec_golomb: 57666
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57667
+idx after dec_golomb: 57668
+mode_diff is 0
+mode is 0
+mcb_idx=193
+i, j = 65, 529
+
+McB row is 5
+McB col is 34
+idx before dec_golomb: 57699
+idx after dec_golomb: 57700
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57712
+idx after dec_golomb: 57715
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 57716
+idx after dec_golomb: 57717
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 57723
+idx after dec_golomb: 57726
+mode_diff is 1
+mode is 2
+idx before dec_golomb: 57738
+idx after dec_golomb: 57743
+mode_diff is -2
+mode is 0
+idx before dec_golomb: 57744
+idx after dec_golomb: 57745
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57746
+idx after dec_golomb: 57753
+mode_diff is 5
+mode is 5
+idx before dec_golomb: 57754
+idx after dec_golomb: 57761
+mode_diff is -5
+mode is 0
+idx before dec_golomb: 57769
+idx after dec_golomb: 57770
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57782
+idx after dec_golomb: 57785
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 57786
+idx after dec_golomb: 57787
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 57795
+idx after dec_golomb: 57800
+mode_diff is 3
+mode is 4
+idx before dec_golomb: 57813
+idx after dec_golomb: 57820
+mode_diff is -4
+mode is 0
+idx before dec_golomb: 57821
+idx after dec_golomb: 57822
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57823
+idx after dec_golomb: 57830
+mode_diff is 5
+mode is 5
+idx before dec_golomb: 57831
+idx after dec_golomb: 57832
+mode_diff is 0
+mode is 5
+mcb_idx=194
+i, j = 65, 545
+
+McB row is 5
+McB col is 35
+idx before dec_golomb: 57851
+idx after dec_golomb: 57852
+mode_diff is 0
+mode is 5
+idx before dec_golomb: 57878
+idx after dec_golomb: 57883
+mode_diff is -3
+mode is 2
+idx before dec_golomb: 57902
+idx after dec_golomb: 57907
+mode_diff is -2
+mode is 0
+idx before dec_golomb: 57908
+idx after dec_golomb: 57909
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57910
+idx after dec_golomb: 57911
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57928
+idx after dec_golomb: 57929
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57937
+idx after dec_golomb: 57938
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57939
+idx after dec_golomb: 57940
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57941
+idx after dec_golomb: 57942
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 57965
+idx after dec_golomb: 57972
+mode_diff is 5
+mode is 5
+idx before dec_golomb: 57994
+idx after dec_golomb: 57999
+mode_diff is -3
+mode is 2
+idx before dec_golomb: 58000
+idx after dec_golomb: 58003
+mode_diff is -1
+mode is 1
+idx before dec_golomb: 58004
+idx after dec_golomb: 58007
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 58019
+idx after dec_golomb: 58020
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58039
+idx after dec_golomb: 58040
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58041
+idx after dec_golomb: 58042
+mode_diff is 0
+mode is 0
+mcb_idx=195
+i, j = 65, 561
+
+McB row is 5
+McB col is 36
+idx before dec_golomb: 58095
+idx after dec_golomb: 58102
+mode_diff is 5
+mode is 5
+idx before dec_golomb: 58128
+idx after dec_golomb: 58133
+mode_diff is 2
+mode is 7
+idx before dec_golomb: 58157
+idx after dec_golomb: 58164
+mode_diff is -7
+mode is 0
+idx before dec_golomb: 58178
+idx after dec_golomb: 58179
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58212
+idx after dec_golomb: 58213
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58226
+idx after dec_golomb: 58227
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58240
+idx after dec_golomb: 58241
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58272
+idx after dec_golomb: 58273
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58317
+idx after dec_golomb: 58318
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58330
+idx after dec_golomb: 58331
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58343
+idx after dec_golomb: 58344
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58362
+idx after dec_golomb: 58363
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58390
+idx after dec_golomb: 58391
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58403
+idx after dec_golomb: 58404
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58416
+idx after dec_golomb: 58417
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 58441
+idx after dec_golomb: 58442
+mode_diff is 0
+mode is 0
+mcb_idx=196
+i, j = 65, 577
+
+McB row is 5
+McB col is 37
+idx before dec_golomb: 58533
+idx after dec_golomb: 58540
+mode_diff is 4
+mode is 4
+idx before dec_golomb: 58577
+idx after dec_golomb: 58582
+mode_diff is 2
+mode is 6
+idx before dec_golomb: 58620
+idx after dec_golomb: 58621
+mode_diff is 0
+mode is 6
+idx before dec_golomb: 58654
+idx after dec_golomb: 58655
+mode_diff is 0
+mode is 6
+idx before dec_golomb: 58676
+idx after dec_golomb: 58681
+mode_diff is -3
+mode is 3
+idx before dec_golomb: 58731
+idx after dec_golomb: 58738
+mode_diff is 5
+mode is 8
+idx before dec_golomb: 58773
+idx after dec_golomb: 58774
+mode_diff is 0
+mode is 8
+idx before dec_golomb: 58809
+idx after dec_golomb: 58810
+mode_diff is 0
+mode is 8
+idx before dec_golomb: 58851
+idx after dec_golomb: 58854
+mode_diff is -1
+mode is 7
+idx before dec_golomb: 58880
+idx after dec_golomb: 58887
+mode_diff is -4
+mode is 3
+idx before dec_golomb: 58909
+idx after dec_golomb: 58916
+mode_diff is 4
+mode is 7
+idx before dec_golomb: 58939
+idx after dec_golomb: 58942
+mode_diff is 1
+mode is 8
+idx before dec_golomb: 58966
+idx after dec_golomb: 58969
+mode_diff is -1
+mode is 7
+idx before dec_golomb: 58994
+idx after dec_golomb: 58995
+mode_diff is 0
+mode is 7
+idx before dec_golomb: 59009
+idx after dec_golomb: 59016
+mode_diff is -7
+mode is 0
+idx before dec_golomb: 59031
+idx after dec_golomb: 59038
+mode_diff is 5
+mode is 5
+mcb_idx=197
+i, j = 65, 593
+
+McB row is 5
+McB col is 38
+idx before dec_golomb: 59246
+idx after dec_golomb: 59251
+mode_diff is 3
+mode is 8
+idx before dec_golomb: 59268
+idx after dec_golomb: 59273
+mode_diff is -3
+mode is 5
+idx before dec_golomb: 59287
+idx after dec_golomb: 59288
+mode_diff is 0
+mode is 5
+idx before dec_golomb: 59298
+idx after dec_golomb: 59309
+mode_diff is -16
+mode is -11
+Error(1): mode=-11, m=65, n=605
+err_flag reset!
+
+McB row is 5
+McB col is 38
+idx before dec_golomb: 59247
+idx after dec_golomb: 59250
+mode_diff is -1
+mode is 4
+idx before dec_golomb: 59274
+idx after dec_golomb: 59277
+mode_diff is 1
+mode is 5
+idx before dec_golomb: 59310
+idx after dec_golomb: 59317
+mode_diff is -5
+mode is 0
+idx before dec_golomb: 59329
+idx after dec_golomb: 59330
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59338
+idx after dec_golomb: 59343
+mode_diff is 3
+mode is 3
+idx before dec_golomb: 59375
+idx after dec_golomb: 59382
+mode_diff is 4
+mode is 7
+idx before dec_golomb: 59407
+idx after dec_golomb: 59414
+mode_diff is -7
+mode is 0
+idx before dec_golomb: 59426
+idx after dec_golomb: 59427
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59439
+idx after dec_golomb: 59444
+mode_diff is 2
+mode is 2
+idx before dec_golomb: 59463
+idx after dec_golomb: 59466
+mode_diff is -1
+mode is 1
+idx before dec_golomb: 59480
+idx after dec_golomb: 59483
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 59507
+idx after dec_golomb: 59510
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 59523
+idx after dec_golomb: 59528
+mode_diff is 3
+mode is 4
+idx before dec_golomb: 59542
+idx after dec_golomb: 59549
+mode_diff is 4
+mode is 8
+idx before dec_golomb: 59550
+idx after dec_golomb: 59557
+mode_diff is -5
+mode is 3
+idx before dec_golomb: 59576
+idx after dec_golomb: 59583
+mode_diff is 5
+mode is 8
+mcb_idx=198
+i, j = 65, 609
+
+McB row is 5
+McB col is 39
+idx before dec_golomb: 59675
+idx after dec_golomb: 59684
+mode_diff is -8
+mode is 0
+idx before dec_golomb: 59685
+idx after dec_golomb: 59686
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59687
+idx after dec_golomb: 59688
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59689
+idx after dec_golomb: 59690
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59691
+idx after dec_golomb: 59692
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59693
+idx after dec_golomb: 59694
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59695
+idx after dec_golomb: 59696
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59697
+idx after dec_golomb: 59698
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59699
+idx after dec_golomb: 59700
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59701
+idx after dec_golomb: 59702
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59703
+idx after dec_golomb: 59704
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59705
+idx after dec_golomb: 59706
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59707
+idx after dec_golomb: 59708
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59709
+idx after dec_golomb: 59710
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59711
+idx after dec_golomb: 59712
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59713
+idx after dec_golomb: 59714
+mode_diff is 0
+mode is 0
+mcb_idx=199
+i, j = 65, 625
+
+McB row is 5
+McB col is 40
+idx before dec_golomb: 59729
+idx after dec_golomb: 59730
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59731
+idx after dec_golomb: 59732
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59733
+idx after dec_golomb: 59736
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 59737
+idx after dec_golomb: 59738
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 59739
+idx after dec_golomb: 59742
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 59743
+idx after dec_golomb: 59744
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59745
+idx after dec_golomb: 59746
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59747
+idx after dec_golomb: 59748
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59749
+idx after dec_golomb: 59750
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59751
+idx after dec_golomb: 59752
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59753
+idx after dec_golomb: 59754
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59755
+idx after dec_golomb: 59756
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59757
+idx after dec_golomb: 59758
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59759
+idx after dec_golomb: 59760
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59761
+idx after dec_golomb: 59762
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59763
+idx after dec_golomb: 59764
+mode_diff is 0
+mode is 0
+mcb_idx=200
+i, j = 81, 1
+
+McB row is 6
+McB col is 1
+idx before dec_golomb: 59800
+idx after dec_golomb: 59803
+mode_diff is 1
+mode is 1
+Error(1): mode=1, m=81, n=1
+err_flag reset!
+
+McB row is 6
+McB col is 1
+idx before dec_golomb: 59801
+idx after dec_golomb: 59802
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59819
+idx after dec_golomb: 59822
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 59836
+idx after dec_golomb: 59843
+mode_diff is 7
+mode is 8
+idx before dec_golomb: 59852
+idx after dec_golomb: 59859
+mode_diff is -7
+mode is 1
+idx before dec_golomb: 59872
+idx after dec_golomb: 59875
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 59891
+idx after dec_golomb: 59900
+mode_diff is 8
+mode is 8
+idx before dec_golomb: 59901
+idx after dec_golomb: 59908
+mode_diff is -5
+mode is 3
+idx before dec_golomb: 59920
+idx after dec_golomb: 59925
+mode_diff is -3
+mode is 0
+idx before dec_golomb: 59926
+idx after dec_golomb: 59927
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59928
+idx after dec_golomb: 59929
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59930
+idx after dec_golomb: 59935
+mode_diff is 2
+mode is 2
+idx before dec_golomb: 59947
+idx after dec_golomb: 59950
+mode_diff is -1
+mode is 1
+idx before dec_golomb: 59959
+idx after dec_golomb: 59962
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 59963
+idx after dec_golomb: 59964
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 59965
+idx after dec_golomb: 59968
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 59982
+idx after dec_golomb: 59989
+mode_diff is 7
+mode is 8
+mcb_idx=201
+i, j = 81, 17
+
+McB row is 6
+McB col is 2
+idx before dec_golomb: 60020
+idx after dec_golomb: 60023
+mode_diff is -1
+mode is 7
+idx before dec_golomb: 60036
+idx after dec_golomb: 60037
+mode_diff is 0
+mode is 7
+idx before dec_golomb: 60038
+idx after dec_golomb: 60039
+mode_diff is 0
+mode is 7
+idx before dec_golomb: 60040
+idx after dec_golomb: 60041
+mode_diff is 0
+mode is 7
+idx before dec_golomb: 60042
+idx after dec_golomb: 60043
+mode_diff is 0
+mode is 7
+idx before dec_golomb: 60044
+idx after dec_golomb: 60045
+mode_diff is 0
+mode is 7
+idx before dec_golomb: 60072
+idx after dec_golomb: 60073
+mode_diff is 0
+mode is 7
+idx before dec_golomb: 60091
+idx after dec_golomb: 60098
+mode_diff is 7
+mode is 14
+Error(1): mode=14, m=85, n=29
+err_flag reset!
+
+McB row is 6
+McB col is 2
+idx before dec_golomb: 60021
+idx after dec_golomb: 60022
+mode_diff is 0
+mode is 8
+idx before dec_golomb: 60023
+idx after dec_golomb: 60030
+mode_diff is -7
+mode is 1
+idx before dec_golomb: 60031
+idx after dec_golomb: 60032
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 60033
+idx after dec_golomb: 60034
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 60035
+idx after dec_golomb: 60038
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 60039
+idx after dec_golomb: 60040
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60041
+idx after dec_golomb: 60042
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60043
+idx after dec_golomb: 60044
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60045
+idx after dec_golomb: 60054
+mode_diff is 8
+mode is 8
+idx before dec_golomb: 60066
+idx after dec_golomb: 60073
+mode_diff is -7
+mode is 1
+idx before dec_golomb: 60091
+idx after dec_golomb: 60098
+mode_diff is 7
+mode is 8
+idx before dec_golomb: 60099
+idx after dec_golomb: 60106
+mode_diff is -7
+mode is 1
+idx before dec_golomb: 60107
+idx after dec_golomb: 60112
+mode_diff is 2
+mode is 3
+idx before dec_golomb: 60116
+idx after dec_golomb: 60121
+mode_diff is -3
+mode is 0
+idx before dec_golomb: 60122
+idx after dec_golomb: 60123
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60124
+idx after dec_golomb: 60125
+mode_diff is 0
+mode is 0
+mcb_idx=202
+i, j = 81, 33
+
+McB row is 6
+McB col is 3
+idx before dec_golomb: 60138
+idx after dec_golomb: 60145
+mode_diff is 4
+mode is 4
+idx before dec_golomb: 60154
+idx after dec_golomb: 60155
+mode_diff is 0
+mode is 4
+idx before dec_golomb: 60156
+idx after dec_golomb: 60161
+mode_diff is 3
+mode is 7
+idx before dec_golomb: 60169
+idx after dec_golomb: 60178
+mode_diff is 11
+mode is 18
+Error(1): mode=18, m=81, n=45
+err_flag reset!
+
+McB row is 6
+McB col is 3
+idx before dec_golomb: 60139
+idx after dec_golomb: 60144
+mode_diff is 2
+mode is 2
+idx before dec_golomb: 60157
+idx after dec_golomb: 60160
+mode_diff is -1
+mode is 1
+idx before dec_golomb: 60174
+idx after dec_golomb: 60177
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 60195
+idx after dec_golomb: 60198
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 60207
+idx after dec_golomb: 60210
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 60226
+idx after dec_golomb: 60235
+mode_diff is 8
+mode is 8
+idx before dec_golomb: 60236
+idx after dec_golomb: 60243
+mode_diff is -6
+mode is 2
+idx before dec_golomb: 60252
+idx after dec_golomb: 60259
+mode_diff is 6
+mode is 8
+idx before dec_golomb: 60260
+idx after dec_golomb: 60269
+mode_diff is -8
+mode is 0
+idx before dec_golomb: 60270
+idx after dec_golomb: 60271
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60272
+idx after dec_golomb: 60275
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 60276
+idx after dec_golomb: 60277
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 60278
+idx after dec_golomb: 60281
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 60282
+idx after dec_golomb: 60283
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60284
+idx after dec_golomb: 60285
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60286
+idx after dec_golomb: 60287
+mode_diff is 0
+mode is 0
+mcb_idx=203
+i, j = 81, 49
+
+McB row is 6
+McB col is 4
+idx before dec_golomb: 60298
+idx after dec_golomb: 60307
+mode_diff is 12
+mode is 12
+Error(1): mode=12, m=81, n=49
+err_flag reset!
+
+McB row is 6
+McB col is 4
+idx before dec_golomb: 60299
+idx after dec_golomb: 60306
+mode_diff is 6
+mode is 6
+idx before dec_golomb: 60315
+idx after dec_golomb: 60322
+mode_diff is -6
+mode is 0
+idx before dec_golomb: 60342
+idx after dec_golomb: 60349
+mode_diff is 5
+mode is 5
+idx before dec_golomb: 60369
+idx after dec_golomb: 60376
+mode_diff is -5
+mode is 0
+idx before dec_golomb: 60388
+idx after dec_golomb: 60395
+mode_diff is 6
+mode is 6
+idx before dec_golomb: 60405
+idx after dec_golomb: 60410
+mode_diff is -2
+mode is 4
+idx before dec_golomb: 60422
+idx after dec_golomb: 60429
+mode_diff is -4
+mode is 0
+idx before dec_golomb: 60430
+idx after dec_golomb: 60431
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60443
+idx after dec_golomb: 60446
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 60452
+idx after dec_golomb: 60455
+mode_diff is 1
+mode is 2
+idx before dec_golomb: 60467
+idx after dec_golomb: 60472
+mode_diff is -2
+mode is 0
+idx before dec_golomb: 60488
+idx after dec_golomb: 60493
+mode_diff is 2
+mode is 2
+idx before dec_golomb: 60512
+idx after dec_golomb: 60517
+mode_diff is 3
+mode is 5
+idx before dec_golomb: 60518
+idx after dec_golomb: 60525
+mode_diff is -5
+mode is 0
+idx before dec_golomb: 60533
+idx after dec_golomb: 60534
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60546
+idx after dec_golomb: 60547
+mode_diff is 0
+mode is 0
+mcb_idx=204
+i, j = 81, 65
+
+McB row is 6
+McB col is 5
+idx before dec_golomb: 60621
+idx after dec_golomb: 60628
+mode_diff is 7
+mode is 7
+idx before dec_golomb: 60662
+idx after dec_golomb: 60669
+mode_diff is -7
+mode is 0
+idx before dec_golomb: 60680
+idx after dec_golomb: 60681
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60682
+idx after dec_golomb: 60683
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60684
+idx after dec_golomb: 60685
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60697
+idx after dec_golomb: 60698
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60710
+idx after dec_golomb: 60711
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60712
+idx after dec_golomb: 60713
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60714
+idx after dec_golomb: 60721
+mode_diff is 5
+mode is 5
+idx before dec_golomb: 60749
+idx after dec_golomb: 60756
+mode_diff is -5
+mode is 0
+idx before dec_golomb: 60776
+idx after dec_golomb: 60777
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60778
+idx after dec_golomb: 60779
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60780
+idx after dec_golomb: 60781
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60793
+idx after dec_golomb: 60794
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60806
+idx after dec_golomb: 60807
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60808
+idx after dec_golomb: 60809
+mode_diff is 0
+mode is 0
+mcb_idx=205
+i, j = 81, 81
+
+McB row is 6
+McB col is 6
+idx before dec_golomb: 60943
+idx after dec_golomb: 60944
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60945
+idx after dec_golomb: 60946
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60947
+idx after dec_golomb: 60948
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60949
+idx after dec_golomb: 60950
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60951
+idx after dec_golomb: 60952
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60953
+idx after dec_golomb: 60954
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60955
+idx after dec_golomb: 60956
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60957
+idx after dec_golomb: 60958
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60959
+idx after dec_golomb: 60960
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60961
+idx after dec_golomb: 60962
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60963
+idx after dec_golomb: 60964
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60965
+idx after dec_golomb: 60966
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60967
+idx after dec_golomb: 60968
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60969
+idx after dec_golomb: 60970
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60971
+idx after dec_golomb: 60972
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 60973
+idx after dec_golomb: 60974
+mode_diff is 0
+mode is 0
+mcb_idx=206
+i, j = 81, 97
+
+McB row is 6
+McB col is 7
+idx before dec_golomb: 61050
+idx after dec_golomb: 61053
+mode_diff is -1
+mode is -1
+Error(1): mode=-1, m=81, n=97
+err_flag reset!
+
+McB row is 6
+McB col is 7
+idx before dec_golomb: 61051
+idx after dec_golomb: 61052
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61053
+idx after dec_golomb: 61054
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61055
+idx after dec_golomb: 61058
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 61059
+idx after dec_golomb: 61060
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61061
+idx after dec_golomb: 61064
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61065
+idx after dec_golomb: 61066
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61067
+idx after dec_golomb: 61068
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61069
+idx after dec_golomb: 61070
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61071
+idx after dec_golomb: 61072
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61073
+idx after dec_golomb: 61074
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61075
+idx after dec_golomb: 61076
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61077
+idx after dec_golomb: 61078
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61079
+idx after dec_golomb: 61080
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61081
+idx after dec_golomb: 61082
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61083
+idx after dec_golomb: 61084
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61085
+idx after dec_golomb: 61086
+mode_diff is 0
+mode is 0
+mcb_idx=207
+i, j = 81, 113
+
+McB row is 6
+McB col is 8
+idx before dec_golomb: 61099
+idx after dec_golomb: 61100
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61101
+idx after dec_golomb: 61102
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61103
+idx after dec_golomb: 61104
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61105
+idx after dec_golomb: 61106
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61107
+idx after dec_golomb: 61108
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61109
+idx after dec_golomb: 61110
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61111
+idx after dec_golomb: 61112
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61113
+idx after dec_golomb: 61114
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61115
+idx after dec_golomb: 61116
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61117
+idx after dec_golomb: 61118
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61119
+idx after dec_golomb: 61120
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61121
+idx after dec_golomb: 61122
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61123
+idx after dec_golomb: 61124
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61125
+idx after dec_golomb: 61126
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61127
+idx after dec_golomb: 61128
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61129
+idx after dec_golomb: 61130
+mode_diff is 0
+mode is 0
+mcb_idx=208
+i, j = 81, 129
+
+McB row is 6
+McB col is 9
+idx before dec_golomb: 61161
+idx after dec_golomb: 61162
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61163
+idx after dec_golomb: 61164
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61165
+idx after dec_golomb: 61166
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61167
+idx after dec_golomb: 61168
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61169
+idx after dec_golomb: 61170
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61171
+idx after dec_golomb: 61172
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61173
+idx after dec_golomb: 61174
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61175
+idx after dec_golomb: 61176
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61177
+idx after dec_golomb: 61178
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61190
+idx after dec_golomb: 61193
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 61194
+idx after dec_golomb: 61197
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61198
+idx after dec_golomb: 61199
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61200
+idx after dec_golomb: 61201
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61202
+idx after dec_golomb: 61203
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61204
+idx after dec_golomb: 61205
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61206
+idx after dec_golomb: 61207
+mode_diff is 0
+mode is 0
+mcb_idx=209
+i, j = 81, 145
+
+McB row is 6
+McB col is 10
+idx before dec_golomb: 61220
+idx after dec_golomb: 61223
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 61237
+idx after dec_golomb: 61238
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61239
+idx after dec_golomb: 61240
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61241
+idx after dec_golomb: 61242
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61246
+idx after dec_golomb: 61247
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61248
+idx after dec_golomb: 61249
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61250
+idx after dec_golomb: 61251
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61252
+idx after dec_golomb: 61253
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61254
+idx after dec_golomb: 61255
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61256
+idx after dec_golomb: 61257
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61258
+idx after dec_golomb: 61259
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61260
+idx after dec_golomb: 61261
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61262
+idx after dec_golomb: 61263
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61264
+idx after dec_golomb: 61265
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61266
+idx after dec_golomb: 61267
+mode_diff is 0
+mode is 1
+idx before dec_golomb: 61268
+idx after dec_golomb: 61269
+mode_diff is 0
+mode is 1
+mcb_idx=210
+i, j = 81, 161
+
+McB row is 6
+McB col is 11
+idx before dec_golomb: 61304
+idx after dec_golomb: 61309
+mode_diff is 3
+mode is 4
+idx before dec_golomb: 61341
+idx after dec_golomb: 61348
+mode_diff is -4
+mode is 0
+idx before dec_golomb: 61349
+idx after dec_golomb: 61350
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61351
+idx after dec_golomb: 61352
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61364
+idx after dec_golomb: 61365
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61378
+idx after dec_golomb: 61379
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61380
+idx after dec_golomb: 61381
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61382
+idx after dec_golomb: 61383
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61395
+idx after dec_golomb: 61396
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61408
+idx after dec_golomb: 61409
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61410
+idx after dec_golomb: 61411
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61412
+idx after dec_golomb: 61413
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61425
+idx after dec_golomb: 61426
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61438
+idx after dec_golomb: 61439
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61440
+idx after dec_golomb: 61441
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61442
+idx after dec_golomb: 61443
+mode_diff is 0
+mode is 0
+mcb_idx=211
+i, j = 81, 177
+
+McB row is 6
+McB col is 12
+idx before dec_golomb: 61502
+idx after dec_golomb: 61503
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61504
+idx after dec_golomb: 61505
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61511
+idx after dec_golomb: 61514
+mode_diff is -1
+mode is -1
+Error(1): mode=-1, m=81, n=185
+err_flag reset!
+
+McB row is 6
+McB col is 12
+idx before dec_golomb: 61503
+idx after dec_golomb: 61504
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61505
+idx after dec_golomb: 61508
+mode_diff is 1
+mode is 1
+idx before dec_golomb: 61514
+idx after dec_golomb: 61521
+mode_diff is 4
+mode is 5
+idx before dec_golomb: 61527
+idx after dec_golomb: 61530
+mode_diff is 1
+mode is 6
+idx before dec_golomb: 61538
+idx after dec_golomb: 61543
+mode_diff is -2
+mode is 4
+idx before dec_golomb: 61551
+idx after dec_golomb: 61556
+mode_diff is 2
+mode is 6
+idx before dec_golomb: 61557
+idx after dec_golomb: 61562
+mode_diff is -3
+mode is 3
+idx before dec_golomb: 61563
+idx after dec_golomb: 61568
+mode_diff is 3
+mode is 6
+idx before dec_golomb: 61569
+idx after dec_golomb: 61570
+mode_diff is 0
+mode is 6
+idx before dec_golomb: 61571
+idx after dec_golomb: 61576
+mode_diff is 3
+mode is 9
+Error(2): mode=9, m=89, n=181
+Error count over: go back to the previous MCB
+mcb_idx=210
+i, j = 81, 161
+
+McB row is 6
+McB col is 11
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=169
+err_flag reset!
+
+McB row is 6
+McB col is 11
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=161
+Error count over: go back to the previous MCB
+mcb_idx=209
+i, j = 81, 145
+
+McB row is 6
+McB col is 10
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=153
+err_flag reset!
+
+McB row is 6
+McB col is 10
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=145
+Error count over: go back to the previous MCB
+mcb_idx=208
+i, j = 81, 129
+
+McB row is 6
+McB col is 9
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=137
+err_flag reset!
+
+McB row is 6
+McB col is 9
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=129
+Error count over: go back to the previous MCB
+mcb_idx=207
+i, j = 81, 113
+
+McB row is 6
+McB col is 8
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=121
+err_flag reset!
+
+McB row is 6
+McB col is 8
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=113
+Error count over: go back to the previous MCB
+mcb_idx=206
+i, j = 81, 97
+
+McB row is 6
+McB col is 7
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=105
+err_flag reset!
+
+McB row is 6
+McB col is 7
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=97
+Error count over: go back to the previous MCB
+mcb_idx=205
+i, j = 81, 81
+
+McB row is 6
+McB col is 6
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=89
+err_flag reset!
+
+McB row is 6
+McB col is 6
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=81
+Error count over: go back to the previous MCB
+mcb_idx=204
+i, j = 81, 65
+
+McB row is 6
+McB col is 5
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=73
+err_flag reset!
+
+McB row is 6
+McB col is 5
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=65
+Error count over: go back to the previous MCB
+mcb_idx=203
+i, j = 81, 49
+
+McB row is 6
+McB col is 4
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=57
+err_flag reset!
+
+McB row is 6
+McB col is 4
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=49
+Error count over: go back to the previous MCB
+mcb_idx=202
+i, j = 81, 33
+
+McB row is 6
+McB col is 3
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=41
+err_flag reset!
+
+McB row is 6
+McB col is 3
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=33
+Error count over: go back to the previous MCB
+mcb_idx=201
+i, j = 81, 17
+
+McB row is 6
+McB col is 2
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=25
+err_flag reset!
+
+McB row is 6
+McB col is 2
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=17
+Error count over: go back to the previous MCB
+mcb_idx=200
+i, j = 81, 1
+
+McB row is 6
+McB col is 1
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=81, n=9
+err_flag reset!
+
+McB row is 6
+McB col is 1
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=81, n=1
+Error count over: go back to the previous MCB
+mcb_idx=199
+i, j = 65, 625
+
+McB row is 5
+McB col is 40
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=633
+err_flag reset!
+
+McB row is 5
+McB col is 40
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=625
+Error count over: go back to the previous MCB
+mcb_idx=198
+i, j = 65, 609
+
+McB row is 5
+McB col is 39
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=617
+err_flag reset!
+
+McB row is 5
+McB col is 39
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=609
+Error count over: go back to the previous MCB
+mcb_idx=197
+i, j = 65, 593
+
+McB row is 5
+McB col is 38
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=601
+err_flag reset!
+
+McB row is 5
+McB col is 38
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=593
+Error count over: go back to the previous MCB
+mcb_idx=196
+i, j = 65, 577
+
+McB row is 5
+McB col is 37
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=585
+err_flag reset!
+
+McB row is 5
+McB col is 37
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=577
+Error count over: go back to the previous MCB
+mcb_idx=195
+i, j = 65, 561
+
+McB row is 5
+McB col is 36
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=569
+err_flag reset!
+
+McB row is 5
+McB col is 36
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=561
+Error count over: go back to the previous MCB
+mcb_idx=194
+i, j = 65, 545
+
+McB row is 5
+McB col is 35
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=553
+err_flag reset!
+
+McB row is 5
+McB col is 35
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=545
+Error count over: go back to the previous MCB
+mcb_idx=193
+i, j = 65, 529
+
+McB row is 5
+McB col is 34
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=537
+err_flag reset!
+
+McB row is 5
+McB col is 34
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=529
+Error count over: go back to the previous MCB
+mcb_idx=192
+i, j = 65, 513
+
+McB row is 5
+McB col is 33
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=521
+err_flag reset!
+
+McB row is 5
+McB col is 33
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=513
+Error count over: go back to the previous MCB
+mcb_idx=191
+i, j = 65, 497
+
+McB row is 5
+McB col is 32
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=505
+err_flag reset!
+
+McB row is 5
+McB col is 32
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=497
+Error count over: go back to the previous MCB
+mcb_idx=190
+i, j = 65, 481
+
+McB row is 5
+McB col is 31
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=489
+err_flag reset!
+
+McB row is 5
+McB col is 31
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=481
+Error count over: go back to the previous MCB
+mcb_idx=189
+i, j = 65, 465
+
+McB row is 5
+McB col is 30
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=473
+err_flag reset!
+
+McB row is 5
+McB col is 30
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=465
+Error count over: go back to the previous MCB
+mcb_idx=188
+i, j = 65, 449
+
+McB row is 5
+McB col is 29
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=457
+err_flag reset!
+
+McB row is 5
+McB col is 29
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=449
+Error count over: go back to the previous MCB
+mcb_idx=187
+i, j = 65, 433
+
+McB row is 5
+McB col is 28
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=441
+err_flag reset!
+
+McB row is 5
+McB col is 28
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=433
+Error count over: go back to the previous MCB
+mcb_idx=186
+i, j = 65, 417
+
+McB row is 5
+McB col is 27
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=425
+err_flag reset!
+
+McB row is 5
+McB col is 27
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=417
+Error count over: go back to the previous MCB
+mcb_idx=185
+i, j = 65, 401
+
+McB row is 5
+McB col is 26
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=409
+err_flag reset!
+
+McB row is 5
+McB col is 26
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=401
+Error count over: go back to the previous MCB
+mcb_idx=184
+i, j = 65, 385
+
+McB row is 5
+McB col is 25
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=393
+err_flag reset!
+
+McB row is 5
+McB col is 25
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=385
+Error count over: go back to the previous MCB
+mcb_idx=183
+i, j = 65, 369
+
+McB row is 5
+McB col is 24
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=377
+err_flag reset!
+
+McB row is 5
+McB col is 24
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=369
+Error count over: go back to the previous MCB
+mcb_idx=182
+i, j = 65, 353
+
+McB row is 5
+McB col is 23
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=361
+err_flag reset!
+
+McB row is 5
+McB col is 23
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=353
+Error count over: go back to the previous MCB
+mcb_idx=181
+i, j = 65, 337
+
+McB row is 5
+McB col is 22
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=345
+err_flag reset!
+
+McB row is 5
+McB col is 22
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=337
+Error count over: go back to the previous MCB
+mcb_idx=180
+i, j = 65, 321
+
+McB row is 5
+McB col is 21
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=329
+err_flag reset!
+
+McB row is 5
+McB col is 21
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=321
+Error count over: go back to the previous MCB
+mcb_idx=179
+i, j = 65, 305
+
+McB row is 5
+McB col is 20
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=313
+err_flag reset!
+
+McB row is 5
+McB col is 20
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=305
+Error count over: go back to the previous MCB
+mcb_idx=178
+i, j = 65, 289
+
+McB row is 5
+McB col is 19
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=297
+err_flag reset!
+
+McB row is 5
+McB col is 19
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=289
+Error count over: go back to the previous MCB
+mcb_idx=177
+i, j = 65, 273
+
+McB row is 5
+McB col is 18
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=281
+err_flag reset!
+
+McB row is 5
+McB col is 18
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=273
+Error count over: go back to the previous MCB
+mcb_idx=176
+i, j = 65, 257
+
+McB row is 5
+McB col is 17
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=265
+err_flag reset!
+
+McB row is 5
+McB col is 17
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=257
+Error count over: go back to the previous MCB
+mcb_idx=175
+i, j = 65, 241
+
+McB row is 5
+McB col is 16
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=249
+err_flag reset!
+
+McB row is 5
+McB col is 16
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=241
+Error count over: go back to the previous MCB
+mcb_idx=174
+i, j = 65, 225
+
+McB row is 5
+McB col is 15
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=233
+err_flag reset!
+
+McB row is 5
+McB col is 15
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=225
+Error count over: go back to the previous MCB
+mcb_idx=173
+i, j = 65, 209
+
+McB row is 5
+McB col is 14
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=217
+err_flag reset!
+
+McB row is 5
+McB col is 14
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=209
+Error count over: go back to the previous MCB
+mcb_idx=172
+i, j = 65, 193
+
+McB row is 5
+McB col is 13
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=201
+err_flag reset!
+
+McB row is 5
+McB col is 13
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=193
+Error count over: go back to the previous MCB
+mcb_idx=171
+i, j = 65, 177
+
+McB row is 5
+McB col is 12
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=185
+err_flag reset!
+
+McB row is 5
+McB col is 12
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=177
+Error count over: go back to the previous MCB
+mcb_idx=170
+i, j = 65, 161
+
+McB row is 5
+McB col is 11
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=169
+err_flag reset!
+
+McB row is 5
+McB col is 11
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=161
+Error count over: go back to the previous MCB
+mcb_idx=169
+i, j = 65, 145
+
+McB row is 5
+McB col is 10
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=153
+err_flag reset!
+
+McB row is 5
+McB col is 10
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=145
+Error count over: go back to the previous MCB
+mcb_idx=168
+i, j = 65, 129
+
+McB row is 5
+McB col is 9
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=137
+err_flag reset!
+
+McB row is 5
+McB col is 9
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=129
+Error count over: go back to the previous MCB
+mcb_idx=167
+i, j = 65, 113
+
+McB row is 5
+McB col is 8
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=121
+err_flag reset!
+
+McB row is 5
+McB col is 8
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=113
+Error count over: go back to the previous MCB
+mcb_idx=166
+i, j = 65, 97
+
+McB row is 5
+McB col is 7
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=105
+err_flag reset!
+
+McB row is 5
+McB col is 7
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=97
+Error count over: go back to the previous MCB
+mcb_idx=165
+i, j = 65, 81
+
+McB row is 5
+McB col is 6
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=89
+err_flag reset!
+
+McB row is 5
+McB col is 6
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=81
+Error count over: go back to the previous MCB
+mcb_idx=164
+i, j = 65, 65
+
+McB row is 5
+McB col is 5
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=73
+err_flag reset!
+
+McB row is 5
+McB col is 5
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=65
+Error count over: go back to the previous MCB
+mcb_idx=163
+i, j = 65, 49
+
+McB row is 5
+McB col is 4
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=57
+err_flag reset!
+
+McB row is 5
+McB col is 4
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=49
+Error count over: go back to the previous MCB
+mcb_idx=162
+i, j = 65, 33
+
+McB row is 5
+McB col is 3
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=41
+err_flag reset!
+
+McB row is 5
+McB col is 3
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=33
+Error count over: go back to the previous MCB
+mcb_idx=161
+i, j = 65, 17
+
+McB row is 5
+McB col is 2
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=25
+err_flag reset!
+
+McB row is 5
+McB col is 2
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=17
+Error count over: go back to the previous MCB
+mcb_idx=160
+i, j = 65, 1
+
+McB row is 5
+McB col is 1
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=65, n=9
+err_flag reset!
+
+McB row is 5
+McB col is 1
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=65, n=1
+Error count over: go back to the previous MCB
+mcb_idx=159
+i, j = 49, 625
+
+McB row is 4
+McB col is 40
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=633
+err_flag reset!
+
+McB row is 4
+McB col is 40
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=625
+Error count over: go back to the previous MCB
+mcb_idx=158
+i, j = 49, 609
+
+McB row is 4
+McB col is 39
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=617
+err_flag reset!
+
+McB row is 4
+McB col is 39
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=609
+Error count over: go back to the previous MCB
+mcb_idx=157
+i, j = 49, 593
+
+McB row is 4
+McB col is 38
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=601
+err_flag reset!
+
+McB row is 4
+McB col is 38
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=593
+Error count over: go back to the previous MCB
+mcb_idx=156
+i, j = 49, 577
+
+McB row is 4
+McB col is 37
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=585
+err_flag reset!
+
+McB row is 4
+McB col is 37
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=577
+Error count over: go back to the previous MCB
+mcb_idx=155
+i, j = 49, 561
+
+McB row is 4
+McB col is 36
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=569
+err_flag reset!
+
+McB row is 4
+McB col is 36
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=561
+Error count over: go back to the previous MCB
+mcb_idx=154
+i, j = 49, 545
+
+McB row is 4
+McB col is 35
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=553
+err_flag reset!
+
+McB row is 4
+McB col is 35
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=545
+Error count over: go back to the previous MCB
+mcb_idx=153
+i, j = 49, 529
+
+McB row is 4
+McB col is 34
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=537
+err_flag reset!
+
+McB row is 4
+McB col is 34
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=529
+Error count over: go back to the previous MCB
+mcb_idx=152
+i, j = 49, 513
+
+McB row is 4
+McB col is 33
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=521
+err_flag reset!
+
+McB row is 4
+McB col is 33
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=513
+Error count over: go back to the previous MCB
+mcb_idx=151
+i, j = 49, 497
+
+McB row is 4
+McB col is 32
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=505
+err_flag reset!
+
+McB row is 4
+McB col is 32
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=497
+Error count over: go back to the previous MCB
+mcb_idx=150
+i, j = 49, 481
+
+McB row is 4
+McB col is 31
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=489
+err_flag reset!
+
+McB row is 4
+McB col is 31
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=481
+Error count over: go back to the previous MCB
+mcb_idx=149
+i, j = 49, 465
+
+McB row is 4
+McB col is 30
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=473
+err_flag reset!
+
+McB row is 4
+McB col is 30
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=465
+Error count over: go back to the previous MCB
+mcb_idx=148
+i, j = 49, 449
+
+McB row is 4
+McB col is 29
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=457
+err_flag reset!
+
+McB row is 4
+McB col is 29
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=449
+Error count over: go back to the previous MCB
+mcb_idx=147
+i, j = 49, 433
+
+McB row is 4
+McB col is 28
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=441
+err_flag reset!
+
+McB row is 4
+McB col is 28
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=433
+Error count over: go back to the previous MCB
+mcb_idx=146
+i, j = 49, 417
+
+McB row is 4
+McB col is 27
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=425
+err_flag reset!
+
+McB row is 4
+McB col is 27
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=417
+Error count over: go back to the previous MCB
+mcb_idx=145
+i, j = 49, 401
+
+McB row is 4
+McB col is 26
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=409
+err_flag reset!
+
+McB row is 4
+McB col is 26
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=401
+Error count over: go back to the previous MCB
+mcb_idx=144
+i, j = 49, 385
+
+McB row is 4
+McB col is 25
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=393
+err_flag reset!
+
+McB row is 4
+McB col is 25
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=385
+Error count over: go back to the previous MCB
+mcb_idx=143
+i, j = 49, 369
+
+McB row is 4
+McB col is 24
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=377
+err_flag reset!
+
+McB row is 4
+McB col is 24
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=369
+Error count over: go back to the previous MCB
+mcb_idx=142
+i, j = 49, 353
+
+McB row is 4
+McB col is 23
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=361
+err_flag reset!
+
+McB row is 4
+McB col is 23
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=353
+Error count over: go back to the previous MCB
+mcb_idx=141
+i, j = 49, 337
+
+McB row is 4
+McB col is 22
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=345
+err_flag reset!
+
+McB row is 4
+McB col is 22
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=337
+Error count over: go back to the previous MCB
+mcb_idx=140
+i, j = 49, 321
+
+McB row is 4
+McB col is 21
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=329
+err_flag reset!
+
+McB row is 4
+McB col is 21
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=321
+Error count over: go back to the previous MCB
+mcb_idx=139
+i, j = 49, 305
+
+McB row is 4
+McB col is 20
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=313
+err_flag reset!
+
+McB row is 4
+McB col is 20
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=305
+Error count over: go back to the previous MCB
+mcb_idx=138
+i, j = 49, 289
+
+McB row is 4
+McB col is 19
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=297
+err_flag reset!
+
+McB row is 4
+McB col is 19
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=289
+Error count over: go back to the previous MCB
+mcb_idx=137
+i, j = 49, 273
+
+McB row is 4
+McB col is 18
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=281
+err_flag reset!
+
+McB row is 4
+McB col is 18
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=273
+Error count over: go back to the previous MCB
+mcb_idx=136
+i, j = 49, 257
+
+McB row is 4
+McB col is 17
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=265
+err_flag reset!
+
+McB row is 4
+McB col is 17
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=257
+Error count over: go back to the previous MCB
+mcb_idx=135
+i, j = 49, 241
+
+McB row is 4
+McB col is 16
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=249
+err_flag reset!
+
+McB row is 4
+McB col is 16
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=241
+Error count over: go back to the previous MCB
+mcb_idx=134
+i, j = 49, 225
+
+McB row is 4
+McB col is 15
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=233
+err_flag reset!
+
+McB row is 4
+McB col is 15
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=225
+Error count over: go back to the previous MCB
+mcb_idx=133
+i, j = 49, 209
+
+McB row is 4
+McB col is 14
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=217
+err_flag reset!
+
+McB row is 4
+McB col is 14
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=209
+Error count over: go back to the previous MCB
+mcb_idx=132
+i, j = 49, 193
+
+McB row is 4
+McB col is 13
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=201
+err_flag reset!
+
+McB row is 4
+McB col is 13
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=193
+Error count over: go back to the previous MCB
+mcb_idx=131
+i, j = 49, 177
+
+McB row is 4
+McB col is 12
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=185
+err_flag reset!
+
+McB row is 4
+McB col is 12
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=177
+Error count over: go back to the previous MCB
+mcb_idx=130
+i, j = 49, 161
+
+McB row is 4
+McB col is 11
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=169
+err_flag reset!
+
+McB row is 4
+McB col is 11
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=161
+Error count over: go back to the previous MCB
+mcb_idx=129
+i, j = 49, 145
+
+McB row is 4
+McB col is 10
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=153
+err_flag reset!
+
+McB row is 4
+McB col is 10
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=145
+Error count over: go back to the previous MCB
+mcb_idx=128
+i, j = 49, 129
+
+McB row is 4
+McB col is 9
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=137
+err_flag reset!
+
+McB row is 4
+McB col is 9
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=129
+Error count over: go back to the previous MCB
+mcb_idx=127
+i, j = 49, 113
+
+McB row is 4
+McB col is 8
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=121
+err_flag reset!
+
+McB row is 4
+McB col is 8
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=113
+Error count over: go back to the previous MCB
+mcb_idx=126
+i, j = 49, 97
+
+McB row is 4
+McB col is 7
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=105
+err_flag reset!
+
+McB row is 4
+McB col is 7
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=97
+Error count over: go back to the previous MCB
+mcb_idx=125
+i, j = 49, 81
+
+McB row is 4
+McB col is 6
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=89
+err_flag reset!
+
+McB row is 4
+McB col is 6
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=81
+Error count over: go back to the previous MCB
+mcb_idx=124
+i, j = 49, 65
+
+McB row is 4
+McB col is 5
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=73
+err_flag reset!
+
+McB row is 4
+McB col is 5
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=65
+Error count over: go back to the previous MCB
+mcb_idx=123
+i, j = 49, 49
+
+McB row is 4
+McB col is 4
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=57
+err_flag reset!
+
+McB row is 4
+McB col is 4
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=49
+Error count over: go back to the previous MCB
+mcb_idx=122
+i, j = 49, 33
+
+McB row is 4
+McB col is 3
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=41
+err_flag reset!
+
+McB row is 4
+McB col is 3
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=33
+Error count over: go back to the previous MCB
+mcb_idx=121
+i, j = 49, 17
+
+McB row is 4
+McB col is 2
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=25
+err_flag reset!
+
+McB row is 4
+McB col is 2
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=17
+Error count over: go back to the previous MCB
+mcb_idx=120
+i, j = 49, 1
+
+McB row is 4
+McB col is 1
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=49, n=9
+err_flag reset!
+
+McB row is 4
+McB col is 1
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=49, n=1
+Error count over: go back to the previous MCB
+mcb_idx=119
+i, j = 33, 625
+
+McB row is 3
+McB col is 40
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=633
+err_flag reset!
+
+McB row is 3
+McB col is 40
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=625
+Error count over: go back to the previous MCB
+mcb_idx=118
+i, j = 33, 609
+
+McB row is 3
+McB col is 39
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=617
+err_flag reset!
+
+McB row is 3
+McB col is 39
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=609
+Error count over: go back to the previous MCB
+mcb_idx=117
+i, j = 33, 593
+
+McB row is 3
+McB col is 38
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=601
+err_flag reset!
+
+McB row is 3
+McB col is 38
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=593
+Error count over: go back to the previous MCB
+mcb_idx=116
+i, j = 33, 577
+
+McB row is 3
+McB col is 37
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=585
+err_flag reset!
+
+McB row is 3
+McB col is 37
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=577
+Error count over: go back to the previous MCB
+mcb_idx=115
+i, j = 33, 561
+
+McB row is 3
+McB col is 36
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=569
+err_flag reset!
+
+McB row is 3
+McB col is 36
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=561
+Error count over: go back to the previous MCB
+mcb_idx=114
+i, j = 33, 545
+
+McB row is 3
+McB col is 35
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=553
+err_flag reset!
+
+McB row is 3
+McB col is 35
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=545
+Error count over: go back to the previous MCB
+mcb_idx=113
+i, j = 33, 529
+
+McB row is 3
+McB col is 34
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=537
+err_flag reset!
+
+McB row is 3
+McB col is 34
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=529
+Error count over: go back to the previous MCB
+mcb_idx=112
+i, j = 33, 513
+
+McB row is 3
+McB col is 33
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=521
+err_flag reset!
+
+McB row is 3
+McB col is 33
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=513
+Error count over: go back to the previous MCB
+mcb_idx=111
+i, j = 33, 497
+
+McB row is 3
+McB col is 32
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=505
+err_flag reset!
+
+McB row is 3
+McB col is 32
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=497
+Error count over: go back to the previous MCB
+mcb_idx=110
+i, j = 33, 481
+
+McB row is 3
+McB col is 31
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=489
+err_flag reset!
+
+McB row is 3
+McB col is 31
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=481
+Error count over: go back to the previous MCB
+mcb_idx=109
+i, j = 33, 465
+
+McB row is 3
+McB col is 30
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=473
+err_flag reset!
+
+McB row is 3
+McB col is 30
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=465
+Error count over: go back to the previous MCB
+mcb_idx=108
+i, j = 33, 449
+
+McB row is 3
+McB col is 29
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=457
+err_flag reset!
+
+McB row is 3
+McB col is 29
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=449
+Error count over: go back to the previous MCB
+mcb_idx=107
+i, j = 33, 433
+
+McB row is 3
+McB col is 28
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=441
+err_flag reset!
+
+McB row is 3
+McB col is 28
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=433
+Error count over: go back to the previous MCB
+mcb_idx=106
+i, j = 33, 417
+
+McB row is 3
+McB col is 27
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=425
+err_flag reset!
+
+McB row is 3
+McB col is 27
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=417
+Error count over: go back to the previous MCB
+mcb_idx=105
+i, j = 33, 401
+
+McB row is 3
+McB col is 26
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=409
+err_flag reset!
+
+McB row is 3
+McB col is 26
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=401
+Error count over: go back to the previous MCB
+mcb_idx=104
+i, j = 33, 385
+
+McB row is 3
+McB col is 25
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=393
+err_flag reset!
+
+McB row is 3
+McB col is 25
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=385
+Error count over: go back to the previous MCB
+mcb_idx=103
+i, j = 33, 369
+
+McB row is 3
+McB col is 24
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=377
+err_flag reset!
+
+McB row is 3
+McB col is 24
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=369
+Error count over: go back to the previous MCB
+mcb_idx=102
+i, j = 33, 353
+
+McB row is 3
+McB col is 23
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=361
+err_flag reset!
+
+McB row is 3
+McB col is 23
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=353
+Error count over: go back to the previous MCB
+mcb_idx=101
+i, j = 33, 337
+
+McB row is 3
+McB col is 22
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=345
+err_flag reset!
+
+McB row is 3
+McB col is 22
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=337
+Error count over: go back to the previous MCB
+mcb_idx=100
+i, j = 33, 321
+
+McB row is 3
+McB col is 21
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=329
+err_flag reset!
+
+McB row is 3
+McB col is 21
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=321
+Error count over: go back to the previous MCB
+mcb_idx=99
+i, j = 33, 305
+
+McB row is 3
+McB col is 20
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=313
+err_flag reset!
+
+McB row is 3
+McB col is 20
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=305
+Error count over: go back to the previous MCB
+mcb_idx=98
+i, j = 33, 289
+
+McB row is 3
+McB col is 19
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=297
+err_flag reset!
+
+McB row is 3
+McB col is 19
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=289
+Error count over: go back to the previous MCB
+mcb_idx=97
+i, j = 33, 273
+
+McB row is 3
+McB col is 18
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=281
+err_flag reset!
+
+McB row is 3
+McB col is 18
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=273
+Error count over: go back to the previous MCB
+mcb_idx=96
+i, j = 33, 257
+
+McB row is 3
+McB col is 17
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=265
+err_flag reset!
+
+McB row is 3
+McB col is 17
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=257
+Error count over: go back to the previous MCB
+mcb_idx=95
+i, j = 33, 241
+
+McB row is 3
+McB col is 16
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=249
+err_flag reset!
+
+McB row is 3
+McB col is 16
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=241
+Error count over: go back to the previous MCB
+mcb_idx=94
+i, j = 33, 225
+
+McB row is 3
+McB col is 15
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=233
+err_flag reset!
+
+McB row is 3
+McB col is 15
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=225
+Error count over: go back to the previous MCB
+mcb_idx=93
+i, j = 33, 209
+
+McB row is 3
+McB col is 14
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=217
+err_flag reset!
+
+McB row is 3
+McB col is 14
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=209
+Error count over: go back to the previous MCB
+mcb_idx=92
+i, j = 33, 193
+
+McB row is 3
+McB col is 13
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=201
+err_flag reset!
+
+McB row is 3
+McB col is 13
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=193
+Error count over: go back to the previous MCB
+mcb_idx=91
+i, j = 33, 177
+
+McB row is 3
+McB col is 12
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=185
+err_flag reset!
+
+McB row is 3
+McB col is 12
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=177
+Error count over: go back to the previous MCB
+mcb_idx=90
+i, j = 33, 161
+
+McB row is 3
+McB col is 11
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is 0
+idx before dec_golomb: 61358
+idx after dec_golomb: 61359
+mode_diff is 0
+mode is 0
+idx before dec_golomb: 61366
+idx after dec_golomb: 61371
+mode_diff is -3
+mode is -3
+Error(1): mode=-3, m=33, n=169
+err_flag reset!
+
+McB row is 3
+McB col is 11
+idx before dec_golomb: 61305
+idx after dec_golomb: 61308
+mode_diff is -1
+mode is -1
+Error(2): mode=-1, m=33, n=161
+Error count over: go back to the previous MCB
+mcb_idx=89
+i, j = 33, 145
+
+McB row is 3
+McB col is 10
+K>> 

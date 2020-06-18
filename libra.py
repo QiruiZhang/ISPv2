@@ -383,69 +383,69 @@ class libra():
         return# }}}
     def img_if_reset_enable_on(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : img if reset enable ON')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0400000/4),data_list=[0x11],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0400000/4),data_list=[0x11],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0400000), .MEM_VALUE(32'h11), .NUM_BULK(1))://img_if_ctrl(softreset,enable)
         return# }}}
     def img_if_reset_enable_off(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : img if reset enable OFF')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0400000/4),data_list=[0x01],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0400000/4),data_list=[0x01],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0400000), .MEM_VALUE(32'h01), .NUM_BULK(1))://img_if_ctrl(softreset,enable)
         return# }}}
     def img_if_direct_mem_access_on(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : img if direct mem access ON')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0400004/4),data_list=[0x00],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0400004/4),data_list=[0x00],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0400004), .MEM_VALUE(32'h00), .NUM_BULK(1))://img_mode=0,img_type=0
         return# }}}
     def img_if_direct_mem_access_off(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : img if direct mem access OFF')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0400004/4),data_list=[0x10],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0400004/4),data_list=[0x10],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0400004), .MEM_VALUE(32'h10), .NUM_BULK(1)):
         return# }}}
     def ne_reset_enable_on(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : ne reset ON')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0100000/4),data_list=[0x11],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0100000/4),data_list=[0x11],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0100000), .MEM_VALUE(32'h11), .NUM_BULK(1))://NE_enable(softreset,enable)
         return# }}}
     def ne_autogate_pe_disable(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : ne autogate pe DISABLE')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA010006C/4),data_list=[0x00],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA010006C/4),data_list=[0x00],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA010006C), .MEM_VALUE(32'h00), .NUM_BULK(1))://NE_autogate_pe
         return# }}}
     def ne_autogate_pe_enable(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : ne autogate pe ENABLE')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA010006C/4),data_list=[0x11],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA010006C/4),data_list=[0x11],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA010006C), .MEM_VALUE(32'h11), .NUM_BULK(1))://NE_autogate_pe
         return# }}}
     def h264_reset_enable_on(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : h264 reset enable ON')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0200004/4),data_list=[0x11],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0200004/4),data_list=[0x11],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0200004), .MEM_VALUE( 32'h11), .NUM_BULK(1))://h264_enable(softreset,enable)
         return# }}}
     def h264_reset_enable_off(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : h264 reset enable OFF')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0200004/4),data_list=[0x01],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0200004/4),data_list=[0x01],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0200004), .MEM_VALUE( 32'h01), .NUM_BULK(1))://h264_enable(softreset,enable)
         return# }}}
     def h264_direct_mem_access_on(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : h264 direct memory acess ON')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0200020/4),data_list=[0x101],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0200020/4),data_list=[0x101],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0200020), .MEM_VALUE(32'h101), .NUM_BULK(1))://h264_debug(debug_sram_sel,debug_out_sel)
         return# }}}
     def h264_direct_mem_access_off(self,memberid=2,verbose=0,vv=0):
         print('- libra2 : h264 direct memory acess OFF')#{{{
-        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=(0xA0200020/4),data_list=[0x000],verbose=verbose,vv=vv)
+        self.mbus.send_memory_bulkwrite(memberid=memberid,startaddr=int(0xA0200020/4),data_list=[0x000],verbose=verbose,vv=vv)
         #mbus_memory_bulk_write(.SHORT_PREFIX(`CMP_ADDR), .MEM_ADDR(32'hA0200020), .MEM_VALUE(32'h000), .NUM_BULK(1))://h264_debug(debug_sram_sel,debug_out_sel)
         return# }}}
 
     def read_mem_result(self,address=0x3c00,count=10,memberid=2,verbose=1,vv=0):
         print('- libra2 : read memory result')#{{{
-        self.mbus.send_memory_read(memberid,(address/4),count,1,0,verbose,vv)
+        self.mbus.send_memory_read(memberid,int(address/4),count,1,0,verbose,vv)
         return# }}}
 
     def ne_instr_mem_write(self,basepath='./01_maincodes/ne/dbgnets',memberid=2,compare=1,verbose=1,vv=0):
         print(Fore.YELLOW + '- libra2 : NE instr mem write') #{{{
         print(Style.RESET_ALL)
-        self.write_prog_mem(filename=basepath+'/ne_instructions.byte',memberid=memberid,compare=compare,startaddr=(0xA0100100/4),verbose=verbose,vv=vv)
+        self.write_prog_mem(filename=basepath+'/ne_instructions.byte',memberid=memberid,compare=compare,startaddr=int(0xA0100100/4),verbose=verbose,vv=vv)
         return# }}}
     
     def ne_shared_mem_write(self,basepath='./01_maincodes/ne/dbgnets',memberid=2,compare=1,startaddr=0,verbose=1,vv=0):
@@ -460,8 +460,8 @@ class libra():
             if int(valid) == 1:
                 filename = '/in_'+str(super_cnt)+'_'+str(set_cnt)+'_'+str(bank_cnt)+'.bytes'
                 startaddr= 0xA0104100 +(128*512)/8 * i
-                print(Fore.GREEN + '\t- libra2 : NE shared mem load '+ filename + "  startaddr :" + str(hex(startaddr)))
-                self.write_prog_mem(filename=basepath+'/unified_sram'+filename,memberid=memberid,compare=0,startaddr=(startaddr/4),verbose=verbose,vv=vv)
+                print(Fore.GREEN + '\t- libra2 : NE shared mem load '+ filename + "  startaddr :" + str(hex(int(startaddr))))
+                self.write_prog_mem(filename=basepath+'/unified_sram'+filename,memberid=memberid,compare=0,startaddr=int(startaddr/4),verbose=verbose,vv=vv)
             if bank_cnt == 3:
                 if super_cnt ==3:
                     bank_cnt = 0
@@ -473,6 +473,8 @@ class libra():
             else:
                 bank_cnt = bank_cnt + 1
             i         = i + 1 
+            if i >= 52:
+                return
         return# }}}
         
     ##### memory APIs : boot test sequences ################################
@@ -480,8 +482,9 @@ class libra():
         self.set_osc(memberid=memberid,osc_sd=osc_sd,osc_div=osc_div,verbose=verbose,vv=vv)
         self.memory_init(tune=0,memberid=memberid,verbose=verbose,vv=vv)
         if ne_use == 1 :
-            self.ne_instr_mem_write(basepath=ne_basepath,memberid=2,compare=0,verbose=1,vv=0)
-            self.ne_shared_mem_write(basepath=ne_basepath,memberid=2,compare=0,verbose=verbose,vv=0)
+            self.ne_reset_enable_on(memberid=2,verbose=1,vv=0)
+            self.ne_instr_mem_write(basepath=ne_basepath,memberid=2,compare=compare,verbose=1,vv=0)
+            self.ne_shared_mem_write(basepath=ne_basepath,memberid=2,compare=compare,verbose=verbose,vv=0)
         print(Fore.YELLOW + '- libra2 : main mem write')
         print(Style.RESET_ALL)
         self.write_prog_mem(filename=filename,memberid=memberid,compare=compare,startaddr=0,verbose=verbose,vv=vv)
@@ -493,7 +496,7 @@ class libra():
         ofiler = open("readmem_indi.log","w")
         returned_datalist = []
         for start_addr,read_len in read_list:
-            (fuid,temp_returned_datalist)=self.mbus.send_memory_read(2,start_addr,read_len,1,0,verbose=1,vv=0)
+            (fuid,temp_returned_datalist)=self.mbus.send_memory_read(2,int(start_addr),read_len,1,0,verbose=1,vv=0)
             returned_datalist = returned_datalist + temp_returned_datalist[1:]
             #returned_datalist = temp_returned_datalist[1:]+returned_datalist 
         returned_datalist = list(itertools.chain(*returned_datalist))
@@ -509,7 +512,7 @@ class libra():
         self.write('sram_isolate',[1,1,1,1],verbose=verbose,vv=vv)
         self.mbus.broadcast_allsleep()
 
-    def cdmap_write(self,filename='./04_goldenbrick/cdmap_readable.txt',memberid=2,startaddr=(0xA040004C/4),verbose=1,vv=0):
+    def cdmap_write(self,filename='./04_goldenbrick/cdmap_readable.txt',memberid=2,startaddr=int(0xA040004C/4),verbose=1,vv=0):
         print(Fore.YELLOW + '\t- libra2 : cdmap overwrite') #{{{
         print(Style.RESET_ALL)
         ifile = open(filename,'r')

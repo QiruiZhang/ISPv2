@@ -353,7 +353,9 @@ class libraview():
 		if os.path.exists(filename): os.remove(filename)
 		sal = saleae.Saleae()
 		sal.capture_start_and_wait_until_finished()
-		sal.export_data2(os.path.abspath(filename),[0,1,2],None,None,'binary') #binary is fastest
+		#sal.export_data2(os.path.abspath(filename),[0,1,2],None,None,'binary') #binary is fastest
+		sal.export_data2(os.path.abspath(filename),[2,1,0],None,None,'binary')
+        #binary is fastest [2]: EXTDATA1 , [1]: EXTDATA0,  [0]: CLK
 		while not os.path.exists(filename) or not (os.path.getsize(filename) > 1000) or not sal.is_processing_complete(): #wait
 			time.sleep(0.5)
 		time.sleep(5)

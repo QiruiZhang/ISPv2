@@ -1,0 +1,15 @@
+*.log
+
+01_maincode/NE/
+01_maincode/software/**/*.bin
+01_maincode/software/**/*.boothex
+01_maincode/software/**/*.bootinc
+01_maincode/software/**/*.elf
+01_maincode/software/**/*.hex
+01_maincode/software/**/*.lst
+01_maincode/software/**/*.memmap
+01_maincode/software/**/*.asm
+03_captures/*
+
+__pycache__
+testimage/

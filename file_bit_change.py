@@ -12,7 +12,7 @@ def file_bit_change(filename="./sample.txt",length=8,indexing=1):
 		buf = line.strip() + buf
 		if cnt % length == 0 :
 			if indexing == 1:
-				print >> fw, "line_cnt: "+ str(line_cnt) + "\t" + buf
+				fw.write("line_cnt: "+ str(line_cnt) + "\t" + buf +"\n")
 			else :
 				vec.append(int(buf,2))
 			line_cnt = line_cnt +1
@@ -25,7 +25,7 @@ def file_bit_change(filename="./sample.txt",length=8,indexing=1):
 	return vec
 
 if __name__ == '__main__':
-	filename = str(raw_input("file_name:   "))
-	length   = int(raw_input("length:      "))
-	indexing = int(raw_input("indexing?:   "))
-	file_bit_change(filename,length,indexing)
+	filename = input("file_name:   ")
+	length   = input("length:      ")
+	indexing = input("indexing?:   ")
+	file_bit_change(str(filename),int(length),int(indexing))

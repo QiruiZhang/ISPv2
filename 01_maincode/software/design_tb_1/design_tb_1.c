@@ -278,28 +278,29 @@ int main() {
 			break;
 		}
 	}
-
-	//fls if intialize
-	flsif_initialize(0x1, 0x0); //H264 and 1channel
-
-	//H264 channel
-    while(1){  
-		delay(1);
-		if(frame_flag){
-			arb_debug_ascii(0xD3, "H264");
-			for(mcb_row=0; mcb_row<30; mcb_row = mcb_row + 1){
-				for(mcb_col=0; mcb_col<40; mcb_col = mcb_col + 1){
-					//wait flash out
-					arb_debug_reg(0xDB, mcb_row*mcb_col);
-					h264_start(mcb_row, mcb_col);
-					while(1) { delay(1); if (flash_flag) { flash_flag =0; break; } }
-				}
-				delay(1);
-			}
-			delay(1);
-			break;
-		}
-	}
+//	while(1) { if (flash_flag) { flash_flag =0; delay(1); break; } delay(20);};
+//
+//      //fls if intialize
+//	flsif_initialize(0x1, 0x0); //H264 and 1channel
+//
+//	//H264 channel
+//    while(1){  
+//		delay(1);
+//		if(frame_flag){
+//			arb_debug_ascii(0xD3, "H264");
+//			for(mcb_row=0; mcb_row<30; mcb_row = mcb_row + 1){
+//				for(mcb_col=0; mcb_col<40; mcb_col = mcb_col + 1){
+//					//wait flash out
+//					arb_debug_reg(0xDB, mcb_row*mcb_col);
+//					h264_start(mcb_row, mcb_col);
+//					while(1) { delay(1); if (flash_flag) { flash_flag =0; break; } }
+//				}
+//				delay(1);
+//			}
+//			delay(1);
+//			break;
+//		}
+//	}
 
 	////min-max value check
 	//arb_debug_ascii(0xD3, "MMY");

@@ -1,0 +1,15 @@
+1. Main Scripts to run (Please see the header of the files for details):
+    ChipTest.m
+    ChipTestFIFOdbg.m
+    ChipTest_CDsweepQP.m
+
+2. Change the variable 'filename' in these files to re-target to the new bitstream outputs that we want to test.
+
+3. Change the variable 'Quant' and 'QP' to change quantization parameter. It should be consistent with 
+what is used to generated the bitstream.
+
+4. Change the variable 'h' and 'w' (image height and width) as you wish if we still have problems with the bottom McB row.
+	
+5. The script 'ChipTest.m' is meant for bitstream from a bug-free chip that is streamed out using H.264's direct path to Flash IF.
+It did not work last time because some segments of the bitstream messed up. This time if the direct path is totally ok it should work (probably some extra tweaking needed). 
+If not please contact me and I will setup a new template.

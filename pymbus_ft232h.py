@@ -35,7 +35,8 @@ class PYMBUS_FT232H():
 
 	def setup_mbus(self,startmemberid=2):
 		self.broadcast_interject()
-		time.sleep(0.1)
+		#time.sleep(0.1)
+		time.sleep(1)
 		self.broadcast_enumerate(startmemberid)
 		return
 

@@ -26,7 +26,7 @@ for mcb_index_y in range(mcb_index_y_start,mcb_index_y_end+1):
 	for mcb_index_x in range(mcb_index_x_start,mcb_index_x_end+1):
 		mcb_index = mcb_index_y * 40 + mcb_index_x
 		data_list = []
-		print "mcb_index_x:  ", mcb_index_x, "\tmcb_index_y:  ",mcb_index_y
+		print("mcb_index_x:  ", mcb_index_x, "\tmcb_index_y:  ",mcb_index_y)
 		#data_list.extend(chip.mbus.send_memory_read(2,(0xA0411290+mcb_index*4)/4,(16*16)/4,1,0)[1][1:])
 		data_list.extend(chip.mbus.send_memory_read(2,(0xA0411290+mcb_index*4)/4,(16*16)/4,1,0)[1][1:])
 		cnt = 0
@@ -47,10 +47,9 @@ for mcb_index_y in range(mcb_index_y_start,mcb_index_y_end+1):
 			filename = r"\mcb_y_" + str(mcb_index_x) + "+" + str(mcb_index_y)+"_%s_%s"%(date,hour) + ".txt"
 			f = open(base_path+filename,'w')
 			for item in data_list_parsed:
-				print >> f, item
+				f.write(item)
 			f.close()
 		img[(mcb_index_y-mcb_index_y_start)*16:(mcb_index_y-mcb_index_y_start+1)*16,(mcb_index_x-mcb_index_x_start)*16:(mcb_index_x-mcb_index_x_start+1)*16] = np.array(data_list_parsed)
-			
 
 ##filename = "mcb_y_" + str(mcb_index) + ".txt"
 ##f = open(filename,'w')

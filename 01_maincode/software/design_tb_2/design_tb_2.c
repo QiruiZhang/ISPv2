@@ -225,8 +225,8 @@ int main() {
 	imgif_initialize();
 
 	//Image request to PRC
-	rf_write (0,0xDEADBEEF);//+1 txcnt
-	rf_send (0,0,0x10,0);//+1 txcnt
+	//rf_write (0,0xDEADBEEF);//+1 txcnt
+	//rf_send (0,0,0x10,0);//+1 txcnt
 
 	//Wait for current image
     while(1){  
@@ -275,34 +275,34 @@ int main() {
 	}
 
 	//fls if intialize
-	flsif_initialize(0x1, 0x0); //H264 and 1channel
-
-	//H264 channel
-    while(1){  
-		delay(1);
-		if(frame_flag){
-			arb_debug_ascii(0xD3, "H264");
-			for(mcb_row=0; mcb_row<30; mcb_row = mcb_row + 1){
-				for(mcb_col=0; mcb_col<40; mcb_col = mcb_col + 1){
-					//wait flash out
-					arb_debug_reg(0xDB, mcb_row*mcb_col);
-					h264_start(mcb_row, mcb_col);
-					while(1) { delay(1); if (flash_flag) { flash_flag =0; break; } }
-				}
-				delay(1);
-			}
-			delay(1);
-			break;
-		}
-	}
-
-	//read CD map
-	for(mcb_col=0; mcb_col<40; mcb_col=mcb_col+1){
-		ahb_data = imgif_cd_map_read(mcb_col);
-		for(mcb_row=0; mcb_row<30; mcb_row=mcb_row+1){
-			cd_map[mcb_col][mcb_row] = ((ahb_data & (1<<mcb_row))>>mcb_row);
-		}
-	}
+//	flsif_initialize(0x1, 0x0); //H264 and 1channel
+//
+//	//H264 channel
+//    while(1){  
+//		delay(1);
+//		if(frame_flag){
+//			arb_debug_ascii(0xD3, "H264");
+//			for(mcb_row=0; mcb_row<30; mcb_row = mcb_row + 1){
+//				for(mcb_col=0; mcb_col<40; mcb_col = mcb_col + 1){
+//					//wait flash out
+//					arb_debug_reg(0xDB, mcb_row*mcb_col);
+//					h264_start(mcb_row, mcb_col);
+//					while(1) { delay(1); if (flash_flag) { flash_flag =0; break; } }
+//				}
+//				delay(1);
+//			}
+//			delay(1);
+//			break;
+//		}
+//	}
+//
+//	//read CD map
+//	for(mcb_col=0; mcb_col<40; mcb_col=mcb_col+1){
+//		ahb_data = imgif_cd_map_read(mcb_col);
+//		for(mcb_row=0; mcb_row<30; mcb_row=mcb_row+1){
+//			cd_map[mcb_col][mcb_row] = ((ahb_data & (1<<mcb_row))>>mcb_row);
+//		}
+//	}
 
 	//for(mcb_row=0; mcb_row<30; mcb_row=mcb_row+1){
 	//	for(mcb_col=0; mcb_col<40; mcb_col=mcb_col+1){

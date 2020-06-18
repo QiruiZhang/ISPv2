@@ -186,13 +186,19 @@ int main() {
 	frame_flag=0;
 	flash_flag=0;
 	enable_irq(0xFFFFF9FF);
+	rf_write (0,0xFF);
+	rf_write (1,0xFF);
+	rf_write (2,0xFF);
+	rf_write (3,0xFF);
+	rf_write (4,0xFF);
 	//enable_all_irq();
-
+	flsif_initialize(0x3, 0x3);
 
 	//********************************************************************
 	// IMG IF SFR TEST             
 	//********************************************************************
 	arb_debug_ascii(0xD3, "IMGF "); 
+	flsif_senddata(0x0);
 	
 	// IMGIF_IF_CTRL
 	// default val check
@@ -940,6 +946,7 @@ int main() {
 	temp_reg=imgif_cd_map_read((uint16_t)2);
 	if(temp_reg != 0) {arb_debug_ascii(0xD5, "ERR");err_cnt_imgif++;};
 	
+	flsif_senddata(err_cnt_imgif);
 	//// CD_SRAM
 	//// Turn on debug mode
 	//dbg_imgif_enable();
@@ -1221,6 +1228,7 @@ int main() {
 	// NE TEST             
 	//********************************************************************
 	arb_debug_ascii(0xD3, "NE  ");
+	flsif_senddata(0x1);
 
 
     // now actually un-reset
@@ -1254,6 +1262,7 @@ int main() {
         if(ii != jj) {arb_debug_ascii(0xD5, "ERR");err_cnt_ne++;};
     }
 
+	flsif_senddata(err_cnt_ne);
 
     // set and unset autogate mode (default is 1)
     // keep it unset so that the accumulator reads work
@@ -1465,6 +1474,7 @@ int main() {
 	// H264 TEST             
 	//********************************************************************
 	arb_debug_ascii(0xD3,"H264");
+	flsif_senddata(0x2);
 
 
 	p_H264_ENABLE->h264_en = 0x0;
@@ -1623,6 +1633,7 @@ int main() {
 	temp_reg=p_H264_STATUS->h264_top_mcb_valid;
 	if(temp_reg != 0){arb_debug_ascii(0xD5,"ERR");err_cnt_h264++;}	
 
+	flsif_senddata(err_cnt_h264);
 	////H264_MEM
 	//p_H264_ENABLE->h264_en = 0x1;	
 
@@ -1687,6 +1698,7 @@ int main() {
 	// RF TEST             
 	//********************************************************************
 	arb_debug_ascii(0xD3, "RF  "); 
+	flsif_senddata(0x3);
 
 	arb_debug_ascii(0xDA, "REG0");
 	temp_reg=CMPv1_R00->MBUS_R0;
@@ -1855,10 +1867,13 @@ int main() {
 	rf_write (23,wr_val);
 	delay(1);
 	if(wr_val != CMPv1_R17->as_int) {arb_debug_ascii(0xD5, "ERR");err_cnt_rf++;};
+
+	flsif_senddata(err_cnt_rf);
 	//********************************************************************
 	// FLS IF SFR TEST             
 	//********************************************************************
 	arb_debug_ascii(0xD3, "FLS"); //0xD0 for bold green 0xDA for normal green
+	flsif_senddata(0x4);
 
 	//Read Write registers
 	//default value check
@@ -1895,6 +1910,9 @@ int main() {
 	//FIFO test
 	arb_debug_ascii(0xDA, "REG5");
 	p_FLSIF_FIFO->as_int = 0xDEADBEEF;
+
+	flsif_initialize(0x3, 0x3);
+	flsif_senddata(err_cnt_fls);
 
 	rf_write (0,err_cnt_imgif);
 	rf_write (1,err_cnt_ne   );
