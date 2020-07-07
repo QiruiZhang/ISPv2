@@ -1,6 +1,7 @@
 //*******************************************************************
 //Author: Hyochan An
 //*******************************************************************
+//
 #include "CMPv1.h"
 #include "CMPv1_H264.h"
 #include "CMPv1_FLS.h"
@@ -35,39 +36,13 @@ volatile uint32_t cyc_num;
 volatile uint32_t ind_mau;
 volatile uint32_t irq_history;
 
-//volatile flpv2s_r0F_t FLPv2S_R0F_IRQ      = FLPv2S_R0F_DEFAULT;
-//volatile flpv2s_r12_t FLPv2S_R12_PWR_CONF = FLPv2S_R12_DEFAULT;
-//volatile flpv2s_r07_t FLPv2S_R07_GO       = FLPv2S_R07_DEFAULT;
-//
-//volatile pmuv7h_r51_t PMUv7H_R51_CONF = PMUv7H_R51_DEFAULT;
-//volatile pmuv7h_r52_t PMUv7H_R52_IRQ  = PMUv7H_R52_DEFAULT;
-
-// Select Testing
-volatile uint32_t do_cycle0  = 1; // System Halt and Resume
-volatile uint32_t do_cycle1  = 1; // PMU Testing
-volatile uint32_t do_cycle2  = 1; // Register test
-volatile uint32_t do_cycle3  = 1; // MEM IRQ
-volatile uint32_t do_cycle4  = 1; // Flash Erase
-volatile uint32_t do_cycle5  = 1; // Memory Streaming 1
-volatile uint32_t do_cycle6  = 1; // Memory Streaming 2
-volatile uint32_t do_cycle7  = 1; // TIMER16
-volatile uint32_t do_cycle8  = 1; // TIMER32
-#ifdef PREv17
-volatile uint32_t do_cycle9  = 1; // GPIO (only for PRE)
-volatile uint32_t do_cycle10 = 1; // SPI (only for PRE)
-#else
-volatile uint32_t do_cycle9  = 0;
-volatile uint32_t do_cycle10 = 0;
-#endif
-volatile uint32_t do_cycle11 = 1; // Watch-Dog
-
 int frame_flag;
 int flash_flag;
 int md_flag;
 int h264_flag;
 int ne_flag;
-
-
+int mbustx_flag;
+int mbusrx_flag;
 
 //*******************************************************************
 // INTERRUPT HANDLERS
@@ -150,7 +125,6 @@ void handler_ext_int_mbustx(void) { // MBUS_TX
 void handler_ext_int_md(void) { // MOTION_DETECTION
     *NVIC_ICPR = (0x1 << IRQ_MD); irq_history |= (0x1 << IRQ_MD);
     arb_debug_reg(IRQ_MD, 0x00000000);
-	imgif_clear_md_done_int();
 	md_flag=1;
 }
 void handler_ext_int_vga(void) { // VGA
@@ -158,8 +132,6 @@ void handler_ext_int_vga(void) { // VGA
     arb_debug_reg(IRQ_VGA, 0x00000000);
 	frame_flag=1;
 	imgif_clear_enc_done_int();
-	p_COMPMEM_CONFIG->compmem_config_dec_en = 1;
-	//ne_enable();
 }
 void handler_ext_int_ne(void) { // NE
     *NVIC_ICPR = (0x1 << IRQ_NE); irq_history |= (0x1 << IRQ_NE);
@@ -170,7 +142,7 @@ void handler_ext_int_ne(void) { // NE
 void handler_ext_int_fls(void) { // FLS
     *NVIC_ICPR = (0x1 << IRQ_FLS); irq_history |= (0x1 << IRQ_FLS);
     arb_debug_reg(IRQ_FLS, 0x00000000);
-	p_FLSIF_INTR->as_int  = 0;
+	p_FLSIF_INTR->as_int  = 1;
 	flash_flag=1;
 }
 void handler_ext_int_h264(void) { // H264
@@ -182,267 +154,373 @@ void handler_ext_int_h264(void) { // H264
 void handler_ext_int_h264_fifordy(void) { // H264_fifordy
     *NVIC_ICPR = (0x1 << IRQ_H264_FIFORDY); irq_history |= (0x1 << IRQ_H264_FIFORDY);
     arb_debug_reg(IRQ_H264_FIFORDY, 0x00000000);
+	p_H264_INTR_FIFO->as_int = 1;
 }
 
 //*******************************************************************
 // USER FUNCTIONS
 //*******************************************************************
-void merge_md_arr(uint32_t md_frame_arr_in[32][20], uint32_t merged_arr[32][5]) {
-
-	int r;
-	int c;
-
-	for(r=0;r<32;r++) {
-		for(c=0;c<5;c++) {
-			merged_arr[r][c] = 	(md_frame_arr_in[r][c*4+3]<<24) 	+ 
-					     	(md_frame_arr_in[r][c*4+2]<<16) 	+
-					    	(md_frame_arr_in[r][c*4+1]<<8)  	+
-						md_frame_arr_in[r][c*4];
-
-			// Printing debug
-//		 	arb_debug_ascii(0xDA, "PRNT");
-//			arb_debug_reg(0xDB, r);
-//			arb_debug_reg(0xDB, c);
-//			arb_debug_reg(0xDB, merged_arr[r][c]);
-		}
-	}
-
-}
-
-void print_md_frame_arr(uint32_t md_frame_arr_in[32][20]) {
-	int r;
-	int c;
-
-	arb_debug_ascii(0xDA, "PRMD");
-
-	for(r=0;r<32;r++) {
-		for(c=0;c<20;c++) {
-			arb_debug_reg(0xDB, r);
-			arb_debug_reg(0xDB, c);
-			arb_debug_reg(0xDB, md_frame_arr_in[r][c]);
-		}
-	}
-}
 
 //********************************************************************
 // MAIN function starts here             
 //********************************************************************
-#define   p_     ((volatile uint32_t                     *) 0xA01D6100)
+//#define ERROR_ADDR_LOG    0x4000
+//#define ERROR_WORD_LOG    0x8000
+//#define ERROR_XOR_LOG     0xC000
+#define REG_RUN_CPU		  ((volatile uint32_t *) 0xA0000080)
+
+#define ERROR_LOG		  ((volatile uint32_t *) 0x00003C00)
+#define ERROR_ADDR_LOG	  ((volatile uint32_t *) 0x00004000)
+#define ERROR_WORD_LOG	  ((volatile uint32_t *) 0x00008000)
+#define ERROR_XOR_LOG	  ((volatile uint32_t *) 0x0000C000)
+
+#define TESTING_PROGRESS  ((volatile uint32_t *) 0x00003C1C)
+#define ERROR_LOG_SUMMARY ((volatile uint32_t *) 0x00003C20)
+#define ERROR_LOG_DETAIL  ((volatile uint32_t *) 0x00003C78)
+
+#define TOTAL_WORDS			262144
+
+
+//Global Variable Initialize here is useless. Must initialize in main function for C
+uint32_t word_err_cnt = 0;
+uint32_t single_word_cnt = 0; //word contain <= 2 error bits
+uint32_t multi_word_cnt = 0;
+uint32_t bit_err_cnt = 0;
+uint32_t single_bit_cnt = 0; //word contains <= 2 error bits
+uint32_t multi_bit_cnt = 0;
+uint32_t log_cnt;
+uint32_t total_word_cnt;
+
+const uint32_t m1  = 0x55555555;
+const uint32_t m2  = 0x33333333;
+const uint32_t m4  = 0x0f0f0f0f;
+const uint32_t m8  = 0x00ff00ff;
+const uint32_t m16 = 0x0000ffff;
+
+uint32_t popcount32(uint32_t x){
+	x = (x & m1)  + ((x >> 1)  & m1 ); 
+	x = (x & m2)  + ((x >> 2)  & m2 ); 
+	x = (x & m4)  + ((x >> 4)  & m4 ); 
+	x = (x & m8)  + ((x >> 8)  & m8 ); 
+	x = (x & m16) + ((x >> 16) & m16 ); 
+	return x;
+}
+
+void failBitCnt(volatile uint32_t * startaddr, uint32_t size, bool skip, int skip_num){
+//size: how many 32-bit words
+//skip: true - skip addr 8*n + 6/7 for CD SRAM testing
+//		false - don't skip
+	uint32_t addr,addr1;
+	int i;
+	
+	uint32_t pattern, pattern1;
+	uint32_t error_word, error_word1;
+	
+	for(i=0;i<size;i=i+2){
+		if(skip && (i % 8 >= skip_num))
+			continue;
+			
+		total_word_cnt = total_word_cnt + 2;	
+		
+		//Thoroughly test mem with 6 data patterns
+		addr = (startaddr+i);
+		addr1 = (startaddr+i+1);
+		uint32_t temp_xor = 0;
+		uint32_t temp_xor1 = 0;
+		for(int p=0;p<6;p++){
+			switch(p)
+			{
+				case 0:
+					pattern = addr;
+					pattern1 = addr1;
+					break;
+				case 1:
+					pattern = ~addr;
+					pattern1 = ~addr1;
+					break;
+				case 2:
+					pattern = 0x00000000;
+					pattern1 = 0x00000000;
+					break;
+				case 3:
+					pattern = 0xFFFFFFFF;
+					pattern1 = 0xFFFFFFFF;
+					break;
+				case 4:
+					pattern = 0xAAAAAAAA;
+					pattern1 = 0xAAAAAAAA;
+					break;
+				case 5:
+					pattern = 0x55555555;
+					pattern1 = 0x55555555;
+					break;
+				default:
+					pattern = addr;
+					pattern1 = addr1;
+					break;
+			}
+			
+			*(startaddr+i)=pattern; 
+			*(startaddr+i+1)=pattern1;
+			
+			if(i > size-20){
+				*(startaddr+i-17) = pattern;
+			}else{
+				*(startaddr+i+17) = pattern;
+			}
+			
+			uint32_t temp_reg=*(startaddr+i);
+			uint32_t temp_reg1=*(startaddr+i+1);
+
+			if(i > size-20){
+				*(startaddr+i-17) = pattern1;
+			}else{
+				*(startaddr+i+17) = pattern1;
+			}
+			
+			if(temp_reg != pattern) {
+				temp_xor = temp_xor | (temp_reg^pattern);
+				error_word = temp_reg;
+			}
+			
+			if(temp_reg1 != pattern1) {
+				temp_xor1 = temp_xor1 | (temp_reg1^pattern1);
+				error_word1 = temp_reg1;
+			}
+		}
+		
+		//Count errorbit
+		uint32_t error_bitcnt = popcount32(temp_xor);
+		if(error_bitcnt > 0){
+			bit_err_cnt += error_bitcnt;
+			if(single_word_cnt < 4096 && error_bitcnt < 4){
+				*(ERROR_ADDR_LOG + single_word_cnt) = addr;
+				*(ERROR_WORD_LOG + single_word_cnt) = error_word;
+				*(ERROR_XOR_LOG  + single_word_cnt) = temp_xor;
+			}
+			if(error_bitcnt > 3){
+				multi_word_cnt++;
+				multi_bit_cnt += error_bitcnt;
+			}else{
+				single_word_cnt++;
+				single_bit_cnt += error_bitcnt;
+			}
+			word_err_cnt++;
+		}
+		
+		uint32_t error_bitcnt1 = popcount32(temp_xor1);
+		if(error_bitcnt1 > 0){
+			bit_err_cnt += error_bitcnt1;
+			if(single_word_cnt < 4096 && error_bitcnt1 < 4){
+				*(ERROR_ADDR_LOG + single_word_cnt) = addr1;
+				*(ERROR_WORD_LOG + single_word_cnt) = error_word1;
+				*(ERROR_XOR_LOG  + single_word_cnt) = temp_xor1;
+			}
+			if(error_bitcnt1 > 3){
+				multi_word_cnt++;
+				multi_bit_cnt += error_bitcnt1;
+			}else{
+				single_word_cnt++;
+				single_bit_cnt += error_bitcnt1;
+			}
+			word_err_cnt++;
+		}
+	}
+	return;
+}
+
+
+uint32_t bank, block, progress, jump;
+void BlockTest(volatile uint32_t * startaddr, uint32_t size, uint32_t num_bank, uint32_t mask){
+	uint32_t prev_single_word_cnt, prev_multi_word_cnt;
+	uint32_t prev_single_word_cnt_b, prev_multi_word_cnt_b;
+	
+	prev_single_word_cnt_b = single_word_cnt;
+	prev_multi_word_cnt_b = multi_word_cnt;
+	
+	for(int i = 0; i < num_bank ; i++){
+		prev_single_word_cnt = single_word_cnt;
+		prev_multi_word_cnt = multi_word_cnt;
+		failBitCnt(startaddr + i*size, size, false, 0);
+		*(ERROR_LOG_DETAIL + bank) = ((single_word_cnt - prev_single_word_cnt) << 16 ) | (multi_word_cnt - prev_multi_word_cnt);
+		bank++;
+		progress = (total_word_cnt << 5) / TOTAL_WORDS;
+		*(TESTING_PROGRESS) = ~(0xFFFFFFFF >> progress);
+	}
+	
+	*(ERROR_LOG_SUMMARY + block) = (single_word_cnt - prev_single_word_cnt_b) | mask; 
+	*(ERROR_LOG_SUMMARY + jump + block) = (multi_word_cnt - prev_multi_word_cnt_b) | mask;
+	block++;
+}
+
+void BlockTest_CD(volatile uint32_t * startaddr, uint32_t size, uint32_t num_bank, uint32_t mask){
+	uint32_t prev_single_word_cnt, prev_multi_word_cnt;
+	uint32_t prev_single_word_cnt_b, prev_multi_word_cnt_b;
+	
+	prev_single_word_cnt_b = single_word_cnt;
+	prev_multi_word_cnt_b = multi_word_cnt;
+	
+	for(int i = 0; i < num_bank; i++){
+		prev_single_word_cnt = single_word_cnt;
+		prev_multi_word_cnt = multi_word_cnt;
+		failBitCnt(startaddr + i*size, size, true, 2);
+		*(ERROR_LOG_DETAIL + bank) = ((single_word_cnt - prev_single_word_cnt) << 16 ) | (multi_word_cnt - prev_multi_word_cnt);
+		bank++;
+		progress = (total_word_cnt << 5) / TOTAL_WORDS;
+		*(TESTING_PROGRESS) = ~(0xFFFFFFFF >> progress);
+		
+		prev_single_word_cnt = single_word_cnt;
+		prev_multi_word_cnt = multi_word_cnt;
+		failBitCnt(startaddr + i*size + 2, size, true, 4);
+		*(ERROR_LOG_DETAIL + bank) = ((single_word_cnt - prev_single_word_cnt) << 16 ) | (multi_word_cnt - prev_multi_word_cnt);
+		bank++;
+		progress = (total_word_cnt << 5) / TOTAL_WORDS;
+		*(TESTING_PROGRESS) = ~(0xFFFFFFFF >> progress);
+	}
+	
+	*(ERROR_LOG_SUMMARY + block) = (single_word_cnt - prev_single_word_cnt_b) | mask; 
+	*(ERROR_LOG_SUMMARY + jump + block) = (multi_word_cnt - prev_multi_word_cnt_b) | mask;
+	block++;
+}
+
 
 int main() {
 	//********************************************************************
 	//********************************************************************
-	// MD FRAME TEST ut
+	// MEM access test
 	//********************************************************************
 	//********************************************************************
-
-	int i;
-	int chunk;
-	int mode=1; //1: just bayer output, 2: NE works
-
-	uint32_t merged_frame[32][5];
-	uint32_t md_frame_arr[32][20];
-
-	uint32_t temp0;
-	uint32_t temp1;
-	int r;
-	int c;
-	
-	frame_flag=0;
-	flash_flag=0;
-	h264_flag=0;
-	md_flag=0;
-	ne_flag=0;
 	//enable_all_irq();
 	enable_irq(0xFFFFF9FF);
 	
-	//fls if intialize
-	flsif_initialize(0x3, 0x3); //AHB path
+	//error_msg = {0, 0, 0, 0, 0, 0};
+	word_err_cnt = 0;
+	single_word_cnt = 0; //word contain <= 2 error bits
+	multi_word_cnt = 0;
+	bit_err_cnt = 0;
+	single_bit_cnt = 0; //word contains <= 2 error bits
+	multi_bit_cnt = 0;
+	log_cnt = 0;
+	total_word_cnt = 0;
 	
-	//h264 initialize
-	//h264_initialize();
-	//h264_config(p_H264_COMPMEM_SADDR_YREF->as_int, p_H264_COMPMEM_SADDR_UVREF->as_int, 20,1);//quality factor = 10
+	block = 0;
+	bank = 0;
+	progress = 0;
+	jump = 11;
 	
-	//imager if intialize
-	imgif_intensity_mode_enable();
+	
+	for(int i = 0; i < 256; i++){
+		*(ERROR_LOG + i) = 0;
+	}
+	for(int i = 0; i < 4096; i++){
+		*(ERROR_ADDR_LOG + i) = 0;
+		*(ERROR_WORD_LOG + i) = 0;
+		*(ERROR_XOR_LOG  + i) = 0;
+	}
+	
+
 	imgif_initialize();
+	//1. first write all data in all SRAM (You can use certain round-robin pattern)
+	//2. read data in all SRAM and match
+	//This is because of N2W works as a buffer
+	//********************************************************************
+	// IMG IF access test
+	//********************************************************************
+	imgif_mem_access_enable();
+	
+	// 1. min max memory bank (64x512)
+	BlockTest(p_MINMAX_SRAM_START, 2*512, 1, 0x10000000);
+	
+	//2. CD mem//64x512 (4) 128x512(4)
+	//			  #words/row * #rows * #banks
+	BlockTest_CD(p_CD_SRAM_START, 8*512, 4, 0x20000000);
+	
+	//3. Ref mem//64x512 (3)
+	BlockTest(p_REF_SRAM_START, 2*512, 3, 0x30000000);
 
-	rf_write(0,22);
-	//wait for motion detection
-    	while(1){  delay(1); if(md_flag){ md_flag = 0; break; } }
+	//4. compmeme 64x512 (55)
+	BlockTest(p_COMP_SRAM_START, 2*512, 55, 0x40000000);
+	
+	//********************************************************************
+	// NE access test
+	//********************************************************************
+	ne_mem_access();
 
-	//imgif_mem_access_enable();
-	dbg_imgif_disable_md_shift();
-	p_B_CONV->min = 0; // set manual minimum to 0 - default is 70
-	imgif_md_frame_read(md_frame_arr);
-	merge_md_arr(md_frame_arr, merged_frame);
+	// //5. shared memory
+	// //128x512 (80)
+	BlockTest(p_NE_SHARED_MEM_START, 4*512, 52, 0x50000000);
 
-	if(mode == 1){
-		for(r=0;r<32;r++) {
-			for(c=0;c<5;c++) {
-				flsif_senddata(merged_frame[r][c]);
-    				while(1){  delay(1); if(flash_flag){ flash_flag = 0; break; } }
-			}
-		}
-	}
-	else if(mode ==2 ){
-		    // enable the NE
-		    ne_enable();
-		
-		
-		    // load the md frame into NE for Person Detection
-		    arb_debug_ascii(0xDA, "LDNE");
-		    ne_load_md_frame(md_frame_arr, 98304);//32bit addr
-		
-		
-		    while(1){
-		    	//// preload NCX registers with params for Person Detect
-		    	//arb_debug_ascii(0xDA, "PDRG");
-		    	//ne_set_ncx_register(0, 512 );//1st MBC index //512bit addr
-		    	//ne_set_ncx_register(1, 0x0000);//1st MBC destaddr
-		    	//ne_set_ncx_register(2, 2     );//stride
-		    	//ne_set_ncx_register(3, 6656 );//huff weight ssaddr
-		    	//ne_set_ncx_register(4, 6672 );//huff weight enaddr
-		    	//ne_set_ncx_register(5, 6672 );//huff loc table ssaddr
-		    	//ne_set_ncx_register(6, 6676 );//huff loc table enaddr
-		    	//ne_set_ncx_register(7, 7168 );//bias ssaddr
-		    	//ne_set_ncx_register(8, 7169 );//bias enaddr
-		    	//ne_set_ncx_register(9, 0x0020);//mov instr size
-		    	//ne_set_ncx_register(10,0x0000);
-		    	//ne_set_ncx_register(11,0x0000);
-		    	//ne_set_ncx_register(12,0x0009);
-		    	//ne_set_ncx_register(13,0x0009);
-		    	//ne_set_ncx_register(14,0x0000);
-		    	//ne_set_ncx_register(15,0x000A);
-		    	//ne_set_ncx_register(16,7680  );//weight ssaddr
-		    	//ne_set_ncx_register(17,7720  );//weight enaddr
-		    	//ne_set_ncx_register(18,3584  );//output addr(512bit addr)
-		    	//ne_set_ncx_register(19,0x5800);
-		    	//ne_set_ncx_register(20,0x5805);
-		    	//ne_set_ncx_register(21,0x0000);
-		    	//ne_set_ncx_register(22,0x0000);
-		    	//ne_set_ncx_register(23,10240);//input addr
-		    ne_set_ncx_register(0, 0x0000);
-		    ne_set_ncx_register(1, 24576 );//input image data(128b)
-		    ne_set_ncx_register(2, 5632  );//1st intermediate(512b)
-		    ne_set_ncx_register(3, 0x0000);
-		    ne_set_ncx_register(4, 6144  );//2nd intermediate(512b)
-		    ne_set_ncx_register(5, 7168  );//conv1 bias ss(128b)
-		    ne_set_ncx_register(6, 7169  );//conv1 bias end(128b)
+	// //6. weight memory
+	// //256x256 (4 )
+	BlockTest(p_NE_PE_WEIGHTBUF_START, 8*256, 4, 0x60000000);
 
-		    ne_set_ncx_register(7, 0x0000);
-		    ne_set_ncx_register(8, 0x0000);
-		    ne_set_ncx_register(9, 0x0000);
-		    ne_set_ncx_register(10,0x0000);
-		    ne_set_ncx_register(11,0x0000);
+	// //7. Instr memeory
+	// //128x512 (2 )
+	BlockTest(p_NE_IMEM_START, 4*512, 2, 0x70000000);
+	
+	// //8. local memeory
+	// //256x256 (4 )
+	BlockTest(p_NE_PE_LOCALMEM_START, 8*256, 4, 0x80000000);
+	
+	// //9. accum memeory
+	// //32x32   (64)
+	BlockTest(p_NE_PE_ACCUMULATORS_START, 1*32, 64, 0x90000000);
 
-		    ne_set_ncx_register(12,8704  );//conv1 weight ss(128b)
-		    ne_set_ncx_register(13,2560  );//conv1 huff w table start(128b)
-		    ne_set_ncx_register(14,2576  );//conv1 huff w table end  (128b)
-		    ne_set_ncx_register(15,2580  );//conv1 huff loc table end(128b)
+	// //10. Bias memeory
+	// //128x512 (1 )
+	BlockTest(p_NE_PE_BIAS_BUFFER_START, 4*512, 1, 0xA0000000);
 
-		    ne_set_ncx_register(16,12288 );//conv2 weight ss(128b)
-		    ne_set_ncx_register(17,10240 );//conv2 huff w table start(128b)
-		    ne_set_ncx_register(18,10258 );//conv2 huff w table end  (128b)
-		    ne_set_ncx_register(19,11776 );//conv2 bias start (128b)
+	// //********************************************************************
+	// // H264 access test
+	// //********************************************************************
+	// //11. Bias memeory
+	// //64x512 (1 )
+	h264_initialize();
+	h264_mem_direct_access();
+	
+	BlockTest(p_H264_MEM_START, 2*512, 1, 0xB0000000);
+	
+	//********************************************************************
+	// FINISH             
+	//********************************************************************
+	// uint32_t pattern [8]; 
+	// pattern[0] = 0xDEADBEEF;
+	// pattern[1] = 0xABCDEF00; 
+	// pattern[2] = 0xAAAABBBB; 
+	// pattern[3] = 0xCCCCDDDD; 
+	// pattern[4] = 0xEEEEFFFF; 
+	// pattern[5] = 0xABABABAB; 
+	// pattern[6] = 0xCDCDCDCD;
+	// pattern[7] = 0xEFEFEFEF;
+	
+	// mbus_write_message(0x11,pattern,7);
+	
+	*(ERROR_LOG + 0) = word_err_cnt;
+	*(ERROR_LOG + 1) = single_word_cnt;
+	*(ERROR_LOG + 2) = multi_word_cnt;
+	*(ERROR_LOG + 3) = bit_err_cnt;
+	*(ERROR_LOG + 4) = single_bit_cnt;
+	*(ERROR_LOG + 5) = multi_bit_cnt;
+	*(ERROR_LOG + 6) = total_word_cnt;
 
-		    ne_set_ncx_register(20,7680  );//dfc1 weight (512b)
-		    ne_set_ncx_register(21,9728  );//dfc2 weight (512b)
-		    ne_set_ncx_register(22,28672 );//dfc1 bias start (128b)
-		    ne_set_ncx_register(23,10264 );//conv2 huff loc table end(128b)
-		
-		
-		    // run Person Detect
-		    	arb_debug_ascii(0xDA, "PD  ");
-		    	ne_start(0);
-		    	while(1){ delay(1); if(ne_flag){ ne_flag = 0; break; } }
-		    	arb_debug_ascii(0xDA, "check");
-		    }
-
-		
-		    // check result
-		    uint16_t result = 0;
-		    result = ne_get_ncx_register(5);
-		    if(result != 74) {rf_write(1,0xFFFF);}//arb_debug_ascii("ERR");}
-		    result = ne_get_ncx_register(7);
-		    if(result != 84) {rf_write(2,0xFFFF);}//arb_debug_ascii("ERR");}
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+0));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+1));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+2));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+3));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+4));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+5));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+6));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+7));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+8));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+9));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+10));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+11));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+12));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+13));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+14));
-		    arb_debug_ascii(0xDA, *(((volatile uint32_t *)0xa013c100)+15));
-		    arb_debug_reg(0xFF, 0);//END_OF_PROGRAM
-	}
-	else {
-		for(r=0;r<32;r++) {
-			for(c=0;c<5;c++) {
-				flsif_senddata(merged_frame[r][c]);
-    				while(1){  delay(1); if(flash_flag){ flash_flag = 0; break; } }
-			}
-		}
-		    // enable the NE
-		    ne_enable();
-		
-		
-		    // load the md frame into NE for Person Detection
-		    arb_debug_ascii(0xDA, "LDNE");
-		    ne_load_md_frame(md_frame_arr, 0);
-		
-		
-		    // preload NCX registers with params for Person Detect
-		    arb_debug_ascii(0xDA, "PDRG");
-		    ne_set_ncx_register(0, 0x0000);
-		    ne_set_ncx_register(1, 0x0000);
-		    ne_set_ncx_register(2, 0x0002);
-		    ne_set_ncx_register(3, 0x1000);
-		    ne_set_ncx_register(4, 0x1010);
-		    ne_set_ncx_register(5, 0x1010);
-		    ne_set_ncx_register(6, 0x1014);
-		    ne_set_ncx_register(7, 0x1400);
-		    ne_set_ncx_register(8, 0x1401);
-		    ne_set_ncx_register(9, 0x0020);
-		    ne_set_ncx_register(10,0x0000);
-		    ne_set_ncx_register(11,0x0000);
-		    ne_set_ncx_register(12,0x0009);
-		    ne_set_ncx_register(13,0x0009);
-		    ne_set_ncx_register(14,0x0000);
-		    ne_set_ncx_register(15,0x000A);
-		    ne_set_ncx_register(16,0x1800);
-		    ne_set_ncx_register(17,0x0008);
-		    ne_set_ncx_register(18,0x0080);
-		    //ne_set_ncx_register(19,0x5800);
-		    //ne_set_ncx_register(20,0x5805);
-		    ne_set_ncx_register(21,0x0000);
-		    ne_set_ncx_register(22,0x0000);
-		    ne_set_ncx_register(23,0x0011);
-		
-		
-		    // run Person Detect
-		    arb_debug_ascii(0xDA, "PD  ");
-		    ne_start(NE_PERSON_DETECTION_IMEM_START_ADDR);
-		    while(1){ delay(1); if(ne_flag){ ne_flag = 0; break; } }
-		
-		    // check result
-		    uint16_t result = 0;
-		    result = ne_get_ncx_register(5);
-		    if(result != 74) {arb_debug_ascii("ERR ");rf_write(1,0xFFFF);}
-		    result = ne_get_ncx_register(7);
-		    if(result != 84) {arb_debug_ascii("ERR ");rf_write(2,0xFFFF);}
-	}
-
-	arb_debug_reg(0xFF, 0);//END_OF_PROGRAM
-
-	while(1){ delay(1); }
+	flsif_initialize(0x3, 0x3);
+	flsif_senddata(word_err_cnt   );
+	while(1) { if (flash_flag) { flash_flag =0; delay(1); break; } delay(1); }
+	flsif_senddata(single_word_cnt);
+	while(1) { if (flash_flag) { flash_flag =0; delay(1); break; } delay(1); }
+	flsif_senddata(multi_word_cnt );
+	while(1) { if (flash_flag) { flash_flag =0; delay(1); break; } delay(1); }
+	flsif_senddata(bit_err_cnt    );
+	while(1) { if (flash_flag) { flash_flag =0; delay(1); break; } delay(1); }
+	flsif_senddata(single_bit_cnt );
+	while(1) { if (flash_flag) { flash_flag =0; delay(1); break; } delay(1); }
+	flsif_senddata(multi_bit_cnt  );
+	while(1) { if (flash_flag) { flash_flag =0; delay(1); break; } delay(1); }
+	flsif_senddata(total_word_cnt );
+	
+	//*REG_RUN_CPU = 0;
+	rf_write(32,0);
+	
+	//while(1){ delay(1); }
     return 1;
 }

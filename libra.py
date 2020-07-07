@@ -364,6 +364,13 @@ class libra():
         ofile_memwrite.close()
         return# }}}
 
+    def set_osc_sd(self,osc_sd=0x11,osc_div=0x2,memberid=2,verbose=0,vv=0):
+        print(Fore.YELLOW + '- libra2 : Oscillator setting')#{{{
+        print(Style.RESET_ALL)
+        self.write('clock_tuning',[0,osc_sd,osc_div],verbose=verbose,vv=vv)
+        self.write('osc_sd',[osc_sd],verbose=verbose,vv=vv)
+        return# }}}
+
     def set_osc(self,osc_sd=0x11,osc_div=0x2,memberid=2,verbose=0,vv=0):
         print(Fore.YELLOW + '- libra2 : Oscillator setting')#{{{
         print(Style.RESET_ALL)

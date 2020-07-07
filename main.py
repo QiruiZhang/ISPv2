@@ -260,8 +260,12 @@ while 1:
 			raise LibraError("\t\tlibra2 : LibraError : wrong option")
 
 print('\t=========================================================')
-time.sleep(3)
-chip.boot(filename=filename,osc_sd=0x17,osc_div=4,memberid=2,compare=0,ne_use=ne_use,ne_basepath=ne_basepath,verbose=0,vv=0) #650K 0.6V
+#chip.mbus.send_register_write(2,[[5, 10]],verbose=1,vv=0)
+#_,_ = chip.mbus.send_register_read(2,5,1,1,0,verbose=1,vv=0)
+##chip.set_osc_sd(verbose=1,vv=0)
+#exit()
+#time.sleep(3)
+chip.boot(filename=filename,osc_sd=0x17,osc_div=2,memberid=2,compare=0,ne_use=ne_use,ne_basepath=ne_basepath,verbose=0,vv=0) #650K 0.6V
 print(Fore.RESET)
 
 ##debug port setting
